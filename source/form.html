@@ -60,6 +60,165 @@
 
 <main class="page-main">
   <h1 class="page-main_title">Направления</h1>
+  <section class="profile">
+    <a class="profile__avatar profile__avatar--level">
+      <img src="https://via.placeholder.com/150x150" alt="Петя Демин">
+    </a>
+    <form class="profile__form profile-form" action="https://echo.htmlacademy.ru" method="post">
+      <button class="profile-form__button" type="button">Сменить фото</button>
+      <fieldset>
+        <legend class="profile-form__title">Тэги</legend>
+        <p>#бургер #бар #футбол #концерт #крафт</p>
+      </fieldset>
+      <fieldset>
+        <legend class="profile-form__title">Транспорт</legend>
+        <table>
+          <tr class="profile-form__row transport-row">
+            <td class="transport-row__item transport-row__item--active">Самолёт</td>
+            <td class="transport-row__item transport-row__item--active">Машина</td>
+            <td class="transport-row__item">Велосипед</td>
+            <td class="transport-row__item transport-row__item--active">Пешком</td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </section>
+  <section class="my-plans">
+    <h2 class="my-plans__title">Мои планы:</h2>
+    <ol class="my-plans__list">
+      <li class="my-plans__item">Франция, Италия
+        <span class="my-plans__companion">3 попутчика</span>
+        <span class="my-plans__date">26 мар — 29 мар</span>
+        <button class="my-plans__setup">Изменить</button>
+      </li>
+      <li class="my-plans__item">Таиланд, Индонезия
+        <span class="my-plans__companion">1 попутчик</span>
+        <span class="my-plans__date">1 июл — 15 июл</span>
+        <button class="my-plans__setup">Изменить</button>
+      </li>
+    </ol>
+  </section>
+  <section class="create-plan">
+    <form class="create-plan__form" action="https://echo.htmlacademy.ru" method="post">
+      <ul class="create-plan__list">
+        <li class="create-plan__item">
+          <h3 class="create-plan__title">Шаг 1. Даты пребывания</h3>
+          <p class="create-plan__step-description">Укажите предпочтительное количество попутчиков, которых
+            вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+          <label for="companions">ищу попутчиков:<span>Чел.</span></label>
+          <input class="create-plan__companions" id="companions" type="number" value="2">
+          <label for="duration">Длительность:<span>дн.</span></label>
+          <input class="create-plan__duration" id="duration" type="number" value="2">
+          <input class="create-plan__with-children" id="with-children" type="checkbox" checked>
+          <label for="with-children">Можно с детьми</label>
+          <div class="create-plan__calendar calendar">
+            <button class="calendar__prev" type="button">X</button>
+            <span>Март 2019</span>
+            <button class="calendar__next" type="button">X</button>
+            <table class="create-plan__table">
+              <tr>
+                <th>п</th>
+                <th>в</th>
+                <th>с</th>
+                <th>ч</th>
+                <th>п</th>
+                <th class="calendar__saturday">с</th>
+                <th class="calendar__sunday">в</th>
+              </tr>
+              <tr>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+              </tr>
+              <tr>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td class="calendar__selected-day">26</td>
+                <td class="calendar__selected-day">27</td>
+                <td class="calendar__selected-day">28</td>
+                <td>29</td>
+              </tr>
+              <tr>
+                <td>30</td>
+                <td>31</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+              </tr>
+            </table>
+          </div>
+          <a class="create-plan__next-step" href="#">Следующий шаг</a>
+        </li>
+        <li class="create-plan__item">
+          <h3 class="create-plan__title">Шаг 2. Маршрут</h3>
+          <p class="create-plan__step-description">Укажите страны, которые вы хотели по посетить.
+            Это может быть одна или сразу несколько.</p>
+          <select>
+            <option>Босния и герцеговина</option>
+          </select>
+          <button type="button">X</button>
+          <select>
+            <option>Чехия</option>
+          </select>
+          <select>
+            <option>Выберите страну</option>
+          </select>
+          <button type="button">X</button>
+          <button class="create-plan__add-country create-plan__add-country--icon" type="button">Добавить стран</button>
+          <a class="create-plan__next-step" href="#">Следующий шаг</a>
+          <a class="create-plan__prev-step" href="#">На шаг назад</a>
+        </li>
+        <li class="create-plan__item">
+          <h3 class="create-plan__title">Шаг 3. Развлечения</h3>
+          <p class="create-plan__step-description">Наконец, расскажите о своих планах времяпровождения.
+            Можно писать в свободной форме и ставить тэги.</p>
+          <label for="plan-todo-1">Босния и герцеговина</label>
+          <textarea name="todo" id="plan-todo-1" cols="30" rows="10"></textarea>
+          <label for="plan-todo-2">Чехия</label>
+          <textarea name="todo" id="plan-todo-2" cols="30" rows="10">Пить пиво и лазить
+по старым замкам, наслаждаться архитектурой
+и вот это все.
+          </textarea>
+        </li>
+      </ul>
+      <button type="submit">Отправить</button>
+      <a class="create-plan__prev-step" href="#">На шаг назад</a>
+    </form>
+  </section>
 </main>
 
 <footer class="page-footer">
