@@ -60,6 +60,65 @@
 
     <main class="page-main">
       <h1 class="page-main_title">Попутчики</h1>
+      <section class="filter">
+        <h2 class="filter__title">Фильтрация по странам</h2>
+        <button class="filter__close">X</button>
+        <ul class="continents-list">
+          <li class="continents-list__item continents-list__item--active">Европа</li>
+          <li class="continents-list__item">Азия</li>
+          <li class="continents-list__item">Америка</li>
+          <li class="continents-list__item">Острова</li>
+        </ul>
+        <table class="filter__table">
+          <tr>
+            <td class="filter__item filter__item--active">а</td>
+            <td>б</td>
+            <td>в</td>
+            <td>г</td>
+            <td>д</td>
+          </tr>
+          <tr>
+            <td>е</td>
+            <td>з</td>
+            <td>и</td>
+            <td>к</td>
+            <td>л</td>
+          </tr>
+          <tr>
+            <td>м</td>
+            <td>н</td>
+            <td>о</td>
+            <td>п</td>
+            <td>р</td>
+          </tr>
+          <tr>
+            <td>с</td>
+            <td>т</td>
+            <td>у</td>
+            <td>ф</td>
+            <td>х</td>
+          </tr>
+          <tr>
+            <td>ч</td>
+            <td>ш</td>
+            <td>э</td>
+            <td>ю</td>
+            <td>я</td>
+          </tr>
+        </table>
+        <ul class="country-list">
+          <li class="country-list__item">Афганистан</li>
+          <li class="country-list__item">Албания</li>
+          <li class="country-list__item">Алжир</li>
+          <li class="country-list__item">Андорра</li>
+          <li class="country-list__item">Аргентина</li>
+          <li class="country-list__item">Армения</li>
+          <li class="country-list__item">Австралия</li>
+          <li class="country-list__item">Австрия</li>
+          <li class="country-list__item">Азербайджан</li>
+        </ul>
+        <button class="filter__roll-up filter__roll-up--icon">свернуть</button>
+      </section>
       <section class="travelers-catalog">
         <div class="travelers-catalog__wrapper">
           <ul class="travelers-catalog__list">
@@ -90,12 +149,12 @@
                  <td class="travelers-catalog__transport">транспорт:</td>
                  <td class="travelers-catalog__level">левел:</td>
                </tr>
-               <tr>
-                 <td class="travelers-catalog__type-transport travelers-catalog__type-transport--active">Самолёт</td>
-                 <td class="travelers-catalog__type-transport">Машина</td>
-                 <td class="travelers-catalog__type-transport">Велосипед</td>
-                 <td class="travelers-catalog__type-transport">Пешком</td>
-                 <td class="travelers-catalog__level-rate">99</td>
+               <tr class="travelers-catalog__row transport-row">
+                 <td class="transport-row__item transport-row__item--active">Самолёт</td>
+                 <td class="transport-row__item">Машина</td>
+                 <td class="transport-row__item">Велосипед</td>
+                 <td class="transport-row__item">Пешком</td>
+                 <td class="transport-row__level-rate">99</td>
                </tr>
              </table>
               <button class="travelers-catalog__invite button" type="button">Позвать!</button>
@@ -123,12 +182,12 @@
                   <td class="travelers-catalog__transport">транспорт:</td>
                   <td class="travelers-catalog__level">левел:</td>
                 </tr>
-                <tr>
-                  <td class="travelers-catalog__type-transport--active travelers-catalog__type-transport--active">Самолёт</td>
-                  <td class="travelers-catalog__type-transport--active travelers-catalog__type-transport--active">Машина</td>
-                  <td class="travelers-catalog__type-transport">Велосипед</td>
-                  <td class="travelers-catalog__type-transport--active travelers-catalog__type-transport--active">Пешком</td>
-                  <td class="travelers-catalog__level-rate">80</td>
+                <tr class="travelers-catalog__row transport-row">
+                  <td class="transport-row__item transport-row__item--active">Самолёт</td>
+                  <td class="transport-row__item transport-row__item--active">Машина</td>
+                  <td class="transport-row__item">Велосипед</td>
+                  <td class="transport-row__item transport-row__item--active">Пешком</td>
+                  <td class="transport-row__level-rate">80</td>
                 </tr>
               </table>
               <button class="travelers-catalog__invite button" type="button">Позвать!</button>
@@ -160,12 +219,12 @@
                   <td class="travelers-catalog__transport">транспорт:</td>
                   <td class="travelers-catalog__level">левел:</td>
                 </tr>
-                <tr>
-                  <td class="travelers-catalog__type-transport--active travelers-catalog__type-transport--active">Самолёт</td>
-                  <td class="travelers-catalog__type-transport">Машина</td>
-                  <td class="travelers-catalog__type-transport--active travelers-catalog__type-transport--active">Велосипед</td>
-                  <td class="travelers-catalog__type-transport">Пешком</td>
-                  <td class="travelers-catalog__level-rate">25</td>
+                <tr class="travelers-catalog__row transport-row">
+                  <td class="transport-row__item transport-row__item--active">Самолёт</td>
+                  <td class="transport-row__item">Машина</td>
+                  <td class="transport-row__item transport-row__item--active">Велосипед</td>
+                  <td class="transport-row__item">Пешком</td>
+                  <td class="transport-row__level-rate">25</td>
                 </tr>
               </table>
               <button class="travelers-catalog__invite button" type="button">Позвать!</button>
@@ -193,12 +252,12 @@
                   <td class="travelers-catalog__transport">транспорт:</td>
                   <td class="travelers-catalog__level">левел:</td>
                 </tr>
-                <tr>
-                  <td class="travelers-catalog__type-transport--active travelers-catalog__type-transport--active">Самолёт</td>
-                  <td class="travelers-catalog__type-transport--active travelers-catalog__type-transport--active">Машина</td>
-                  <td class="travelers-catalog__type-transport">Велосипед</td>
-                  <td class="travelers-catalog__type-transport">Пешком</td>
-                  <td class="travelers-catalog__level-rate">50</td>
+                <tr class="travelers-catalog__row transport-row">
+                  <td class="transport-row__item transport-row__item--active">Самолёт</td>
+                  <td class="transport-row__item transport-row__item--active">Машина</td>
+                  <td class="transport-row__item">Велосипед</td>
+                  <td class="transport-row__item">Пешком</td>
+                  <td class="transport-row__level-rate">50</td>
                 </tr>
               </table>
               <button class="travelers-catalog__invite button" type="button">Позвать!</button>

@@ -147,6 +147,14 @@
               </a>
               <h3 class="traveler-list__name traveler-list__name--point">Петя Демин</h3>
               <b class="traveler-list__hash-tag">бургер #бар #футбол #концерт #крафт</b>
+              <table>
+                <tr class="traveler-list__row transport-row">
+                  <td class="transport-row__item transport-row__item--active">Самолёт</td>
+                  <td class="transport-row__item transport-row__item--active">Машина</td>
+                  <td class="transport-row__item">Велосипед</td>
+                  <td class="transport-row__item transport-row__item--active">Пешком</td>
+                </tr>
+              </table>
             </li>
             <li><a class="traveler-list__link traveler-list__link--icon" href="#">Показать всех</a></li>
           </ul>
@@ -169,6 +177,39 @@
           </tr>
         </table>
         <a class="add-profile__show-all button">Показать тарифы для бизнеса</a>
+      </section>
+
+     <article class="sign-up">
+       <h2 class="sign-up__title">Заинтересовались?</h2>
+       <p class="sign-up__text">Зарегистрируйтесь, это быстро и бесплатно!
+         Уже зарегистрированы? Тогда скорее <a class="sign-up__login" href="#">авторизуйтесь</a>.</p>
+       <form class="sign-up__form" action="https://echo.htmlacademy.ru" method="post">
+         <label for="sign-up__email" class="visually-hidden">email:</label>
+         <input class="sign-up__email" id="sign-up__email" type="email" value="E-mail">
+         <button class="sign-up__button sign-up__button--icon">X</button>
+       </form>
+       <div class="sign-up__wrapper">
+         <b>Остались вопросы?</b>
+         <b>Мы с радостью на них ответим!</b>
+         <ul class="sign-up__list user-list">
+           <li class="sign-up__item">
+             <a class="user-list__phone user-list__phone--phone-icon"
+                href="tel:88005558628">8 800 555-86-28</a>
+           </li>
+           <li class="user-list__item">
+             <a class="user-list__email user-list__email--email-icon"
+                href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+           </li>
+         </ul>
+       </div>
+     </article>
+      <section class="location">
+        <ul class="location__list">
+          <li class="location__item location__item--icon"><a href="#">ул. Большая Конюшенная, 19/8</a></li>
+          <li class=""><a class="location__button" href="#">Проложить маршрут</a></li>
+        </ul>
+        <img class="location__map location__map--icon" src="https://via.placeholder.com/150x150"
+        alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
       </section>
     </main>
 
