@@ -1,11 +1,11 @@
 .page-header {
-  font-family: "bloggersans", sans-serif;
+  font-family: "bloggersans", "Arial", sans-serif;
   padding: 25px;
-  color: #ffffff;
+  color: $base-white;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  background-color: #161c36;
+  background-color: $primary-blue;
   background-image: url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
 }

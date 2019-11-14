@@ -1,4 +1,7 @@
+@import "fonts";
+@import "variables";
 @import "./blocks/page-header";
+@import "./blocks/main-nav";
 @import "./blocks/page-main";
 @import "./blocks/steps";
 @import "./blocks/about";
@@ -8,15 +11,3 @@
 @import "./blocks/traveler-list";
 @import "./blocks/add-profile";
 @import "./blocks/page-footer";
-
-@font-face {
-  src: url("../fonts/bloggersans.woff") format("woff"),
-    url("../fonts/bloggersans-bold.woff") format("woff"),
-    url("../fonts/bloggersans-italic.woff") format("woff"),
-    url("../fonts/bloggersans-light.woff") format("woff"),
-    url("../fonts/bloggersans-lightitalic.woff") format("woff"),
-    url("../fonts/bloggersans-medium.woff") format("woff"),
-    url("../fonts/bloggersans-bolditalic.woff") format("woff"),
-    url("../fonts/bloggersans-mediumitalic.woff") format("woff");
-}
-
