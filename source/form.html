@@ -11,61 +11,73 @@
       <a class="page-header__logo">
         <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="HTML Academy: Погнали">
       </a>
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="#">О сервисе</a>
-            </li>
-            <li class="site-list__item">
-              <a href="./form.html">Направления</a>
-            </li>
-            <li class="site-list__item">
-              <a href="./catalog.html">Попутчики</a>
-            </li>
-          </ul>
-          <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a class="user-list__link" href="#">Авторизация</a>
-            </li>
-            <li class="user-list__item">
-              <a class="user-list__phone" href="tel:88005558628">
-                <span class="user-list__phone-icon" aria-label="Иконка телефона"></span>
-                8 800 555-86-28
-              </a>
-            </li>
-            <li class="user-list__item">
-              <a class="user-list__email" href="mailto:mail@htmlacademy.ru">
-                <span class="user-list__email-icon" aria-label="Иконка почты"></span>
-                mail@htmlacademy.ru</a>
-            </li>
-          </ul>
-        </div>
-        <div class="main-nav__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://www.vk.com/htmlacademy">Мы в Вконтакте</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-            </li>
-          </ul>
-        </div>
+        <section class="main-nav__popup">
+          <button class="main-nav__close" type="button">x</button>
+          <div class="main-nav__wrapper">
+
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="#">О сервисе</a>
+              </li>
+              <li class="site-list__item">
+                <a href="./form.html">Направления</a>
+              </li>
+              <li class="site-list__item">
+                <a href="./catalog.html">Попутчики</a>
+              </li>
+            </ul>
+
+            <ul class="main-nav__list user-list">
+              <li class="user-list__item">
+                <a class="user-list__link" href="#">Авторизация</a>
+              </li>
+              <li class="user-list__item">
+                <a class="user-list__phone" href="tel:88005558628">
+                  <span class="user-list__phone-icon" aria-label="Иконка телефона"></span>
+                  8 800 555-86-28
+                </a>
+              </li>
+              <li class="user-list__item">
+                <a class="user-list__email" href="mailto:mail@htmlacademy.ru">
+                  <span class="user-list__email-icon" aria-label="Иконка почты"></span>
+                  mail@htmlacademy.ru</a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="main-nav__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://www.vk.com/htmlacademy">Мы в Вконтакте</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+              </li>
+            </ul>
+          </div>
+
+        </section>
       </nav>
+
     </header>
 
     <main class="page-main">
       <h1 class="page-main_title">Направления</h1>
       <section class="profile">
         <h2 class="visually-hidden">Профиль</h2>
+
         <span class="profile__level level" aria-label="Уровень профиля">
           <span class="level__count">80</span>
           <span class="level__text">level</span>
         </span>
+
         <a class="profile__avatar">
           <img src="https://via.placeholder.com/150x150" alt="Петя Демин">
         </a>
@@ -77,15 +89,18 @@
           </li>
           <li class="profile__item">
             <h4 class="profile__title">транспорт:</h4>
+
             <ul class="profile__transport-list transports">
               <li class="transports__item transports__item--active">Самолёт</li>
               <li class="transports__item transports__item--active">Машина</li>
               <li class="transports__item">Велосипед</li>
               <li class="transports__item transports__item--active">Пешком</li>
             </ul>
+
           </li>
         </ul>
       </section>
+
       <section class="my-plans">
         <h2 class="my-plans__title">Мои планы:</h2>
         <ol class="my-plans__list">
@@ -107,6 +122,7 @@
           </li>
         </ol>
       </section>
+
       <section class="create-plan">
         <form class="create-plan__form" action="https://echo.htmlacademy.ru" method="post">
           <ul class="create-plan__list">
@@ -115,6 +131,7 @@
               <p class="create-plan__step-description">
                 Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.
               </p>
+
               <div class="step-input">
                 <label class="step-input__label" for="companions">
                   ищу попутчиков:
@@ -124,6 +141,7 @@
                 <input class="step-input__input" id="companions" type="number" value="2">
                 <button class="step-input__button" type="button">+</button>
               </div>
+
               <div class="step-input">
                 <label class="step-input__label" for="duration">
                   Длительность:
@@ -133,8 +151,10 @@
                 <input class="step-input__input" id="duration" type="number" value="2">
                 <button class="step-input__button" type="button">+</button>
               </div>
+
               <input class="create-plan__checkbox" id="with-children" type="checkbox" checked>
               <label for="with-children">Можно с детьми</label>
+
               <div class="create-plan__calendar calendar">
                 <button class="calendar__prev" type="button"></button>
                 <span>Март 2019</span>
@@ -205,6 +225,7 @@
                   </tr>
                 </table>
               </div>
+
               <button class="create-plan__next-step button" type="button">Следующий шаг</button>
             </li>
             <li class="create-plan__item">
@@ -245,7 +266,8 @@
     </main>
 
     <footer class="page-footer">
-      <b class="page-footer__title">Погнали?</b>
+      <h2 class="page-footer__title">Погнали?</h2>
+
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -258,11 +280,14 @@
             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
           </li>
         </ul>
+
       </div>
+
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
+
     </footer>
   </body>
 </html>
