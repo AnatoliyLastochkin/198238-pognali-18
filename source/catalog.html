@@ -3,72 +3,81 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
 
     <header class="page-header">
-      <a href="./index.html" class="page-header__logo">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150"
-             alt="HTML Academy: Погнали">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="HTML Academy: Погнали">
       </a>
+
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
+
           <ul class="main-nav__list site-list">
-            <li class="site-list_item">
+            <li class="site-list__item">
               <a href="#">О сервисе</a>
             </li>
-            <li class="site-list_item">
+            <li class="site-list__item">
               <a href="./form.html">Направления</a>
             </li>
-            <li class="site-list_item">
-              <a>Попутчики</a>
+            <li class="site-list__item">
+              <a href="./catalog.html">Попутчики</a>
             </li>
           </ul>
+
           <ul class="main-nav__list user-list">
             <li class="user-list__item">
-              <a class="user-list__login" href="#"></a>
+              <a class="user-list__link" href="#">Авторизация</a>
             </li>
             <li class="user-list__item">
-              <a class="user-list__phone user-list__phone--phone-icon"
-                 href="tel:88005558628">8 800 555-86-28</a>
+              <a class="user-list__phone" href="tel:88005558628">
+                <span class="user-list__phone-icon" aria-label="Иконка телефона"></span>
+                8 800 555-86-28
+              </a>
             </li>
             <li class="user-list__item">
-              <a class="user-list__email user-list__email--email-icon"
-                 href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              <a class="user-list__email" href="mailto:mail@htmlacademy.ru">
+                <span class="user-list__email-icon" aria-label="Иконка почты"></span>
+                mail@htmlacademy.ru</a>
             </li>
           </ul>
+
         </div>
+
         <div class="main-nav__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--facebook"
-                 href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--vkontakte"
-                 href="https://www.vk.com/htmlacademy">Мы в Вконтакте</a>
+              <a class="social__link social__link--vkontakte" href="https://www.vk.com/htmlacademy">Мы в Вконтакте</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram"
-                 href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
             </li>
           </ul>
         </div>
+
       </nav>
+
     </header>
 
     <main class="page-main">
       <h1 class="page-main_title">Попутчики</h1>
       <section class="filter">
         <h2 class="filter__title">Фильтрация по странам</h2>
-        <button class="filter__close">X</button>
+        <button class="filter__close" type="button">X</button>
+
         <ul class="continents-list">
           <li class="continents-list__item continents-list__item--active">Европа</li>
           <li class="continents-list__item">Азия</li>
           <li class="continents-list__item">Америка</li>
           <li class="continents-list__item">Острова</li>
         </ul>
+
         <table class="filter__table">
           <tr>
             <td class="filter__item filter__item--active">а</td>
@@ -106,6 +115,7 @@
             <td>я</td>
           </tr>
         </table>
+
         <ul class="country-list">
           <li class="country-list__item">Афганистан</li>
           <li class="country-list__item">Албания</li>
@@ -117,184 +127,265 @@
           <li class="country-list__item">Австрия</li>
           <li class="country-list__item">Азербайджан</li>
         </ul>
-        <button class="filter__roll-up filter__roll-up--icon">свернуть</button>
+
+        <button class="filter__roll-up">свернуть</button>
       </section>
+
       <section class="travelers-catalog">
+        <h2 class="visually-hidden">Каталог попутчиков</h2>
         <div class="travelers-catalog__wrapper">
           <ul class="travelers-catalog__list">
             <li class="travelers-catalog__item">
-              <a class="travelers-catalog__avatar travelers-catalog__avatar--icon">
-                <img src="https://via.placeholder.com/150x150" alt="Таня Фирсова">
-              </a>
-              <h3 class="travelers-catalog__name travelers-catalog__name--point">Таня Фирсова</h3>
-              <span>1,5M</span>
-              <b class="travelers-catalog__hash-tag">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</b>
-             <table class="travelers-catalog__traveler-settings">
-               <tr>
-                 <td class="travelers-catalog__wants-to-visit">хочет посетить:</td>
-               </tr>
-               <tr>
-                 <td class="travelers-catalog__flag">Шри-ланк</td>
-                 <td class="travelers-catalog__country">Шри-ланк</td>
-               </tr>
-               <tr>
-                 <td class="travelers-catalog__flag">Таиланд</td>
-                 <td class="travelers-catalog__country">Таиланд</td>
-               </tr>
-               <tr>
-                 <td class="travelers-catalog__flag">Сейшелы</td>
-                 <td class="travelers-catalog__country">Сейшелы</td>
-               </tr>
-               <tr>
-                 <td class="travelers-catalog__transport">транспорт:</td>
-                 <td class="travelers-catalog__level">левел:</td>
-               </tr>
-               <tr class="travelers-catalog__row transport-row">
-                 <td class="transport-row__item transport-row__item--active">Самолёт</td>
-                 <td class="transport-row__item">Машина</td>
-                 <td class="transport-row__item">Велосипед</td>
-                 <td class="transport-row__item">Пешком</td>
-                 <td class="transport-row__level-rate">99</td>
-               </tr>
-             </table>
-              <button class="travelers-catalog__invite button" type="button">Позвать!</button>
+
+              <article class="travelers-catalog__card card-profile">
+                <a class="card-profile__avatar">
+                  <img src="https://via.placeholder.com/150x150" alt="Таня Фирсова">
+                </a>
+                <h3 class="card-profile__name">Таня Фирсова</h3>
+                <span>1,5M</span>
+                <span class="card-profile__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</span>
+                <div class="card-profile__flags-wrapper">
+                  <h4>хочет посетить:</h4>
+                  <ul class="card-profile__flags-list flags">
+                    <li class="flags__item">
+                      <span class="flags__flag" aria-label="Флаг Шри-Ланки"></span>
+                      Шри-Ланка
+                    </li>
+                    <li class="flags__item">
+                      <span class="flags__flag" aria-label="Флаг Таиланда"></span>
+                      Таиланд
+                    </li>
+                    <li class="flags__item">
+                      <span class="flags__flag" aria-label="Флаг Сейшела"></span>
+                      Сейшелы
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-profile__transports-wrapper">
+                  <h4>транспорт:</h4>
+                  <ul class="card-profile__transport-list transports">
+                    <li class="transports__item transports__item--active">Самолёт</li>
+                    <li class="transports__item">Машина</li>
+                    <li class="transports__item transports__item--active">Велосипед</li>
+                    <li class="transports__item">Пешком</li>
+                  </ul>
+                </div>
+                <span class="card-profile__level level" aria-label="Уровень профиля">
+                  <span class="level__text">левел:</span>
+                  <span class="level__count">99</span>
+                </span>
+                <button class="card-profile__invite button" type="button">Позвать!</button>
+              </article>
+
             </li>
             <li class="travelers-catalog__item">
-              <a class="travelers-catalog__avatar travelers-catalog__avatar--icon">
-                <img src="https://via.placeholder.com/150x150" alt="Петя Демин">
-              </a>
-              <h3 class="travelers-catalog__name travelers-catalog__name--point">Петя Демин</h3>
-              <span>150</span>
-              <b class="travelers-catalog__hash-tag">бургер #бар #футбол #концерт #крафт</b>
-              <table class="travelers-catalog__traveler-settings">
-                <tr>
-                  <td class="travelers-catalog__wants-to-visit">хочет посетить:</td>
-                </tr>
-                <tr>
-                  <td class="travelers-catalog__flag">Бельгия</td>
-                  <td class="travelers-catalog__country">Бельгия</td>
-                </tr>
-                <tr>
-                  <td class="travelers-catalog__flag">Чехия</td>
-                  <td class="travelers-catalog__country">Чехия</td>
-                </tr>
-                <tr>
-                  <td class="travelers-catalog__transport">транспорт:</td>
-                  <td class="travelers-catalog__level">левел:</td>
-                </tr>
-                <tr class="travelers-catalog__row transport-row">
-                  <td class="transport-row__item transport-row__item--active">Самолёт</td>
-                  <td class="transport-row__item transport-row__item--active">Машина</td>
-                  <td class="transport-row__item">Велосипед</td>
-                  <td class="transport-row__item transport-row__item--active">Пешком</td>
-                  <td class="transport-row__level-rate">80</td>
-                </tr>
-              </table>
-              <button class="travelers-catalog__invite button" type="button">Позвать!</button>
+
+              <article class="travelers-catalog__card card-profile">
+                <a class="card-profile__avatar">
+                  <img src="https://via.placeholder.com/150x150" alt="Петя Демин">
+                </a>
+                <h3 class="card-profile__name">Петя Демин</h3>
+                <span>150</span>
+                <span class="card-profile__tags">#бургер #бар #футбол #концерт #крафт</span>
+                <div class="card-profile__flags-wrapper">
+                  <h4>хочет посетить:</h4>
+                  <ul class="card-profile__flags-list flags">
+                    <li class="flags__item">
+                      <span class="flags__flag" aria-label="Флаг Бельгии"></span>
+                      Бельгия
+                    </li>
+                    <li class="flags__item">
+                      <span class="flags__flag" aria-label="Флаг Чехии"></span>
+                      Чехия
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-profile__transports-wrapper">
+                  <h4>транспорт:</h4>
+                  <ul class="card-profile__transport-list transports">
+                    <li class="transports__item transports__item--active">Самолёт</li>
+                    <li class="transports__item transports__item--active">Машина</li>
+                    <li class="transports__item">Велосипед</li>
+                    <li class="transports__item transports__item--active">Пешком</li>
+                  </ul>
+                </div>
+                <span class="card-profile__level level" aria-label="Уровень профиля">
+                  <span class="level__text">левел:</span>
+                  <span class="level__count">80</span>
+                </span>
+                <button class="card-profile__invite button" type="button">Позвать!</button>
+              </article>
+
             </li>
             <li class="travelers-catalog__item">
-              <a class="travelers-catalog__avatar travelers-catalog__avatar--icon">
-                <img src="https://via.placeholder.com/150x150" alt="Марк Смолов">
-              </a>
-              <h3 class="travelers-catalog__name travelers-catalog__name--point">Марк Смолов</h3>
-              <span>1700</span>
-              <b class="travelers-catalog__hash-tag">#рэп #тату #хайпбист #кроссовки #суприм</b>
-              <table class="travelers-catalog__traveler-settings">
-                <tr>
-                  <td class="travelers-catalog__wants-to-visit">хочет посетить:</td>
-                </tr>
-                <tr>
-                  <td class="travelers-catalog__flag">США</td>
-                  <td class="travelers-catalog__country">США</td>
-                </tr>
-                <tr>
-                  <td class="travelers-catalog__flag">Австралия</td>
-                  <td class="travelers-catalog__country">Австралия</td>
-                </tr>
-                <tr>
-                  <td class="travelers-catalog__flag">Доминикана</td>
-                  <td class="travelers-catalog__country">Доминикана</td>
-                </tr>
-                <tr>
-                  <td class="travelers-catalog__transport">транспорт:</td>
-                  <td class="travelers-catalog__level">левел:</td>
-                </tr>
-                <tr class="travelers-catalog__row transport-row">
-                  <td class="transport-row__item transport-row__item--active">Самолёт</td>
-                  <td class="transport-row__item">Машина</td>
-                  <td class="transport-row__item transport-row__item--active">Велосипед</td>
-                  <td class="transport-row__item">Пешком</td>
-                  <td class="transport-row__level-rate">25</td>
-                </tr>
-              </table>
-              <button class="travelers-catalog__invite button" type="button">Позвать!</button>
+
+              <article class="travelers-catalog__card card-profile">
+                <a class="travelers-catalog__avatar travelers-catalog__avatar--icon">
+                  <img src="https://via.placeholder.com/150x150" alt="Марк Смолов">
+                </a>
+                <h3 class="travelers-catalog__name travelers-catalog__name--point">Марк Смолов</h3>
+                <span>1700</span>
+                <span class="card-profile__tags">#рэп #тату #хайпбист #кроссовки #суприм</span>
+                <div class="card-profile__flags-wrapper">
+                  <h4>хочет посетить:</h4>
+                  <ul class="card-profile__flags-list flags">
+                    <li class="flags__item">
+                      <span class="flags__flag" aria-label="Флаг США"></span>
+                      США
+                    </li>
+                    <li class="flags__item">
+                      <span class="flags__flag" aria-label="Флаг Австралии"></span>
+                      Австралия
+                    </li>
+                    <li class="flags__item">
+                      <span class="flags__flag" aria-label="Флаг Доминикана"></span>
+                      Доминикана
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-profile__transports-wrapper">
+                  <h4>транспорт:</h4>
+                  <ul class="card-profile__transport-list transports">
+                    <li class="transports__item transports__item--active">Самолёт</li>
+                    <li class="transports__item">Машина</li>
+                    <li class="transports__item transports__item--active">Велосипед</li>
+                    <li class="transports__item">Пешком</li>
+                  </ul>
+                </div>
+                <span class="card-profile__level level" aria-label="Уровень профиля">
+                  <span class="level__text">левел:</span>
+                  <span class="level__count">25</span>
+                </span>
+                <button class="card-profile__invite button" type="button">Позвать!</button>
+              </article>
+
             </li>
             <li class="travelers-catalog__item">
-              <a class="travelers-catalog__avatar travelers-catalog__avatar--icon">
-                <img src="https://via.placeholder.com/150x150" alt="Лариса Роговая">
-              </a>
-              <h3 class="travelers-catalog__name travelers-catalog__name--point">Лариса Роговая</h3>
-              <span>23</span>
-              <b class="travelers-catalog__hash-tag">#образование #карьера #учеба #линкедин</b>
-              <table class="travelers-catalog__traveler-settings">
-                <tr>
-                  <td class="travelers-catalog__wants-to-visit">хочет посетить:</td>
-                </tr>
-                <tr>
-                  <td class="travelers-catalog__flag">Великобритания</td>
-                  <td class="travelers-catalog__country">Великобритания</td>
-                </tr>
-                <tr>
-                  <td class="travelers-catalog__flag">Германия</td>
-                  <td class="travelers-catalog__country">Германия</td>
-                </tr>
-                <tr>
-                  <td class="travelers-catalog__transport">транспорт:</td>
-                  <td class="travelers-catalog__level">левел:</td>
-                </tr>
-                <tr class="travelers-catalog__row transport-row">
-                  <td class="transport-row__item transport-row__item--active">Самолёт</td>
-                  <td class="transport-row__item transport-row__item--active">Машина</td>
-                  <td class="transport-row__item">Велосипед</td>
-                  <td class="transport-row__item">Пешком</td>
-                  <td class="transport-row__level-rate">50</td>
-                </tr>
-              </table>
-              <button class="travelers-catalog__invite button" type="button">Позвать!</button>
+
+              <article class="travelers-catalog__card card-profile">
+                <a class="travelers-catalog__avatar travelers-catalog__avatar--icon">
+                  <img src="https://via.placeholder.com/150x150" alt="Лариса Роговая">
+                </a>
+                <h3 class="travelers-catalog__name travelers-catalog__name--point">Лариса Роговая</h3>
+                <span>23</span>
+                <span class="card-profile__tags">#образование #карьера #учеба #линкедин</span>
+                <div class="card-profile__flags-wrapper">
+                  <h4>хочет посетить:</h4>
+                  <ul class="card-profile__flags-list flags">
+                    <li class="flags__item">
+                      <span class="flags__flag" aria-label="Флаг Великобритании"></span>
+                      Великобритания
+                    </li>
+                    <li class="flags__item">
+                      <span class="flags__flag" aria-label="Флаг Германии"></span>
+                      Германия
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-profile__transports-wrapper">
+                  <h4>транспорт:</h4>
+                  <ul class="card-profile__transport-list transports">
+                    <li class="transports__item transports__item--active">Самолёт</li>
+                    <li class="transports__item transports__item--active">Машина</li>
+                    <li class="transports__item">Велосипед</li>
+                    <li class="transports__item">Пешком</li>
+                  </ul>
+                </div>
+                <span class="card-profile__level level" aria-label="Уровень профиля">
+                  <span class="level__text">левел:</span>
+                  <span class="level__count">50</span>
+                </span>
+                <button class="card-profile__invite button" type="button">Позвать!</button>
+              </article>
+
             </li>
           </ul>
         </div>
-        <button class="travelers-catalog__show-more travelers-catalog__show-more--icon"
-                type="button">Показать еще</button>
-        <button class="travelers-catalog__prev travelers-catalog__prev--icon" type="button">X</button>
-        <button class="travelers-catalog__prev travelers-catalog__prev--icon">X</button>
+        <button class="travelers-catalog__show-more" type="button">Показать еще</button>
+        <button class="travelers-catalog__prev" type="button"></button>
+        <button class="travelers-catalog__next"></button>
+
+        <section class="travelers-catalog__popup travelers-filter">
+          <h2 class="travelers-filter__title">Подберите идеального попутчика</h2>
+          <form class="travelers-filter__form" action="https://echo.htmlacademy.ru" method="post">
+            <select class="travelers-filter__item">
+              <option>Хобби</option>
+            </select>
+            <select class="travelers-filter__item">
+              <option>Музыка</option>
+            </select>
+            <label for="hard-rock">Тяжелый рок</label>
+            <input class="travelers-filter__checkbox" id="hard-rock" type="checkbox" checked>
+            <label for="russian-rap">Русский рэп</label>
+            <input class="travelers-filter__checkbox" id="russian-rap" type="checkbox">
+            <label for="euro-dance">Евроденс</label>
+            <input class="travelers-filter__checkbox" id="euro-dance" type="checkbox">
+            <select class="travelers-filter__item">
+              <option>Еда</option>
+            </select>
+            <select class="travelers-filter__item">
+              <option>Транспорт</option>
+            </select>
+
+            <ul class="travelers-filter__transport-list transports">
+              <li class="transports__item transports__item--active">Самолёт</li>
+              <li class="transports__item transports__item--active">Машина</li>
+              <li class="transports__item">Велосипед</li>
+              <li class="transports__item transports__item--active">Пешком</li>
+            </ul>
+
+            <select class="travelers-filter__item">
+              <option>Левел</option>
+            </select>
+
+            <fieldset class="travelers-filter__range-filter range-filter">
+              <div class="range-filter__wrapper">
+                <div class="range-filter__controls">
+                  <label class="range-filter__min"><input name="min" type="text" value="30"></label>
+                  <label class="range-filter__max"><input name="max" type="text" value="100"></label>
+                </div>
+                <div class="range-filter__bar-controls">
+                  <div class="range-filter__scale">
+                    <div class="range-filter__bar"></div>
+                  </div>
+                  <div class="range-filter__toggle"></div>
+                  <div class="range-filter__toggle"></div>
+                </div>
+              </div>
+            </fieldset>
+
+            <button class="travelers-filter__button">Показать</button>
+          </form>
+
+        </section>
+
       </section>
+
     </main>
 
     <footer class="page-footer">
-      <b class="page-footer__title">Погнали?</b>
+      <h2 class="page-footer__title">Погнали?</h2>
+
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--facebook"
-               href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--vkontakte"
-               href="https://www.vk.com/htmlacademy">Мы в Вконтакте</a>
+            <a class="social__link social__link--vkontakte" href="https://www.vk.com/htmlacademy">Мы в Вконтакте</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram"
-               href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
           </li>
         </ul>
       </div>
+
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright button"
-           href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
+
     </footer>
+
   </body>
 </html>
-
