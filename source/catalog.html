@@ -128,7 +128,64 @@
           <li class="country-list__item">Азербайджан</li>
         </ul>
 
-        <button class="filter__roll-up">свернуть</button>
+        <button class="filter__roll-up button">свернуть</button>
+
+        <section class="travelers-catalog__popup travelers-filter">
+          <h2 class="travelers-filter__title">Подберите идеального попутчика</h2>
+          <form class="travelers-filter__form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="travelers-filter__field">
+              <legend class="travelers-filter__legend">Хобби</legend>
+            </fieldset>
+            <fieldset class="travelers-filter__field">
+              <legend class="travelers-filter__legend">Музыка</legend>
+              <label for="hard-rock">Тяжелый рок</label>
+              <input class="travelers-filter__checkbox" id="hard-rock" type="checkbox" checked>
+              <label for="russian-rap">Русский рэп</label>
+              <input class="travelers-filter__checkbox" id="russian-rap" type="checkbox">
+              <label for="euro-dance">Евроденс</label>
+              <input class="travelers-filter__checkbox" id="euro-dance" type="checkbox">
+            </fieldset>
+            <fieldset class="travelers-filter__field">
+              <legend class="travelers-filter__legend">Еда</legend>
+            </fieldset>
+            <fieldset class="travelers-filter__field">
+              <legend class="travelers-filter__legend">Транспорт</legend>
+                <label for="plan">Самолёт</label>
+                <input class="travelers-filter__checkbox travelers-filter__checkbox--active" id="plan" type="checkbox" checked>
+              <label for="car">Машина</label>
+              <input class="travelers-filter__checkbox travelers-filter__checkbox--active" id="car" type="checkbox" checked>
+              <label for="bike">Велосипед</label>
+              <input class="travelers-filter__checkbox" id="bike" type="checkbox">
+              <label for="walking">Пешком</label>
+              <input class="travelers-filter__checkbox travelers-filter__checkbox--active" id="walking" type="checkbox" checked>
+            </fieldset>
+
+            <fieldset class="travelers-filter__range-filter range-filter">
+              <legend>Левел</legend>
+              <div class="range-filter__wrapper">
+                <div class="range-filter__controls">
+                  <label class="range-filter__min">
+                    <input class="range-filter__input" name="min" type="text" value="30">
+                  </label>
+                  <label class="range-filter__max">
+                    <input class="range-filter__input" name="max" type="text" value="100">
+                  </label>
+                </div>
+                <div class="range-filter__bar-controls">
+                  <div class="range-filter__scale">
+                    <div class="range-filter__bar"></div>
+                  </div>
+                  <div class="range-filter__toggle"></div>
+                  <div class="range-filter__toggle"></div>
+                </div>
+              </div>
+            </fieldset>
+
+            <button class="travelers-filter__button button" type="button">Показать</button>
+          </form>
+
+        </section>
+
       </section>
 
       <section class="travelers-catalog">
@@ -301,63 +358,9 @@
             </li>
           </ul>
         </div>
-        <button class="travelers-catalog__show-more" type="button">Показать еще</button>
+        <button class="travelers-catalog__show-more button" type="button">Показать еще</button>
         <button class="travelers-catalog__prev" type="button"></button>
         <button class="travelers-catalog__next"></button>
-
-        <section class="travelers-catalog__popup travelers-filter">
-          <h2 class="travelers-filter__title">Подберите идеального попутчика</h2>
-          <form class="travelers-filter__form" action="https://echo.htmlacademy.ru" method="post">
-            <select class="travelers-filter__item">
-              <option>Хобби</option>
-            </select>
-            <select class="travelers-filter__item">
-              <option>Музыка</option>
-            </select>
-            <label for="hard-rock">Тяжелый рок</label>
-            <input class="travelers-filter__checkbox" id="hard-rock" type="checkbox" checked>
-            <label for="russian-rap">Русский рэп</label>
-            <input class="travelers-filter__checkbox" id="russian-rap" type="checkbox">
-            <label for="euro-dance">Евроденс</label>
-            <input class="travelers-filter__checkbox" id="euro-dance" type="checkbox">
-            <select class="travelers-filter__item">
-              <option>Еда</option>
-            </select>
-            <select class="travelers-filter__item">
-              <option>Транспорт</option>
-            </select>
-
-            <ul class="travelers-filter__transport-list transports">
-              <li class="transports__item transports__item--active">Самолёт</li>
-              <li class="transports__item transports__item--active">Машина</li>
-              <li class="transports__item">Велосипед</li>
-              <li class="transports__item transports__item--active">Пешком</li>
-            </ul>
-
-            <select class="travelers-filter__item">
-              <option>Левел</option>
-            </select>
-
-            <fieldset class="travelers-filter__range-filter range-filter">
-              <div class="range-filter__wrapper">
-                <div class="range-filter__controls">
-                  <label class="range-filter__min"><input name="min" type="text" value="30"></label>
-                  <label class="range-filter__max"><input name="max" type="text" value="100"></label>
-                </div>
-                <div class="range-filter__bar-controls">
-                  <div class="range-filter__scale">
-                    <div class="range-filter__bar"></div>
-                  </div>
-                  <div class="range-filter__toggle"></div>
-                  <div class="range-filter__toggle"></div>
-                </div>
-              </div>
-            </fieldset>
-
-            <button class="travelers-filter__button">Показать</button>
-          </form>
-
-        </section>
 
       </section>
 
