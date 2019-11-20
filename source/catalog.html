@@ -11,56 +11,60 @@
       <a class="page-header__logo">
         <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="HTML Academy: Погнали">
       </a>
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
 
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
+        <section class="main-nav__popup">
+          <h2 class="visually-hidden">Меню</h2>
+          <button class="main-nav__close" type="button">x</button>
+          <div class="main-nav__wrapper">
 
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="#">О сервисе</a>
-            </li>
-            <li class="site-list__item">
-              <a href="./form.html">Направления</a>
-            </li>
-            <li class="site-list__item">
-              <a href="./catalog.html">Попутчики</a>
-            </li>
-          </ul>
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="#">О сервисе</a>
+              </li>
+              <li class="site-list__item">
+                <a href="./form.html">Направления</a>
+              </li>
+              <li class="site-list__item">
+                <a href="./catalog.html">Попутчики</a>
+              </li>
+            </ul>
 
-          <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a class="user-list__link" href="#">Авторизация</a>
-            </li>
-            <li class="user-list__item">
-              <a class="user-list__phone" href="tel:88005558628">
-                <span class="user-list__phone-icon" aria-label="Иконка телефона"></span>
-                8 800 555-86-28
-              </a>
-            </li>
-            <li class="user-list__item">
-              <a class="user-list__email" href="mailto:mail@htmlacademy.ru">
-                <span class="user-list__email-icon" aria-label="Иконка почты"></span>
-                mail@htmlacademy.ru</a>
-            </li>
-          </ul>
+            <ul class="main-nav__list user-list">
+              <li class="user-list__item">
+                <a class="user-list__link" href="#">Авторизация</a>
+              </li>
+              <li class="user-list__item">
+                <a class="user-list__phone" href="tel:88005558628">
+                  <span class="user-list__phone-icon"></span>
+                  8 800 555-86-28
+                </a>
+              </li>
+              <li class="user-list__item">
+                <a class="user-list__email" href="mailto:mail@htmlacademy.ru">
+                  <span class="user-list__email-icon"></span>
+                  mail@htmlacademy.ru</a>
+              </li>
+            </ul>
 
-        </div>
+          </div>
 
-        <div class="main-nav__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://www.vk.com/htmlacademy">Мы в Вконтакте</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-            </li>
-          </ul>
-        </div>
+          <div class="main-nav__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://www.vk.com/htmlacademy">Мы в Вконтакте</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+              </li>
+            </ul>
+          </div>
 
+        </section>
       </nav>
 
     </header>
@@ -150,14 +154,22 @@
             </fieldset>
             <fieldset class="travelers-filter__field">
               <legend class="travelers-filter__legend">Транспорт</legend>
-                <label for="plan">Самолёт</label>
-                <input class="travelers-filter__checkbox travelers-filter__checkbox--active" id="plan" type="checkbox" checked>
-              <label for="car">Машина</label>
-              <input class="travelers-filter__checkbox travelers-filter__checkbox--active" id="car" type="checkbox" checked>
-              <label for="bike">Велосипед</label>
-              <input class="travelers-filter__checkbox" id="bike" type="checkbox">
-              <label for="walking">Пешком</label>
-              <input class="travelers-filter__checkbox travelers-filter__checkbox--active" id="walking" type="checkbox" checked>
+                <label class="travelers-filter__transport-label" aria-label="Самолёт">
+                  <input class="travelers-filter__transport-checkbox visually-hidden" type="checkbox" checked>
+                  <span class="travelers-filter__transport-icon"></span>
+                </label>
+              <label class="travelers-filter__transport-label" aria-label="Машина">
+                <input class="travelers-filter__transport-checkbox visually-hidden" type="checkbox" checked>
+                <span class="travelers-filter__transport-icon"></span>
+              </label>
+              <label class="travelers-filter__transport-label" aria-label="Велосипед">
+                <input class="travelers-filter__transport-checkbox visually-hidden" type="checkbox">
+                <span class="travelers-filter__transport-icon"></span>
+              </label>
+              <label class="travelers-filter__transport-label" aria-label="Пешком">
+                <input class="travelers-filter__transport-checkbox visually-hidden" type="checkbox" checked>
+                <span class="travelers-filter__transport-icon"></span>
+              </label>
             </fieldset>
 
             <fieldset class="travelers-filter__range-filter range-filter">
@@ -205,15 +217,15 @@
                   <h4>хочет посетить:</h4>
                   <ul class="card-profile__flags-list flags">
                     <li class="flags__item">
-                      <span class="flags__flag" aria-label="Флаг Шри-Ланки"></span>
+                      <span class="flags__flag"></span>
                       Шри-Ланка
                     </li>
                     <li class="flags__item">
-                      <span class="flags__flag" aria-label="Флаг Таиланда"></span>
+                      <span class="flags__flag"></span>
                       Таиланд
                     </li>
                     <li class="flags__item">
-                      <span class="flags__flag" aria-label="Флаг Сейшела"></span>
+                      <span class="flags__flag"></span>
                       Сейшелы
                     </li>
                   </ul>
@@ -227,7 +239,7 @@
                     <li class="transports__item">Пешком</li>
                   </ul>
                 </div>
-                <span class="card-profile__level level" aria-label="Уровень профиля">
+                <span class="card-profile__level level">
                   <span class="level__text">левел:</span>
                   <span class="level__count">99</span>
                 </span>
@@ -248,11 +260,11 @@
                   <h4>хочет посетить:</h4>
                   <ul class="card-profile__flags-list flags">
                     <li class="flags__item">
-                      <span class="flags__flag" aria-label="Флаг Бельгии"></span>
+                      <span class="flags__flag"></span>
                       Бельгия
                     </li>
                     <li class="flags__item">
-                      <span class="flags__flag" aria-label="Флаг Чехии"></span>
+                      <span class="flags__flag"></span>
                       Чехия
                     </li>
                   </ul>
@@ -266,7 +278,7 @@
                     <li class="transports__item transports__item--active">Пешком</li>
                   </ul>
                 </div>
-                <span class="card-profile__level level" aria-label="Уровень профиля">
+                <span class="card-profile__level level">
                   <span class="level__text">левел:</span>
                   <span class="level__count">80</span>
                 </span>
@@ -287,15 +299,15 @@
                   <h4>хочет посетить:</h4>
                   <ul class="card-profile__flags-list flags">
                     <li class="flags__item">
-                      <span class="flags__flag" aria-label="Флаг США"></span>
+                      <span class="flags__flag"></span>
                       США
                     </li>
                     <li class="flags__item">
-                      <span class="flags__flag" aria-label="Флаг Австралии"></span>
+                      <span class="flags__flag"></span>
                       Австралия
                     </li>
                     <li class="flags__item">
-                      <span class="flags__flag" aria-label="Флаг Доминикана"></span>
+                      <span class="flags__flag"></span>
                       Доминикана
                     </li>
                   </ul>
@@ -309,7 +321,7 @@
                     <li class="transports__item">Пешком</li>
                   </ul>
                 </div>
-                <span class="card-profile__level level" aria-label="Уровень профиля">
+                <span class="card-profile__level level">
                   <span class="level__text">левел:</span>
                   <span class="level__count">25</span>
                 </span>
@@ -330,11 +342,11 @@
                   <h4>хочет посетить:</h4>
                   <ul class="card-profile__flags-list flags">
                     <li class="flags__item">
-                      <span class="flags__flag" aria-label="Флаг Великобритании"></span>
+                      <span class="flags__flag"></span>
                       Великобритания
                     </li>
                     <li class="flags__item">
-                      <span class="flags__flag" aria-label="Флаг Германии"></span>
+                      <span class="flags__flag"></span>
                       Германия
                     </li>
                   </ul>
@@ -348,7 +360,7 @@
                     <li class="transports__item">Пешком</li>
                   </ul>
                 </div>
-                <span class="card-profile__level level" aria-label="Уровень профиля">
+                <span class="card-profile__level level">
                   <span class="level__text">левел:</span>
                   <span class="level__count">50</span>
                 </span>
