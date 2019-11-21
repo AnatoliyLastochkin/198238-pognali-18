@@ -1,5 +1,42 @@
 .main-nav {
+  display: none;
   padding: 25px;
   color: $secondary-blue;
   background-color: $base-white;
+}
+
+.main-nav__list {
+  @include list-reset;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    display: flex;
+    width: auto;
+    margin: 0;
+    background-color: $primary-blue;
+  }
+
+  .main-nav__close {
+    display: none;
+  }
+
+  .main-nav__social {
+    display: none;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
 }

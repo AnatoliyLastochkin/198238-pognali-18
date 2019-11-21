@@ -1,5 +1,13 @@
 .page-footer {
-  padding: 25px;
+  @include mobile-width-margen;
+  position: relative;
+  z-index: 1;
+  margin-top: -35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
   color: $primary-grey;
   background-color: $base-white;
+  border-radius: 15px 15px 0 0;
 }

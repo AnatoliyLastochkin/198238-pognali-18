@@ -1,7 +1,55 @@
 .page-header {
-  padding: 25px;
+  @include mobile-width-margen;
+  display: flex;
+  justify-content: space-between;
   color: $base-white;
   background-color: $primary-blue;
-  background-image: url("../img/globe-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
+}
+
+.page-header__logo {
+  margin: 25px;
+  height: 19px;
+}
+
+.page-header__button {
+  display: none;
+}
+
+.page-header__toggle {
+  margin: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: auto;
+    margin: 0;
+    background-color: $bg-tablet-blue;
+  }
+
+  .page-header__logo {
+    height: 42px;
+  }
+
+  .page-header__button {
+    display: block;
+    margin: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    background-color: $primary-blue;
+  }
+
+  .page-header__logo {
+    height: 52px;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-header__button {
+    display: none;
+  }
 }

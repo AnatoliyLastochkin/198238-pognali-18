@@ -1,6 +1,7 @@
 @import "fonts";
 @import "variables";
 @import "common";
+@import "mixin";
 @import "./blocks/page-header";
 @import "./blocks/main-nav";
 @import "./blocks/site-list";
@@ -15,10 +16,12 @@
 @import "./blocks/traveler-list";
 @import "./blocks/add-profile";
 @import "./blocks/sign-up";
-@import "./blocks/location";
+@import "blocks/address";
+@import "blocks/map";
 @import "./blocks/page-footer";
 @import "./blocks/copyright";
 @import "./blocks/content-title";
+@import "./blocks/content-text";
 @import "./blocks/level";
 @import "./blocks/flags";
 @import "./blocks/button";
