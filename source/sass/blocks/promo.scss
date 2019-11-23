@@ -5,8 +5,7 @@
 }
 
 .promo__wrapper {
-  width: 270px;
-  margin: 0 auto;
+  padding: 0 25px;
 }
 
 .promo__list {
@@ -16,7 +15,6 @@
 .promo__review {
   @include margin-padding-reset;
   background-color: $primary-blue;
-  margin: 0 -25px;
 }
 
 .promo__author {
