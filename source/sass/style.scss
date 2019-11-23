@@ -1,13 +1,14 @@
 @import "fonts";
+@import "mixin";
 @import "variables";
 @import "common";
-@import "mixin";
 @import "./blocks/page-header";
 @import "./blocks/main-nav";
 @import "./blocks/site-list";
 @import "./blocks/user-list";
 @import "./blocks/social";
 @import "./blocks/page-main";
+@import "./blocks/promo";
 @import "./blocks/steps";
 @import "./blocks/about";
 @import "./blocks/direction";

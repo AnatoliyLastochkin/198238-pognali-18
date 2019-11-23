@@ -1,28 +1,27 @@
 .page-header {
-  @include mobile-width-margen;
-  display: flex;
-  justify-content: space-between;
+  width: 320px;
+  margin: 0 auto;
   color: $base-white;
   background-color: $primary-blue;
 }
 
 .page-header__logo {
-  margin: 25px;
   height: 19px;
+}
+
+.page-header__toggle {
+  padding: 0;
 }
 
 .page-header__button {
   display: none;
 }
 
-.page-header__toggle {
-  margin: 25px;
-}
-
 @media (min-width: $tablet-width) {
   .page-header {
     width: auto;
     margin: 0;
+    padding-top: 40px;
     background-color: $bg-tablet-blue;
   }
 
@@ -32,7 +31,6 @@
 
   .page-header__button {
     display: block;
-    margin: 25px;
   }
 }
 

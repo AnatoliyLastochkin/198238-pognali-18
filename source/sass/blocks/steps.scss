@@ -1,20 +1,15 @@
 .steps {
-  padding: 25px;
-  margin-bottom: 40px;
   color: $base-white;
   background-color: $primary-blue;
 }
 
 .steps__list {
   @include list-reset;
-  width: 270px;
   background-color: $orange;
   border-radius: 10px;
 }
 
 .steps__item {
-  width: 140px;
-  padding: 25px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;

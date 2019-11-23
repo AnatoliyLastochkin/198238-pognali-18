@@ -1,60 +1,27 @@
 .page-main {
-  @include mobile-width-margen;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 25px;
+  width: 320px;
+  margin: 0 auto;
   color: $base-white;
   background-color: $primary-blue;
-}
-
-.page-main__slogan {
-  width: 240px;
-  margin-bottom: 10px;
-  color: $base-white;
-  font-size: 36px;
-  line-height: 40px;
-  font-weight: 700;
   text-align: center;
 }
 
-.page-main__traveler {
-  width: 320px;
-  background-image: url("../img/globe-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 70%;
-  text-align: center;
-
-  img {
-    margin-left: 15px;
-  }
-}
-
-.page-main__list {
-  @include list-reset;
+.page-main__title {
+  @include margin-padding-reset;
 }
 
 @media (min-width: $tablet-width) {
   .page-main {
     width: auto;
     margin: 0;
-    padding-top: 50px;
     background-color: $bg-tablet-blue;
     background-image: url("../img/globe-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: top center;
   }
 
-  .page-main__slogan {
-    margin-bottom: 90px;
-  }
-
   .page-main__list {
     display: none;
-  }
-
-  .page-main__review {
-    align-self: flex-start;
   }
 }
 

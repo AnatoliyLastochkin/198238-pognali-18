@@ -1,9 +1,6 @@
 .map {
-  @include mobile-width-margen;
+  margin: 0 auto;
   position: relative;
   z-index: 0;
-  margin-top: -30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-image: url("../img/map.jpg");
 }

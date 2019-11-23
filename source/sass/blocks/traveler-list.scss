@@ -1,3 +1,4 @@
 .traveler-list {
+  @include list-reset;
   color: $primary-grey;
 }

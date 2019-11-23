@@ -1,6 +1,9 @@
 .direction {
-  padding: 70px 25px 25px 25px;
   color: $primary-grey;
   background-color: $light;
   border-radius: 0 0 15px 15px;
+}
+
+.direction__list {
+  @include margin-padding-reset;
 }

@@ -1,4 +1,5 @@
 .content-text {
+  @include margin-padding-reset;
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
