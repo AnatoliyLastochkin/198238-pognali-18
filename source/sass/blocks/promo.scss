@@ -8,15 +8,92 @@
   padding: 0 25px;
 }
 
+.promo__title {
+  margin: 0 auto;
+  width: 230px;
+  text-align: center;
+}
+
 .promo__list {
-  @include list-reset;
+  display: flex;
+  align-items: center;
 }
 
 .promo__review {
   @include margin-padding-reset;
   background-color: $primary-blue;
+  padding: 0 25px;
+  margin: 0 -25px;
 }
 
 .promo__author {
   font-style: normal;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    text-align: center;
+    background-image: url("../img/globe-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  .promo__wrapper {
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .promo__title {
+    width: 400px;
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 700;
+  }
+
+  .promo__traveler {
+    text-align: right;
+  }
+
+  .promo__list {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    background-color: $bg-tablet-blue;
+    background-image: url("../img/globe-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  .promo__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .promo__title {
+    width: 400px;
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 700;
+  }
+
+  .promo__traveler {
+    width: 192px;
+    height: 255px;
+  }
+
+  .promo__review {
+    @include margin-padding-reset;
+    width: 285px;
+  }
+
+  .promo__list {
+    display: none;
+  }
 }

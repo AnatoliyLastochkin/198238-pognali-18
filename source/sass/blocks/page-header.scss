@@ -5,6 +5,13 @@
   background-color: $primary-blue;
 }
 
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 25px 55px 25px;
+}
+
 .page-header__logo {
   height: 19px;
 }
@@ -21,8 +28,14 @@
   .page-header {
     width: auto;
     margin: 0;
-    padding-top: 40px;
     background-color: $bg-tablet-blue;
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 40px 80px 40px;
   }
 
   .page-header__logo {
@@ -40,7 +53,11 @@
   }
 
   .page-header__logo {
-    height: 52px;
+    display: none;
+  }
+
+  .page-header__wrapper {
+    padding: 0;
   }
 
   .page-header__toggle {

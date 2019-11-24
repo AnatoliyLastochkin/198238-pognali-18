@@ -10,19 +10,23 @@
   <body>
 
     <header class="page-header">
-
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="./img/logo-mobile-white@1x.png" width="100" height="19" alt="HTML Academy: Погнали">
-      </a>
-      <button class="page-header__toggle" type="button">Открыть меню</button>
-      <button class="page-header__button button" type="button">Авторизация</button>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="./img/logo-mobile-white@1x.png" width="100" height="19" alt="HTML Academy: Погнали">
+        </a>
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+        <button class="page-header__button button" type="button">Авторизация</button>
+      </div>
 
       <nav class="main-nav">
         <h2 class="visually-hidden">Меню</h2>
 
         <div class="main-nav__wrapper">
 
-          <ul class="main-nav__list site-list">
+          <a class="main-nav__logo">
+            <img class="page-header__logo-image" src="./img/logo-desktop-white@1x.png" width="200" height="52" alt="HTML Academy: Погнали">
+          </a>
+          <ul class="main-nav__site-list site-list">
             <li class="site-list__item">
               <a href="#">О сервисе</a>
             </li>
@@ -34,20 +38,19 @@
             </li>
           </ul>
 
-          <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a class="user-list__link" href="#">Авторизация</a>
-            </li>
+          <ul class="main-nav__user-list user-list">
             <li class="user-list__item">
               <a class="user-list__phone" href="tel:88005558628">
                 <span class="user-list__phone-icon"></span>
-                8 800 555-86-28
               </a>
             </li>
             <li class="user-list__item">
               <a class="user-list__email" href="mailto:mail@htmlacademy.ru">
                 <span class="user-list__email-icon"></span>
-                mail@htmlacademy.ru</a>
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__link" href="#">Авторизация</a>
             </li>
           </ul>
 
@@ -70,17 +73,14 @@
     </header>
 
     <main class="page-main">
-      <h1 class="page-main__title">В путешествие с крутыми попутчиками!</h1>
 
         <div class="promo">
           <div class="promo__wrapper">
+            <h1 class="promo__title">В путешествие с крутыми попутчиками!</h1>
             <div class="promo__traveler">
               <img src="./img/traveller-illustration-mobile@1x.png" width="192" height="255" alt="фото путешественника">
             </div>
             <ul class="promo__list user-list">
-              <li class="user-list__item">
-                <a class="user-list__link button" href="#">Авторизация</a>
-              </li>
               <li class="user-list__item">
                 <a class="user-list__phone" href="tel:88005558628">
                   <span class="user-list__phone-icon"></span>
@@ -90,6 +90,9 @@
                 <a class="user-list__email" href="mailto:mail@htmlacademy.ru">
                   <span class="user-list__email-icon"></span>
                 </a>
+              </li>
+              <li class="user-list__item">
+                <a class="user-list__link button" href="#">Авторизация</a>
               </li>
             </ul>
             <blockquote class="promo__review">

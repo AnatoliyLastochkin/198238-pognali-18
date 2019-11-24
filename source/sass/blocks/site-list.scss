@@ -1,7 +1,5 @@
 .site-list {
-  padding: 25px;
+  @include list-reset;
   color: $secondary-blue;
   background-color: inherit;
-  font-size: 30px;
-  line-height: 36px;
 }
