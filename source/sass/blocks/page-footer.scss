@@ -8,9 +8,20 @@
   border-radius: 15px 15px 0 0;
 }
 
+.page-footer__wrapper {
+  padding: 40px 25px;
+}
+
 @media (min-width: $tablet-width) {
-  .page-footer {
-    width: auto;
-    margin: 0;
+  .page-footer__wrapper {
+    padding: 60px 40px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 80px 75px;
   }
 }

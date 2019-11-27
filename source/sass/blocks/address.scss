@@ -3,6 +3,30 @@
   z-index: 2;
   font-weight: 700;
   color: $secondary-blue;
-  background-color: $yellow;
+  background-color: $light-gold;
   border-radius: 0 0 15px 15px;
+}
+
+.address__wrapper {
+  padding: 40px 25px;
+}
+
+.address__list {
+  @include list-reset;
+}
+
+@media (min-width: $tablet-width) {
+  .address__wrapper {
+    padding: 60px 40px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .address__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 80px 75px;
+  }
 }

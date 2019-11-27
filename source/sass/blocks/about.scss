@@ -1,8 +1,74 @@
 .about {
   position: relative;
+  margin-bottom: -20px;
   color: $base-white;
-  background-color: $primary-blue;
+  background-color: $secondary-blue;
   background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
+  background-position: 20px 0;
   border-radius: 0 0 20px 20px;
+}
+
+.about__wrapper {
+  padding: 0 25px;
+}
+
+.about__title {
+  padding: 30px 0 0 25px;
+  margin-bottom: 20px;
+}
+
+.about__description {
+  padding: 0 30px 0 25px;
+  margin-bottom: 25px;
+}
+
+.about__slogan {
+  padding: 0 50px 78px 25px;
+}
+
+.about__link {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .about {
+    background-image: none;
+  }
+
+  .about__wrapper {
+    margin: 0 auto;
+    padding: 0 40px;
+    background-image: url("../img/about-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: right 0;
+  }
+
+  .about__description {
+    width: 300px;
+  }
+
+  .about__slogan {
+    width: 300px;
+  }
+
+  .about__link {
+    display: inline-block;
+    margin: 0 0 80px 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    background-image: none;
+  }
+
+  .about__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0 75px;
+    background-image: url("../img/about-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: right 0;
+  }
 }

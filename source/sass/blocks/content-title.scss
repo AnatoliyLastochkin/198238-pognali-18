@@ -5,3 +5,10 @@
   color: $orange;
   text-align: left;
 }
+
+@media (min-width: $tablet-width), (min-width: $desktop-width) {
+  .content-title {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}

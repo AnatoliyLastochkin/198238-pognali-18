@@ -1,7 +1,32 @@
 .sign-up {
   position: relative;
   color: $base-white;
+  margin-bottom: -20px;
   background-color: $secondary-blue;
-  border-radius: 0 0 15px 15px;
+  border-radius: 0 0 20px 20px;
   z-index: 3;
+}
+
+.sign-up__wrapper {
+  padding: 40px 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .sign-up__wrapper {
+    padding: 60px 40px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .sign-up__title {
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sign-up__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 80px 75px;
+  }
 }

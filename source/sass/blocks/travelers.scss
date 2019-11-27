@@ -5,3 +5,47 @@
   border-radius: 0 0 15px 15px;
   z-index: 5;
 }
+
+.travelers__wrapper {
+  position: relative;
+  padding: 30px 25px;
+}
+
+.traveler__link {
+  width: 270px;
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .travelers__wrapper {
+    margin: 0 auto;
+    padding: 50px 40px;
+  }
+
+  .traveler__link {
+    width: 618px;
+    left: 75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .travelers__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 50px 75px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .travelers__text-wrapper {
+    width: 425px;
+  }
+
+  .traveler__link {
+    display: block;
+    position: static;
+    width: 280px;
+  }
+}

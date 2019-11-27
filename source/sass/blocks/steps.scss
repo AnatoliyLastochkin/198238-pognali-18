@@ -5,13 +5,96 @@
 
 .steps__list {
   @include list-reset;
-  background-color: $orange;
-  border-radius: 10px;
+  counter-reset: section;
+  list-style-type: none;
 }
 
 .steps__item {
+  padding: 25px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
   color: $primary-blue;
+
+  &:nth-child(1) {
+    background-color: $orange;
+    border-radius: 10px 10px 0 0;
+  }
+
+  &:nth-child(2) {
+    background-color: $light-orange;
+  }
+
+  &:nth-child(3) {
+    background-color: $gold;
+  }
+
+  &:nth-child(4) {
+    background-color: $light-gold;
+    border-radius: 0 0 10px 10px;
+  }
+
+  &::after {
+    counter-increment: section;
+    content: counters(section, ".") " ";
+    color: $base-white;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .steps {
+    order: 3;
+    width: 100%;
+    background-color: transparent;
+  }
+
+  .steps__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .steps__item {
+    width: 50%;
+    box-sizing: border-box;
+
+    &:nth-child(1) {
+      border-radius: 10px 0 0 0;
+    }
+
+    &:nth-child(2) {
+      border-radius: 0 10px 0 0;
+    }
+
+    &:nth-child(3) {
+      border-radius: 0 0 0 10px;
+    }
+
+    &:nth-child(4) {
+      border-radius: 0 0 10px 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .steps__list {
+    flex-wrap: nowrap;
+  }
+
+  .steps__item {
+    &:nth-child(1) {
+      border-radius: 10px 0 0 10px;
+    }
+
+    &:nth-child(2) {
+      border-radius: 10px 0 0 10px;
+    }
+
+    &:nth-child(3) {
+      border-radius: 10px 0 0 10px;
+    }
+
+    &:nth-child(4) {
+      border-radius: 10px;
+    }
+  }
 }

@@ -2,3 +2,10 @@
   @include list-reset;
   color: $primary-grey;
 }
+
+@media (min-width: $tablet-width) {
+  .traveler-list {
+    display: flex;
+    justify-content: space-between;
+  }
+}

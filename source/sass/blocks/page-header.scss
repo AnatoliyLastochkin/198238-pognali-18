@@ -52,12 +52,13 @@
     background-color: $primary-blue;
   }
 
-  .page-header__logo {
-    display: none;
-  }
-
   .page-header__wrapper {
-    padding: 0;
+    width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0 75px;
   }
 
   .page-header__toggle {

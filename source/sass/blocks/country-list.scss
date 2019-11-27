@@ -1,4 +1,21 @@
 .country-list {
+  @include list-reset;
   color: $primary-blue;
   background-color: $light;
+}
+
+@media (min-width: $tablet-width) {
+  .country-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .country-list__item {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: $base-white;
+    margin-bottom: 20px;
+  }
 }

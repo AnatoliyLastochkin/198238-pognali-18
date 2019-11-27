@@ -13,11 +13,27 @@
 }
 
 @media (min-width: $tablet-width) {
-  font-size: 28px;
-  line-height: 33px;
+  .content-text {
+    font-size: 28px;
+    line-height: 33px;
+
+    &--bold {
+      font-size: 21px;
+      line-height: 25px;
+      font-weight: 700;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
-  font-size: 28px;
-  line-height: 33px;
+  .content-text {
+    font-size: 28px;
+    line-height: 33px;
+
+    &--bold {
+      font-size: 21px;
+      line-height: 25px;
+      font-weight: 700;
+    }
+  }
 }
