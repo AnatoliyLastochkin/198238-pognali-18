@@ -1,4 +1,29 @@
 .my-plans {
-  padding: 0 25px;
   color: $blue;
+  background-color: $grey;
+}
+
+.my-plans__wrapper {
+  padding: 30px 25px;
+}
+
+.my-plans__list {
+  @include list-reset;
+}
+
+.my-plans__item {
+  background-color: $base-white;
+}
+
+@media (min-width: $tablet-width) {
+  .my-plans__wrapper {
+    padding: 60px 75px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .my-plans__wrapper {
+    width: $container-width;
+    margin: 0 auto;
+  }
 }

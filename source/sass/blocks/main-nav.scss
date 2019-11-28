@@ -8,13 +8,16 @@
   .main-nav {
     width: auto;
     margin: 0;
+    padding-bottom: 60px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav {
+    width: 975px;
     display: flex;
-    width: auto;
+    padding-bottom: 130px;
+    justify-content: space-between;
     margin: 0;
     background-color: $primary-blue;
   }

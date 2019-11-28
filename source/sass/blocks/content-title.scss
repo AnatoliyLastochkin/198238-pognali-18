@@ -4,6 +4,10 @@
   line-height: 24px;
   color: $orange;
   text-align: left;
+
+  &--blue {
+    color: $blue;
+  }
 }
 
 @media (min-width: $tablet-width), (min-width: $desktop-width) {

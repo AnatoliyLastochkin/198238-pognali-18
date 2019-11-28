@@ -19,8 +19,8 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
-    width: 1220px;
+    width: $container-width;
     margin: 0 auto;
-    padding: 80px 75px;
+    padding: 80px 0;
   }
 }

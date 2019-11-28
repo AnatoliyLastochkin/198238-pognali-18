@@ -64,9 +64,8 @@
   }
 
   .about__wrapper {
-    width: 1220px;
+    width: $container-width;
     margin: 0 auto;
-    padding: 0 75px;
     background-image: url("../img/about-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: right 0;

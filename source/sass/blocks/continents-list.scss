@@ -1,0 +1,14 @@
+.continents-list {
+  @include list-reset;
+}
+
+@media (min-width: $tablet-width) {
+  .continents-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .continents-list__item {
+    margin-right: 25px;
+  }
+}

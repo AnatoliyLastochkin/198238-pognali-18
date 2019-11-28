@@ -1,0 +1,14 @@
+.block-title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+  color: $base-white;
+  text-align: left;
+}
+
+@media (min-width: $tablet-width) {
+  .block-title {
+    font-size: 60px;
+    line-height: 70px;
+  }
+}

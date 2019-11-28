@@ -1,0 +1,77 @@
+.filter {
+  color: $secondary-blue;
+  background-color: $secondary-grey;
+}
+
+.filter__wrapper {
+  padding: 30px 25px;
+}
+
+.filter__table {
+  width: 100%;
+  background-color: $base-white;
+}
+
+.filter__table-list {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .filter__wrapper {
+    margin: 0 auto;
+    padding: 30px 75px;
+  }
+
+  .filter__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .filter__title {
+    display: none;
+  }
+
+  .filter__close {
+    order: 1;
+  }
+
+  .filter__continents-list {
+    order: 0;
+  }
+
+  .filter__table-wrapper {
+    display: flex;
+  }
+
+  .filter__table {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter__wrapper {
+    width: $container-width;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+
+  .filter__table {
+    tr {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .filter__table-list {
+    @include list-reset;
+    display: block;
+  }
+
+  .filter__table-item {
+    span {
+      font-size: 60px;
+      line-height: 24px;
+      font-weight: 700;
+    }
+  }
+}
