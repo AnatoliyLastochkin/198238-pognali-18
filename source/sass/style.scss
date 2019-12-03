@@ -2,12 +2,16 @@
 @import "mixin";
 @import "variables";
 @import "common";
+@import "./blocks/pagination-list";
+@import "./blocks/arrows";
 @import "./blocks/level";
 @import "./blocks/flags";
 @import "./blocks/button";
+@import "./blocks/link-button";
 @import "./blocks/block-title";
 @import "./blocks/content-title";
 @import "./blocks/content-text";
+@import "./blocks/traveler-list";
 @import "./blocks/page-header";
 @import "./blocks/main-nav";
 @import "./blocks/site-list";
@@ -24,7 +28,6 @@
 @import "./blocks/continents-list";
 @import "./blocks/travelers-catalog";
 @import "./blocks/travelers";
-@import "./blocks/traveler-list";
 @import "./blocks/add-profile";
 @import "./blocks/sign-up";
 @import "./blocks/menu-list";

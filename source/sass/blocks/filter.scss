@@ -4,6 +4,7 @@
 }
 
 .filter__wrapper {
+  @include container;
   padding: 30px 25px;
 }
 
@@ -18,8 +19,8 @@
 
 @media (min-width: $tablet-width) {
   .filter__wrapper {
-    margin: 0 auto;
-    padding: 30px 75px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .filter__nav {
@@ -50,9 +51,8 @@
 
 @media (min-width: $desktop-width) {
   .filter__wrapper {
-    width: $container-width;
-    margin: 0 auto;
-    padding: 40px 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .filter__table {

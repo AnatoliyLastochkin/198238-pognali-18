@@ -3,6 +3,9 @@
 }
 
 .travelers-catalog__wrapper {
+  @include container;
+  display: flex;
+  flex-direction: column;
   padding: 30px 25px;
 }
 
@@ -17,12 +20,27 @@
 .travelers-catalog__item {
   background-color: $base-white;
   margin-bottom: 10px;
+  color: $primary-blue;
+}
+
+.travelers-catalog__pagination-wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: $base-white;
+}
+
+.travelers-catalog__pagination {
+  display: flex;
+}
+
+.travelers-catalog__arrows {
+  display: flex;
 }
 
 @media (min-width: $tablet-width) {
   .travelers-catalog__wrapper {
-    padding: 60px 40px;
-    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .travelers-catalog__filter {
@@ -36,19 +54,16 @@
 
 @media (min-width: $desktop-width) {
   .travelers-catalog__wrapper {
-    width: $container-width;
-    position: relative;
-    padding: 40px 0;
+    flex-direction: row-reverse;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .travelers-catalog__filter {
-    width: 285px;
-    position: absolute;
-    top: 40px;
-    right: 0;
+    height: 815px;
   }
 
-  .travelers-catalog__list {
-    width: 70%;
+  .travelers-catalog__list-wrapper {
+    flex-grow: 1;
   }
 }

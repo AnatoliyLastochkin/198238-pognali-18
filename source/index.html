@@ -97,10 +97,18 @@
             <section class="promo__steps steps">
               <h2 class="visually-hidden">Планирование путешествия</h2>
               <ol class="steps__list">
-                <li class="steps__item">Выберите направление</li>
-                <li class="steps__item">Изучите идеи путешественников</li>
-                <li class="steps__item">Находите тех, кто похож на вас</li>
-                <li class="steps__item">Путешествуйте вместе!</li>
+                <li class="steps__item">
+                  <p class="steps__text">Выберите направление</p>
+                </li>
+                <li class="steps__item">
+                  <p class="steps__text">Изучите идеи путешественников</p>
+                </li>
+                <li class="steps__item">
+                  <p class="steps__text">Находите тех, кто похож на вас</p>
+                </li>
+                <li class="steps__item">
+                  <p class="steps__text">Путешествуйте вместе!</p>
+                </li>
               </ol>
             </section>
           </div>
@@ -109,13 +117,17 @@
 
       <section class="about">
         <div class="about__wrapper">
-          <h2 class="about__title content-title">О сервисе</h2>
-          <p class="about__description content-text">Любое путешествие веселее с&nbsp;попутчиками,
-            которые на одной волне с тобой! Делитесь своими идеями путешествий и
-            черпайте вдохновение в чужих</p>
-          <p class="about__slogan content-text content-text--bold">А если найдете кого-то близкого по духу —
-            скорее зовите в совместный трип!</p>
-          <a class="about__link button" href="#">Подробнее</a>
+          <div class="about__text-wrapper">
+            <h2 class="about__title content-title">О сервисе</h2>
+            <p class="about__description content-text">Любое путешествие веселее с&nbsp;попутчиками,
+              которые на одной волне с тобой! Делитесь своими идеями путешествий и
+              черпайте вдохновение в чужих</p>
+            <p class="about__slogan content-text content-text--bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+            <a class="about__link link-button" href="#">
+              Подробнее
+              <span class="link-button__arrow"></span>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -123,11 +135,9 @@
         <div class="direction__wrapper">
           <div class="direction__text-wrapper">
             <h2 class="direction__title content-title">Направления</h2>
-            <p class="direction__description content-text">Мы не продаем туры и ничего не рекламируем.
-              Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+            <p class="direction__description content-text content-text--grey">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
             <a class="direction__link button" href="#">Показать все</a>
           </div>
-
 
           <ul class="direction__list country-list">
             <li class="country-list__item">
@@ -167,7 +177,7 @@
           <div class="travelers__text-wrapper">
             <h2 class="travelers__title content-title">Попутчики</h2>
             <p class="travelers__description content-text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
-              Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+              Одному нужен пляж и коктейль, а&nbsp;другому маршрут для хайкинга.</p>
             <p class="travelers__slogan content-text content-text--bold">Теперь можно легко найти единомышленников!</p>
             <a class="traveler__link button" href="#">Показать всех</a>
           </div>
@@ -248,11 +258,17 @@
           <h2 class="add-profile__title content-title">Добавьте свой профиль</h2>
           <span class="add-profile__rate"></span>
           <ol class="add-profile__list">
-            <li class="add-profile__item">Базовое размещение Бесплатно</li>
-            <li class="add-profile__item">Вывод на первых позициях 99 руб./мес</li>
-            <li class="add-profile__item">Кастомный цвет карточки 59 руб./мес</li>
+            <li class="add-profile__item">
+              <p class="add-profile__text">Базовое размещение Бесплатно</p>
+            </li>
+            <li class="add-profile__item">
+              <p class="add-profile__text">Вывод на первых позициях 99 руб./мес</p>
+            </li>
+            <li class="add-profile__item">
+              <p class="add-profile__text">Кастомный цвет карточки 59 руб./мес</p>
+            </li>
           </ol>
-          <a class="add-profile__show-prices button">Показать тарифы для бизнеса</a>
+          <a class="add-profile__show-prices">Показать тарифы для бизнеса</a>
 
           <article class="add-profile__popup popup">
             <h2 class="popup__title content-title">Бизнес-тарифы</h2>
@@ -279,14 +295,13 @@
 
       <article class="sign-up">
         <div class="sign-up__wrapper">
-
           <h2 class="sign-up__title content-title">Заинтересовались?</h2>
-          <p class="sign-up__text content-text">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="sign-up__login" href="#">авторизуйтесь</a>.</p>
+          <p class="sign-up__text content-text">Зарегистрируйтесь, это&nbsp;быстро и бесплатно! Уже&nbsp;зарегистрированы?Тогда скорее <a class="sign-up__login" href="#">авторизуйтесь</a>.</p>
           <form class="sign-up__form" action="https://echo.htmlacademy.ru" method="post">
             <input class="sign-up__email" type="email" value="E-mail">
             <button class="sign-up__button" type="submit"></button>
           </form>
-          <small>Остались вопросы? Мы с радостью на них ответим!</small>
+          <p class="sign-up__questions content-text">Остались вопросы? Мы&nbsp;с&nbsp;радостью на них ответим!</p>
 
           <ul class="sign-up__list menu-list">
             <li class="menu-list__item">
@@ -321,11 +336,17 @@
           </ul>
         </div>
       </section>
+
+      <section class="map">
+        <div class="map__wrapper"></div>
+      </section>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <h2 class="page-footer__title">Погнали?</h2>
+        <a class="page-footer__logo">
+          <img class="page-footer__logo-image" src="./img/logo-mobile-blue@1x.png" width="100" height="19" alt="HTML Academy: Погнали">
+        </a>
 
         <ul class="page-footer__social social">
           <li class="social__item">

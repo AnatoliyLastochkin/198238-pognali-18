@@ -4,11 +4,12 @@
 }
 
 .page-header__wrapper {
+  @include container;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 25px 0;
+  padding: 25px 25px 50px;
 }
 
 .page-header__logo {
@@ -33,7 +34,6 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    margin: 0 auto;
     background-color: $bg-tablet-blue;
   }
 
@@ -41,7 +41,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 40px 40px 0;
+    padding-top: 40px;
+    padding-bottom: 80px;
   }
 
   .page-header__logo {
@@ -76,18 +77,10 @@
   }
 
   .page-header__wrapper {
-    width: $container-width;
-    margin: 0 auto;
-    padding: 75px 0 0;
+    padding-top: 75px;
+    padding-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
-  }
-
-  .page__header-title-wrapper {
-    width: $container-width;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 
   .page-header__toggle {

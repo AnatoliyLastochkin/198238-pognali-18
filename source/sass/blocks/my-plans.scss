@@ -4,6 +4,7 @@
 }
 
 .my-plans__wrapper {
+  @include container;
   padding: 30px 25px;
 }
 
@@ -17,13 +18,14 @@
 
 @media (min-width: $tablet-width) {
   .my-plans__wrapper {
-    padding: 60px 75px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .my-plans__wrapper {
-    width: $container-width;
-    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }

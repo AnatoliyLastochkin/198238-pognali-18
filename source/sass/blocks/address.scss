@@ -1,32 +1,42 @@
 .address {
   position: relative;
   z-index: 2;
+  margin-top: -70px;
   font-weight: 700;
   color: $secondary-blue;
   background-color: $light-gold;
-  border-radius: 0 0 15px 15px;
+  border-radius: 0 0 20px 20px;
 }
 
 .address__wrapper {
-  padding: 40px 25px;
+  @include container;
+  padding: 110px 25px 35px;
 }
 
 .address__list {
   @include list-reset;
+  text-align: center;
+}
+
+.address__item {
+  margin-bottom: 35px;
 }
 
 @media (min-width: $tablet-width) {
+  .address {
+    margin-top: -20px;
+  }
+
   .address__wrapper {
-    padding: 60px 40px;
-    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 85px;
     text-align: center;
   }
 }
 
 @media (min-width: $desktop-width) {
   .address__wrapper {
-    width: $container-width;
-    margin: 0 auto;
-    padding: 80px 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }

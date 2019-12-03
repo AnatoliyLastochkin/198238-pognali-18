@@ -4,13 +4,14 @@
 }
 
 .profile__wrapper {
+  @include container;
   padding: 60px 25px 30px;
 }
 
 @media (min-width: $tablet-width) {
   .profile__wrapper {
-    padding: 60px 75px 30px;
-    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -19,8 +20,6 @@
 @media (min-width: $desktop-width) {
   .profile__wrapper {
     position: relative;
-    width: $container-width;
-    margin: 0 auto;
   }
 
   .profile__level {
@@ -31,7 +30,7 @@
 
   .profile__avatar {
     position: absolute;
-    top: -150px;
+    top: -70px;
     right: 150px;
   }
 }

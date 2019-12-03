@@ -1,37 +1,59 @@
 .direction {
+  position: relative;
+  margin-top: -80px;
   color: $primary-grey;
   background-color: $light;
-  border-radius: 0 0 15px 15px;
+  border-radius: 0 0 20px 20px;
+  z-index: 8;
 }
 
 .direction__wrapper {
+  @include container;
   position: relative;
-  padding: 0 25px 30px;
+  padding: 130px 25px 120px;
+}
+
+.direction__text-wrapper {
+  padding: 0 25px;
+  margin-bottom: 65px;
 }
 
 .direction__title {
-  padding-top: 40px;
+  margin-bottom: 25px;
 }
 
 .direction__link {
   position: absolute;
-  bottom: 0;
+  bottom: 30px;
   left: 25px;
   display: block;
   width: 270px;
 }
 
 @media (min-width: $tablet-width) {
+  .direction {
+    margin-top: -20px;
+  }
+
   .direction__wrapper {
-    margin: 0 auto;
-    padding: 0 40px 80px;
+    padding-top: 95px;
+    background-image: url("../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-position: right 40px top 95px;
   }
 
   .direction__text-wrapper {
     width: 340px;
+    margin-left: 35px;
+    padding: 0;
+  }
+
+  .direction__title {
+    margin-bottom: 60px;
   }
 
   .direction__description {
+    margin-bottom: 110px;
     color: $primary-grey;
   }
 
@@ -43,9 +65,7 @@
 
 @media (min-width: $desktop-width) {
   .direction__wrapper {
-    width: $container-width;
-    margin: 0 auto;
-    padding: 50px 0;
+    padding-top: 50px;
     display: flex;
     justify-content: space-between;
   }
