@@ -1,7 +1,19 @@
 .main-nav {
-  display: none;
+  width: 320px;
+  top: 40px;
+  left: 0;
+  position: absolute;
+
   color: $secondary-blue;
   background-color: $base-white;
+
+  &--closed {
+    display: none;
+  }
+}
+
+.main-nav--nojs {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {

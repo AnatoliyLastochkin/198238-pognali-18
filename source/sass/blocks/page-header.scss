@@ -1,6 +1,10 @@
 .page-header {
   color: $base-white;
-  background-color: $primary-blue;
+  background-color: $base-white;
+
+  &--blue {
+    background-color: $primary-blue;
+  }
 }
 
 .page-header__wrapper {
