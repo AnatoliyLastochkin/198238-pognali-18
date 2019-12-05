@@ -1,7 +1,43 @@
 .content-text {
+  @include margin-padding-reset;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 22px;
-  color: $primary-grey;
+  color: $base-white;
   text-align: left;
+
+  &--bold {
+    font-weight: 700;
+    text-align: left;
+  }
+
+  &--grey {
+    color: $primary-grey;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .content-text {
+    font-size: 28px;
+    line-height: 33px;
+
+    &--bold {
+      font-size: 21px;
+      line-height: 25px;
+      font-weight: 700;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .content-text {
+    font-size: 28px;
+    line-height: 33px;
+
+    &--bold {
+      font-size: 21px;
+      line-height: 25px;
+      font-weight: 700;
+    }
+  }
 }

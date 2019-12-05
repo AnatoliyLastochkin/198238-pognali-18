@@ -1,7 +1,20 @@
 .create-plan {
-  padding: 25px;
   color: $blue;
   background-color: $light-grey;
+}
+
+.create-plan__wrapper {
+  @include container;
+  padding: 30px 25px 15px;
+}
+
+.create-plan__list {
+  @include list-reset;
+}
+
+.create-plan__item {
+  background-color: $base-white;
+  margin-bottom: 10px;
 }
 
 .create-plan__checkbox {
@@ -30,4 +43,21 @@
 
 .create-plan__textarea {
   font-family: inherit;
+}
+
+@media (min-width: $tablet-width) {
+  .create-plan__wrapper {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+
+  .create-plan__item {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .create-plan__item {
+    margin-bottom: 45px;
+  }
 }

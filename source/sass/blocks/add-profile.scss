@@ -1,6 +1,82 @@
 .add-profile {
-  padding: 25px;
+  position: relative;
+  margin-top: -30px;
   color: $primary-grey;
   background-color: $light;
-  border-radius: 0 0 15px 15px;
+  z-index: 4;
+  border-radius: 0 0 20px 20px;
+}
+
+.add-profile__wrapper {
+  @include container;
+  padding: 80px 25px 40px 50px;
+}
+
+.add-profile__title {
+  margin-bottom: 45px;
+}
+
+.add-profile__list {
+  @include list-reset;
+  counter-reset: section;
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+.add-profile__item {
+  display: flex;
+  border-top: 1px solid $light-grey-2;
+  border-bottom: 1px solid $light-grey-2;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  &::after {
+    align-self: start;
+    background-color: $light-orange;
+    counter-increment: section;
+    content: counters(section, ".") " ";
+    color: $base-white;
+    padding: 9px 15px 8px;
+    border-radius: 50%;
+  }
+}
+
+.add-profile__text {
+  margin-right: 40px;
+}
+
+.add-profile__show-prices {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $secondary-blue;
+}
+
+.add-profile__popup {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .add-profile__wrapper {
+    padding-top: 95px;
+    padding-bottom: 85px;
+    text-align: center;
+  }
+
+  .add-profile__title {
+    text-align: center;
+  }
+
+  .add-profile__list {
+    font-size: 28px;
+    line-height: 33px;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .add-profile__wrapper {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }

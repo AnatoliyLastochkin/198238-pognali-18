@@ -1,6 +1,83 @@
 .travelers {
-  padding: 25px;
+  position: relative;
+  margin-top: -50px;
   color: $base-white;
   background-color: $primary-blue;
-  border-radius: 0 0 15px 15px;
+  border-radius: 0 0 20px 20px;
+  z-index: 5;
+}
+
+.travelers__wrapper {
+  @include container;
+  position: relative;
+  padding: 120px 25px 110px;
+}
+
+.travelers__text-wrapper {
+  padding: 0 25px;
+}
+
+.travelers__title {
+  margin-bottom: 20px;
+}
+
+.travelers__description {
+  margin-bottom: 25px;
+}
+
+.travelers__slogan {
+  margin-bottom: 60px;
+}
+
+.traveler__link {
+  width: 270px;
+  position: absolute;
+  bottom: 30px;
+  left: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .travelers__wrapper {
+    padding-top: 160px;
+    padding-bottom: 90px;
+  }
+
+  .travelers__text-wrapper {
+    width: 425px;
+  }
+
+  .travelers__title {
+    margin-bottom: 60px;
+  }
+
+  .travelers__description {
+    margin-bottom: 45px;
+  }
+
+  .travelers__list {
+    margin: 0 35px;
+  }
+
+  .traveler__link {
+    width: 618px;
+    left: 75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .travelers__wrapper {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .travelers__text-wrapper {
+    width: 425px;
+  }
+
+  .traveler__link {
+    display: block;
+    position: static;
+    width: 280px;
+  }
 }

@@ -1,5 +1,94 @@
 .sign-up {
-  padding: 25px;
+  position: relative;
   color: $base-white;
+  margin-top: -60px;
   background-color: $secondary-blue;
+  border-radius: 0 0 20px 20px;
+  z-index: 3;
+}
+
+.sign-up__wrapper {
+  @include container;
+  padding: 130px 25px 45px;
+}
+
+.sign-up__title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.sign-up__text {
+  text-align: center;
+  padding: 0 35px;
+  margin-bottom: 30px;
+}
+
+.sign-up__login {
+  color: $light-gold;
+  text-decoration: underline;
+}
+
+.sign-up__form {
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.sign-up__email {
+  flex-grow: 1;
+  border-radius: 10px;
+  margin-right: -7px;
+  border: none;
+}
+
+.sign-up__button {
+  flex-grow: 1;
+  margin-left: -7px;
+  padding: 0;
+  width: 60px;
+  height: 62px;
+  border: none;
+  border-radius: 10px;
+  background-color: $light-gold;
+}
+
+.sign-up__questions {
+  padding: 0 20px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .sign-up {
+    margin-top: -20px;
+  }
+
+  .sign-up__wrapper {
+    padding-top: 90px;
+    padding-bottom: 80px;
+  }
+
+  .sign-up__title {
+    margin-bottom: 60px;
+  }
+
+  .sign-up__text {
+    padding: 0;
+    margin-bottom: 65px;
+  }
+
+  .sign-up__form {
+    margin-bottom: 60px;
+  }
+
+  .sign-up__questions {
+    margin-bottom: 65px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sign-up__wrapper {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }

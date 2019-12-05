@@ -1,4 +1,19 @@
 .page-main {
   color: $base-white;
-  background-color: $light;
+  background-color: $primary-blue;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    width: auto;
+    margin: 0;
+    background-color: $bg-tablet-blue;
+    background-image: url("../img/globe-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  .page-main__list {
+    display: none;
+  }
 }

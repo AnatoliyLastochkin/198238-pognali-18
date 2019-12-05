@@ -1,5 +1,11 @@
 .country-list {
-  padding: 25px;
+  @include list-reset;
   color: $primary-blue;
   background-color: $light;
+}
+
+@media (min-width: $desktop-width) {
+  .country-list {
+    display: none;
+  }
 }

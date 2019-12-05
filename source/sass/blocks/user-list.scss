@@ -1,5 +1,51 @@
 .user-list {
-  padding: 25px;
+  @include list-reset;
   color: $secondary-blue;
-  background-color: $base-white;
+  background-color: inherit;
+}
+
+.user-list__link {
+  padding: 13px 35px 11px 35px;
+  background-color: $light-gold;
+  border-radius: 20px;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $primary-blue;
+}
+
+.user-list__phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: $orange;
+  border-radius: 50%;
+}
+
+.user-list__email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: $gold;
+  border-radius: 50%;
+}
+
+.user-list__phone-icon {
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/topmenu-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.user-list__email-icon {
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/topmenu-mail.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }

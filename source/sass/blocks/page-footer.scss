@@ -1,5 +1,40 @@
 .page-footer {
-  padding: 25px;
+  position: relative;
+  z-index: 1;
+  margin-top: -225px;
   color: $primary-grey;
+  text-align: center;
   background-color: $base-white;
+  border-radius: 15px 15px 0 0;
+}
+
+.page-footer__wrapper {
+  @include container;
+  padding: 40px 25px 25px;
+}
+
+.page-footer__social {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    padding-top: 40px;
+    padding-bottom: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    margin-top: 0;
+  }
+
+  .page-footer__wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }

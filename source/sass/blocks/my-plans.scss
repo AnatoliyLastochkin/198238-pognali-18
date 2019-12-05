@@ -1,4 +1,31 @@
 .my-plans {
-  padding: 0 25px;
   color: $blue;
+  background-color: $grey;
+}
+
+.my-plans__wrapper {
+  @include container;
+  padding: 30px 25px;
+}
+
+.my-plans__list {
+  @include list-reset;
+}
+
+.my-plans__item {
+  background-color: $base-white;
+}
+
+@media (min-width: $tablet-width) {
+  .my-plans__wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .my-plans__wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }

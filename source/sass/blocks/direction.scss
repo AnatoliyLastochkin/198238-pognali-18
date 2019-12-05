@@ -1,6 +1,87 @@
 .direction {
-  padding: 25px;
+  position: relative;
+  margin-top: -80px;
   color: $primary-grey;
   background-color: $light;
-  border-radius: 0 0 15px 15px;
+  border-radius: 0 0 20px 20px;
+  z-index: 8;
+}
+
+.direction__wrapper {
+  @include container;
+  position: relative;
+  padding: 130px 25px 120px;
+}
+
+.direction__text-wrapper {
+  padding: 0 25px;
+  margin-bottom: 65px;
+}
+
+.direction__title {
+  margin-bottom: 25px;
+}
+
+.direction__link {
+  position: absolute;
+  bottom: 30px;
+  left: 25px;
+  display: block;
+  width: 270px;
+}
+
+@media (min-width: $tablet-width) {
+  .direction {
+    margin-top: -20px;
+  }
+
+  .direction__wrapper {
+    padding-top: 95px;
+    background-image: url("../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-position: right 40px top 95px;
+  }
+
+  .direction__text-wrapper {
+    width: 340px;
+    margin-left: 35px;
+    padding: 0;
+  }
+
+  .direction__title {
+    margin-bottom: 60px;
+  }
+
+  .direction__description {
+    margin-bottom: 110px;
+    color: $primary-grey;
+  }
+
+  .direction__link {
+    width: 618px;
+    left: 75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .direction__wrapper {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .direction__text-wrapper {
+    order: 1;
+    width: 340px;
+  }
+
+  .direction__link {
+    position: static;
+    width: 275px;
+  }
+
+  .direction__list {
+    order: 0;
+    width: 560px;
+  }
 }

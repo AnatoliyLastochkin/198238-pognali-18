@@ -1,0 +1,36 @@
+.profile {
+  color: $primary-grey;
+  background-color: $light;
+}
+
+.profile__wrapper {
+  @include container;
+  padding: 60px 25px 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .profile__wrapper {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .profile__wrapper {
+    position: relative;
+  }
+
+  .profile__level {
+    position: absolute;
+    top: -30px;
+    right: 420px;
+  }
+
+  .profile__avatar {
+    position: absolute;
+    top: -70px;
+    right: 150px;
+  }
+}

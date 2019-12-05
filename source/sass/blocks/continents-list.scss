@@ -1,11 +1,14 @@
-.traveler-list {
+.continents-list {
   @include list-reset;
-  color: $primary-grey;
 }
 
 @media (min-width: $tablet-width) {
-  .traveler-list {
+  .continents-list {
     display: flex;
     justify-content: space-between;
+  }
+
+  .continents-list__item {
+    margin-right: 25px;
   }
 }
