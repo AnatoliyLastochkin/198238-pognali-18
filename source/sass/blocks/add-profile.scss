@@ -10,9 +10,14 @@
 .add-profile__wrapper {
   @include container;
   padding: 80px 25px 40px 50px;
+  background-image: url("../img/rates@1x.png");
+  background-repeat: no-repeat;
+  background-position: top 65px right 25px;
+  background-size: 100px;
 }
 
 .add-profile__title {
+  margin-right: 100px;
   margin-bottom: 45px;
 }
 
@@ -21,6 +26,7 @@
   counter-reset: section;
   list-style-type: none;
   margin-bottom: 30px;
+  border-collapse: collapse;
 }
 
 .add-profile__item {
@@ -39,6 +45,14 @@
     padding: 9px 15px 8px;
     border-radius: 50%;
   }
+}
+
+.add-profile__item:nth-child(2)::after {
+  background-color: $gold;
+}
+
+.add-profile__item:nth-child(3)::after {
+  background-color: $light-gold;
 }
 
 .add-profile__text {

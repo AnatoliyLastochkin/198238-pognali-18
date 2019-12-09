@@ -14,12 +14,11 @@
 }
 
 .address__list {
-  @include list-reset;
-  text-align: center;
+  margin-bottom: 30px;
 }
 
-.address__item {
-  margin-bottom: 35px;
+.address__button {
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {

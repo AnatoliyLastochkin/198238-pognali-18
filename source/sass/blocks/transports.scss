@@ -1,3 +1,44 @@
 .transports {
   @include list-reset;
+  display: flex;
+  justify-content: center;
+}
+
+.transports__item:nth-child(1) {
+  width: 19px;
+  height: 21px;
+  margin-right: 17px;
+  background-image: url("../img/plane.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.transports__item:nth-child(2) {
+  width: 17px;
+  height: 21px;
+  margin-right: 13px;
+  background-image: url("../img/bus.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.transports__item:nth-child(3) {
+  width: 24px;
+  height: 21px;
+  margin-right: 10px;
+  background-image: url("../img/bike.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.transports__item:nth-child(4) {
+  width: 20px;
+  height: 21px;
+  background-image: url("../img/run.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.transports__item--not-active {
+  opacity: 0.3;
 }

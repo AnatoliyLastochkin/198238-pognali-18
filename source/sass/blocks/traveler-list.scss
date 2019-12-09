@@ -1,6 +1,78 @@
 .traveler-list {
   @include list-reset;
   color: $primary-grey;
+  text-align: center;
+}
+
+.traveler-list__item {
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: $base-white;
+}
+
+.traveler-list__level {
+  position: absolute;
+}
+
+.traveler-list__photo {
+  position: relative;
+
+  img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+}
+
+.traveler-list__flags {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  img {
+    margin-right: 19px;
+    border-radius: 0;
+  }
+
+  img:last-child {
+    margin-right: 0;
+  }
+}
+
+.traveler-list__item-wrapper {
+  padding: 25px 45px;
+}
+
+.traveler-list__name {
+  position: relative;
+  margin-bottom: 18px;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: $blue;
+}
+
+.traveler-list__point {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 2.5px;
+  background-color: $pink;
+
+  &--active {
+    background-color: $green-apple;
+  }
+}
+
+.traveler-list__tags {
+  display: inline-block;
+  margin-bottom: 18px;
+  line-height: 18px;
 }
 
 @media (min-width: $tablet-width) {

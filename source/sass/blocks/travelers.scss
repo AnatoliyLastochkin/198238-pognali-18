@@ -2,7 +2,7 @@
   position: relative;
   margin-top: -50px;
   color: $base-white;
-  background-color: $primary-blue;
+  background-color: $secondary-blue;
   border-radius: 0 0 20px 20px;
   z-index: 5;
 }
@@ -11,6 +11,8 @@
   @include container;
   position: relative;
   padding: 120px 25px 110px;
+  background: url("../img/blue-backg.svg") no-repeat -20px 85px,
+    url("../img/smolov-back-desktop@1x.png") no-repeat right 25px top 85px;
 }
 
 .travelers__text-wrapper {
@@ -30,7 +32,7 @@
 }
 
 .traveler__link {
-  width: 270px;
+  width: 222px;
   position: absolute;
   bottom: 30px;
   left: 25px;

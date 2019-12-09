@@ -1,9 +1,10 @@
 .main-nav {
-  width: 320px;
+  width: 270px;
+  padding: 0 25px;
   top: 40px;
   left: 0;
   position: absolute;
-
+  text-align: center;
   color: $secondary-blue;
   background-color: $base-white;
 
@@ -13,7 +14,20 @@
 }
 
 .main-nav--nojs {
-  display: none;
+  display: block;
+}
+
+.main-nav__site-list {
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+.main-nav__user-list {
+  margin-bottom: 40px;
+}
+
+.main-nav__social {
+  margin-bottom: 40px;
 }
 
 @media (min-width: $tablet-width) {

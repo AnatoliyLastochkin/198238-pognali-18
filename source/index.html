@@ -9,12 +9,12 @@
   </head>
   <body>
 
-    <header class="page-header page-header--blue">
+    <header class="page-header page-header--blue page-header--nojs">
       <div class="page-header__wrapper">
         <a class="page-header__logo">
           <img class="page-header__logo-image" src="./img/logo-mobile-white@1x.png" width="100" height="19" alt="HTML Academy: Погнали">
         </a>
-        <button class="page-header__toggle" type="button">Открыть меню</button>
+        <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <button class="page-header__button button" type="button">Авторизация</button>
 
         <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -32,31 +32,33 @@
               </li>
             </ul>
 
-            <ul class="main-nav__user-list user-list">
-              <li class="user-list__item">
-                <a class="user-list__phone" href="tel:88005558628">
-                  <span class="user-list__phone-icon"></span>
+            <ul class="main-nav__user-list authorization-list">
+              <li class="authorization__item authorization__item--extra-margin-b">
+                <a class="authorization__link" href="#">
+                  Авторизация
                 </a>
               </li>
-              <li class="user-list__item">
-                <a class="user-list__email" href="mailto:mail@htmlacademy.ru">
-                  <span class="user-list__email-icon"></span>
+              <li class="authorization__item">
+                <a class="authorization__phone" href="tel:88005558628">
+                  8 800 555-86-28
                 </a>
               </li>
-              <li class="user-list__item">
-                <a class="user-list__link" href="#">Авторизация</a>
+              <li class="authorization__item">
+                <a class="authorization__email" href="mailto:mail@htmlacademy.ru">
+                  mail@htmlacademy.ru
+                </a>
               </li>
             </ul>
 
           <ul class="main-nav__social social">
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://www.vk.com/htmlacademy">Мы в Вконтакте</a>
+              <a class="social__link social__link--vkontakte" href="https://www.vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграме</span></a>
             </li>
           </ul>
 
@@ -87,7 +89,7 @@
                 </a>
               </li>
               <li class="user-list__item">
-                <a class="user-list__link button" href="#">Авторизация</a>
+                <a class="user-list__link" href="#">Авторизация</a>
               </li>
             </ul>
             <blockquote class="promo__review">
@@ -105,7 +107,7 @@
                   <p class="steps__text">Изучите идеи путешественников</p>
                 </li>
                 <li class="steps__item">
-                  <p class="steps__text">Находите тех, кто похож на вас</p>
+                  <p class="steps__text">Находите тех, кто&nbsp;похож на вас</p>
                 </li>
                 <li class="steps__item">
                   <p class="steps__text">Путешествуйте вместе!</p>
@@ -145,28 +147,34 @@
               <a class="country-list__photo">
                 <img src="./img/thailand-mobile@1x.jpg" width="270" height="110" alt="Таиланд">
               </a>
-              <span class="country-list-flag"></span>
-              <h3 class="country-list__title">Таиланд</h3>
-              <b class="country-list__slogan">Джунгли зовут!</b>
-              <span class="country-list__visit-number">18321</span>
+              <div class="country-list__item-wrapper">
+                <img class="country-list__flag" src="./img/Thailand-flag.png" width="35" height="24" alt="флаг Тайланда">
+                <h3 class="country-list__title">Таиланд</h3>
+                <span class="country-list__visit-number">18321</span>
+                <p class="country-list__slogan">Джунгли зовут!</p>
+              </div>
             </li>
             <li class="country-list__item">
               <a class="country-list__photo">
                 <img src="./img/france-mobile@1x.jpg" width="270" height="110" alt="Франция">
               </a>
-              <span class="country-list-flag"></span>
-              <h3 class="country-list__title">Франция</h3>
-              <b class="country-list__slogan">Трэ бьен, манифик!</b>
-              <span class="country-list__visit-number">12518</span>
+              <div class="country-list__item-wrapper">
+                <img class="country-list__flag" src="./img/France-flag.png" width="35" height="24" alt="флаг Тайланда">
+                <h3 class="country-list__title">Франция</h3>
+                <span class="country-list__visit-number">12518</span>
+                <p class="country-list__slogan">Трэ бьен, манифик!</p>
+              </div>
             </li>
             <li class="country-list__item">
               <a class="country-list__photo">
                 <img src="./img/czech-mobile@1x.jpg" width="270" height="110" alt="Чехия">
               </a>
-              <span class="country-list-flag"></span>
-              <h3 class="country-list__title">Чехия</h3>
-              <b class="country-list__slogan">Закоулки старой Европы</b>
-              <span class="country-list__visit-number">5326</span>
+              <div class="country-list__item-wrapper">
+                <img class="country-list__flag" src="./img/Czech-flag.png" width="35" height="24" alt="флаг Тайланда">
+                <h3 class="country-list__title">Чехия</h3>
+                <span class="country-list__visit-number">5326</span>
+                <p class="country-list__slogan">Закоулки старой Европы</p>
+              </div>
             </li>
           </ul>
 
@@ -193,30 +201,35 @@
 
               <a class="traveler-list__photo">
                 <img src="./img/firsova-profile-mobile.jpg" width="270" height="270" alt="Таня Фирсова">
+                <div class="traveler-list__flags">
+                  <img src="./img/Seychelles-flag.png" width="35" height="24">
+                  <img src="./img/Thailand-flag.png" width="35" height="24">
+                  <img src="./img/Seychelles-flag.png" width="35" height="24">
+                </div>
               </a>
+              <div class="traveler-list__item-wrapper">
+                <h3 class="traveler-list__name">
+                  <span class="traveler-list__point"></span>
+                  Таня Фирсова
+                </h3>
+                <span class="traveler-list__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</span>
 
-              <ul class="traveler-list__flags-list flags">
-                <li class="flags__item">
-                  <span class="flags__flag"></span>
-                </li>
-                <li class="flags__item">
-                  <span class="traveler-list__flag"></span>
-                </li>
-                <li class="flags__item">
-                  <span class="traveler-list__flag"></span>
-                </li>
-              </ul>
+                <ul class="traveler-list__transports transports">
+                  <li class="transports__item">
+                    <span class="visually-hidden">Транспорт: Самолёт</span>
+                  </li>
+                  <li class="transports__item transports__item--not-active">
+                    <span class="visually-hidden">Транспорт: Автобус</span>
+                  </li>
+                  <li class="transports__item transports__item--not-active">
+                    <span class="visually-hidden">Транспорт: Велосипед</span>
+                  </li>
+                  <li class="transports__item transports__item--not-active">
+                    <span class="visually-hidden">Транспорт: Пешком</span>
+                  </li>
+                </ul>
 
-              <h3 class="traveler-list__name">Таня Фирсова</h3>
-              <span class="traveler-list__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</span>
-
-              <ul class="traveler-list__transport-list transports">
-                <li class="transports__item transports__item--active">Самолёт</li>
-                <li class="transports__item">Машина</li>
-                <li class="transports__item transports__item--active">Велосипед</li>
-                <li class="transports__item">Пешком</li>
-              </ul>
-
+              </div>
             </li>
             <li class="traveler-list__item">
 
@@ -227,26 +240,33 @@
 
               <a class="traveler-list__photo">
                 <img src="./img/demin-profile-mobile.jpg" width="270" height="270" alt="Петя Демин">
+                <div class="traveler-list__flags">
+                  <img src="./img/Belgium-flag.png" width="35" height="24">
+                  <img src="./img/Czech-flag.png" width="35" height="24">
+                </div>
               </a>
+              <div class="traveler-list__item-wrapper">
+                <h3 class="traveler-list__name">
+                  <span class="traveler-list__point traveler-list__point--active"></span>
+                  Петя Демин
+                </h3>
+                <span class="traveler-list__tags">#бургер #бар #футбол #концерт #крафт</span>
 
-              <ul class="traveler-list__flags-list flags">
-                <li class="flags__item">
-                  <span class="flags__flag"></span>
-                </li>
-                <li class="flags__item">
-                  <span class="traveler-list__flag"></span>
-                </li>
-              </ul>
-
-              <h3 class="traveler-list__name traveler-list__name--active">Петя Демин</h3>
-              <span class="traveler-list__tags">#бургер #бар #футбол #концерт #крафт</span>
-
-              <ul class="traveler-list__transports transports">
-                <li class="transports__item transports__item--active">Самолёт</li>
-                <li class="transports__item transports__item--active">Машина</li>
-                <li class="transports__item">Велосипед</li>
-                <li class="transports__item transports__item--active">Пешком</li>
-              </ul>
+                <ul class="traveler-list__transports transports">
+                  <li class="transports__item">
+                    <span class="visually-hidden">Транспорт: Самолёт</span>
+                  </li>
+                  <li class="transports__item">
+                    <span class="visually-hidden">Транспорт: Машина</span>
+                  </li>
+                  <li class="transports__item transports__item--not-active">
+                    <span class="visually-hidden">Транспорт: Велосипед</span>
+                  </li>
+                  <li class="transports__item">
+                    <span class="visually-hidden">Транспорт: Пешком</span>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
 
@@ -299,21 +319,19 @@
           <h2 class="sign-up__title content-title">Заинтересовались?</h2>
           <p class="sign-up__text content-text">Зарегистрируйтесь, это&nbsp;быстро и бесплатно! Уже&nbsp;зарегистрированы?Тогда скорее <a class="sign-up__login" href="#">авторизуйтесь</a>.</p>
           <form class="sign-up__form" action="https://echo.htmlacademy.ru" method="post">
-            <input class="sign-up__email" type="email" value="E-mail">
-            <button class="sign-up__button" type="submit"></button>
+            <input class="sign-up__email" type="email" placeholder="E-mail">
+            <button class="sign-up__button button" type="submit"></button>
           </form>
           <p class="sign-up__questions content-text">Остались вопросы? Мы&nbsp;с&nbsp;радостью на них ответим!</p>
 
-          <ul class="sign-up__list menu-list">
-            <li class="menu-list__item">
-              <a class="menu-list__phone" href="tel:88005558628">
-                <span class="menu-list__phone-icon"></span>
+          <ul class="sign-up__list authorization-list">
+            <li class="authorization__item">
+              <a class="authorization__phone authorization__phone--yellow" href="tel:88005558628">
                 8 800 555-86-28
               </a>
             </li>
-            <li class="menu-list__item">
-              <a class="menu-list__email" href="mailto:mail@htmlacademy.ru">
-                <span class="menu-list__email-icon"></span>
+            <li class="authorization__item">
+              <a class="authorization__email authorization__email--yellow" href="mailto:mail@htmlacademy.ru">
                 mail@htmlacademy.ru</a>
             </li>
           </ul>
@@ -324,17 +342,14 @@
       <section class="address">
         <div class="address__wrapper">
           <h2 class="visually-hidden">Адрес компании</h2>
-          <ul class="address__list">
-            <li class="address__item">
-              <a class="address__link" href="#">
-                <span class="address__link-icon"></span>
-                ул. Большая Конюшенная, 19/8
+          <ul class="address__list authorization-list">
+            <li class="authorization__item">
+              <a class="authorization__address" href="#">
+                ул. Большая Конюшенная,&nbsp;19/8
               </a>
             </li>
-            <li class="address__item">
-              <a class="location__button button" href="#">Проложить маршрут</a>
-            </li>
           </ul>
+          <button class="address__button button button--border-blue" type="button">Проложить маршрут</button>
         </div>
       </section>
 
@@ -350,14 +365,14 @@
         </a>
 
         <ul class="page-footer__social social">
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          <li class="social__item social__item--reset-margin">
+            <a class="social__link social__link--yellow-bg social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://www.vk.com/htmlacademy">Мы в Вконтакте</a>
+          <li class="social__item social__item--reset-margin">
+            <a class="social__link social__link--yellow-bg social__link--vkontakte" href="https://www.vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          <li class="social__item social__item--reset-margin">
+            <a class="social__link social__link--yellow-bg social__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграме</span></a>
           </li>
         </ul>
 

@@ -38,17 +38,22 @@
   border-radius: 10px;
   margin-right: -7px;
   border: none;
+
+  @include placeholder {
+    color: $primary-grey;
+    opacity: 0.3;
+    font-size: 18px;
+    line-height: 18px;
+    padding-left: 25px;
+  }
 }
 
 .sign-up__button {
   flex-grow: 1;
   margin-left: -7px;
   padding: 0;
-  width: 60px;
+  width: 22px;
   height: 62px;
-  border: none;
-  border-radius: 10px;
-  background-color: $light-gold;
 }
 
 .sign-up__questions {

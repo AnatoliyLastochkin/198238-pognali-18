@@ -12,11 +12,17 @@
 }
 
 .steps__item {
+  display: flex;
+  justify-content: space-between;
   padding: 25px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
   color: $primary-blue;
+
+  p {
+    margin-right: 40px;
+  }
 
   &:nth-child(1) {
     background-color: $orange;

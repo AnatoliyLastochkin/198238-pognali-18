@@ -1,4 +1,30 @@
 .button {
+  position: relative;
   font-family: inherit;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $blue;
   background-color: $light-gold;
+  padding: 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+
+  &--border-blue {
+    border: 3px solid $secondary-blue;
+  }
+
+  &::after {
+    position: absolute;
+    top: 40%;
+    right: 23px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-left: 12px solid $blue;
+    border-bottom: 8px solid transparent;
+  }
 }

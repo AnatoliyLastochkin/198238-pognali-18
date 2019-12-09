@@ -5,6 +5,10 @@
   &--blue {
     background-color: $primary-blue;
   }
+
+  &--nojs .page-header__toggle {
+    display: none;
+  }
 }
 
 .page-header__wrapper {
@@ -21,7 +25,26 @@
 }
 
 .page-header__toggle {
+  position: relative;
+  width: 25px;
+  height: 11px;
   padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.page-header__toggle::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+
+  width: 25px;
+  height: 3px;
+
+  background-color: $base-white;
+  box-shadow: 0 8px 0 0 $base-white;
 }
 
 .page-header__title {
