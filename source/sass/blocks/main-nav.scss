@@ -4,6 +4,7 @@
   top: 40px;
   left: 0;
   position: absolute;
+  z-index: 11;
   text-align: center;
   color: $secondary-blue;
   background-color: $base-white;
@@ -32,9 +33,24 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    width: auto;
-    margin: 0;
-    padding-bottom: 60px;
+    width: 688px;
+    padding: 0 40px;
+    top: 80px;
+  }
+
+  .main-nav__site-list {
+    margin-left: 60px;
+    margin-bottom: 150px;
+  }
+
+  .main-nav__user-list {
+    margin-left: 60px;
+    margin-bottom: 130px;
+  }
+
+  .main-nav__social {
+    margin-left: 60px;
+    margin-bottom: 90px;
   }
 }
 

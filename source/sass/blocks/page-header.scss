@@ -51,7 +51,7 @@
   padding-top: 60px;
 }
 
-.page-header__button {
+.page-header__link {
   display: none;
 }
 
@@ -67,6 +67,7 @@
   .page-header__wrapper {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
     padding-top: 40px;
     padding-bottom: 80px;
@@ -77,9 +78,8 @@
     margin-right: 20px;
   }
 
-  .page-header__button {
-    display: block;
-    width: 188px;
+  .page-header__link {
+    display: inherit;
   }
 
   .page-header__back-link {
@@ -114,7 +114,7 @@
     display: none;
   }
 
-  .page-header__button {
+  .page-header__link {
     display: none;
   }
 

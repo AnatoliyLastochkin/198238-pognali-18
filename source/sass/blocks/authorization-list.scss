@@ -17,17 +17,6 @@
   }
 }
 
-.authorization__link {
-  display: inline-block;
-  width: 100%;
-  padding: 10px 0;
-  font-size: 17px;
-  line-height: 30px;
-  background-color: $light-gold;
-  border-radius: 25px;
-  text-align: center;
-}
-
 .authorization__phone {
   display: flex;
   align-items: center;
@@ -93,5 +82,30 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 18px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .authorization__item {
+    a {
+      font-size: 28px;
+      line-height: 28px;
+    }
+  }
+
+  .authorization__phone {
+    &::before {
+      width: 67px;
+      height: 67px;
+      background-size: 27px;
+    }
+  }
+
+  .authorization__email {
+    &::before {
+      width: 67px;
+      height: 67px;
+      background-size: 27px;
+    }
   }
 }

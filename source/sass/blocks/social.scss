@@ -52,3 +52,26 @@
     border-radius: 50%;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .social {
+    justify-content: left;
+  }
+
+  .social__link {
+    width: 35px;
+    height: 35px;
+
+    &--facebook {
+      background-size: 14px;
+    }
+
+    &--vkontakte {
+      background-size: 31px;
+    }
+
+    &--instagram {
+      background-size: 24px;
+    }
+  }
+}

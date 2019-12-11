@@ -79,8 +79,34 @@
   font-weight: 300;
 }
 
-@media (min-width: $desktop-width) {
-  .country-list {
-    display: none;
+@media (min-width: $tablet-width) {
+  .country-list__item {
+    display: flex;
+  }
+
+  .country-list__photo {
+    order: 1;
+
+    img {
+      border-top-left-radius: 0;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+  }
+
+  .country-list__item-wrapper {
+    flex-direction: column;
+    flex-grow: 1;
+    order: 0;
+    padding: 30px;
+    margin-top: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 0;
+  }
+
+  .country-list__flag {
+    top: 20px;
+    right: 0;
   }
 }

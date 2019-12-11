@@ -15,8 +15,9 @@
           <img class="page-header__logo-image" src="./img/logo-mobile-white@1x.png" width="100" height="19" alt="HTML Academy: Погнали">
         </a>
         <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <button class="page-header__button button" type="button">Авторизация</button>
-
+        <a class="page-header__link authorization-link" href="#">
+          Авторизация
+        </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <h2 class="visually-hidden">Меню</h2>
 
@@ -34,7 +35,7 @@
 
             <ul class="main-nav__user-list authorization-list">
               <li class="authorization__item authorization__item--extra-margin-b">
-                <a class="authorization__link" href="#">
+                <a class="authorization__link authorization-link authorization-link--menu" href="#">
                   Авторизация
                 </a>
               </li>
@@ -64,9 +65,6 @@
 
         </nav>
       </div>
-
-
-
     </header>
 
     <main class="page-main">
@@ -89,7 +87,7 @@
                 </a>
               </li>
               <li class="user-list__item">
-                <a class="user-list__link" href="#">Авторизация</a>
+                <a class="user-list__link authorization-link" href="#">Авторизация</a>
               </li>
             </ul>
             <blockquote class="promo__review">
@@ -126,9 +124,8 @@
               которые на одной волне с тобой! Делитесь своими идеями путешествий и
               черпайте вдохновение в чужих</p>
             <p class="about__slogan content-text content-text--bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
-            <a class="about__link link-button" href="#">
+            <a class="about__link button" href="#">
               Подробнее
-              <span class="link-button__arrow"></span>
             </a>
           </div>
         </div>
@@ -145,7 +142,10 @@
           <ul class="direction__list country-list">
             <li class="country-list__item">
               <a class="country-list__photo">
-                <img src="./img/thailand-mobile@1x.jpg" width="270" height="110" alt="Таиланд">
+                <picture>
+                  <source srcset="./img/thailand-desktop@1x.jpg" media="(min-width: 768px)">
+                  <img src="./img/thailand-mobile@1x.jpg" alt="Таиланд">
+                </picture>
               </a>
               <div class="country-list__item-wrapper">
                 <img class="country-list__flag" src="./img/Thailand-flag.png" width="35" height="24" alt="флаг Тайланда">
@@ -156,7 +156,10 @@
             </li>
             <li class="country-list__item">
               <a class="country-list__photo">
-                <img src="./img/france-mobile@1x.jpg" width="270" height="110" alt="Франция">
+                <picture>
+                  <source srcset="./img/france-desktop@1x.jpg" media="(min-width: 768px)">
+                  <img src="./img/france-mobile@1x.jpg" alt="Франция">
+                </picture>
               </a>
               <div class="country-list__item-wrapper">
                 <img class="country-list__flag" src="./img/France-flag.png" width="35" height="24" alt="флаг Тайланда">
@@ -167,7 +170,10 @@
             </li>
             <li class="country-list__item">
               <a class="country-list__photo">
-                <img src="./img/czech-mobile@1x.jpg" width="270" height="110" alt="Чехия">
+                <picture>
+                  <source srcset="./img/czech-desktop@1x.jpg" media="(min-width: 768px)">
+                  <img src="./img/czech-mobile@1x.jpg" alt="Чехия">
+                </picture>
               </a>
               <div class="country-list__item-wrapper">
                 <img class="country-list__flag" src="./img/Czech-flag.png" width="35" height="24" alt="флаг Тайланда">
@@ -378,7 +384,9 @@
 
         <div class="page-footer__copyright copyright">
           <span class="copyright__text">Разработано</span>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTML Academy</span>
+          </a>
         </div>
       </div>
 

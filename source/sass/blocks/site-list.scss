@@ -12,3 +12,11 @@
     text-transform: uppercase;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    font-size: 60px;
+    line-height: 71px;
+    text-align: left;
+  }
+}

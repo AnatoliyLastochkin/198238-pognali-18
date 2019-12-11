@@ -1,0 +1,30 @@
+.authorization-link {
+  padding: 10px 37px;
+  background-color: $light-gold;
+  border-radius: 20px;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $primary-blue;
+  text-align: center;
+  text-transform: uppercase;
+
+  &--menu {
+    display: inline-block;
+    padding: 15px 0;
+    border-radius: 25px;
+    width: 100%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .authorization-link {
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-size: 20px;
+
+    &--menu {
+      display: none;
+    }
+  }
+}
