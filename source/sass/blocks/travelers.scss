@@ -11,8 +11,22 @@
   @include container;
   position: relative;
   padding: 120px 25px 110px;
-  background: url("../img/blue-backg.svg") no-repeat -20px 85px,
-    url("../img/smolov-back-desktop@1x.png") no-repeat right 25px top 85px;
+  background: url("../img/smolov-back-desktop@1x.png") no-repeat right 25px top 85px,
+  url("../img/rogovaya-back-desktop@1x.png") no-repeat left -10px top 390px;
+  background-size: auto, 71px;
+
+  &::before {
+    width: 132px;
+    height: 132px;
+
+    content: "";
+    position: absolute;
+    top: 85px;
+    left: -19px;
+
+    background-color: $blue3;
+    border-radius: 20px;
+  }
 }
 
 .travelers__text-wrapper {
@@ -20,10 +34,12 @@
 }
 
 .travelers__title {
+  position: relative;
   margin-bottom: 20px;
 }
 
 .travelers__description {
+  position: relative;
   margin-bottom: 25px;
 }
 
@@ -42,6 +58,15 @@
   .travelers__wrapper {
     padding-top: 160px;
     padding-bottom: 90px;
+    background-position: left 40px top 450px, right 75px top 110px;
+    background-size: 143px, 285px;
+
+    &::before {
+      width: 213px;
+      height: 213px;
+      top: 110px;
+      left: 40px;
+    }
   }
 
   .travelers__text-wrapper {

@@ -16,11 +16,11 @@
 
 .traveler-list__photo {
   position: relative;
+}
 
-  img {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
+.traveler-list__avatar {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .traveler-list__flags {
