@@ -1,6 +1,7 @@
 .copyright {
   color: $primary-grey;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -11,4 +12,12 @@
   background-image: url("../img/htmlacademy.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    font-size: 20px;
+    line-height: 24px;
+    margin-right: 25px;
+  }
 }

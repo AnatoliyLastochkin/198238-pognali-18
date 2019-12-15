@@ -57,7 +57,7 @@
 @media (min-width: $tablet-width) {
   .travelers__wrapper {
     padding-top: 160px;
-    padding-bottom: 90px;
+    padding-bottom: 250px;
     background-position: left 40px top 450px, right 75px top 110px;
     background-size: 143px, 285px;
 
@@ -86,7 +86,8 @@
   }
 
   .traveler__link {
-    width: 618px;
+    width: 570px;
+    bottom: 90px;
     left: 75px;
   }
 }

@@ -68,8 +68,7 @@
   }
 
   .sign-up__wrapper {
-    padding-top: 90px;
-    padding-bottom: 80px;
+    padding: 90px 75px 80px;
   }
 
   .sign-up__title {
@@ -83,6 +82,22 @@
 
   .sign-up__form {
     margin-bottom: 60px;
+  }
+
+  .sign-up__email {
+    @include placeholder {
+      font-size: 24px;
+      line-height: 24px;
+      padding-left: 35px;
+    }
+  }
+
+  .sign-up__button {
+    width: 82px;
+    height: 81px;
+    flex-grow: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .sign-up__questions {

@@ -5,6 +5,7 @@
 }
 
 .traveler-list__item {
+  position: relative;
   margin-bottom: 10px;
   border-radius: 10px;
   background-color: $base-white;
@@ -12,10 +13,8 @@
 
 .traveler-list__level {
   position: absolute;
-}
-
-.traveler-list__photo {
-  position: relative;
+  top: 16px;
+  left: 16px;
 }
 
 .traveler-list__avatar {
@@ -24,21 +23,15 @@
 }
 
 .traveler-list__flags {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+  margin-top: -20px;
+}
 
-  img {
-    margin-right: 19px;
-    border-radius: 0;
-  }
+.traveler-list__flag {
+  margin-right: 10px;
+}
 
-  img:last-child {
-    margin-right: 0;
-  }
+.traveler-list__flag:last-child {
+  margin-right: 0;
 }
 
 .traveler-list__item-wrapper {
@@ -79,5 +72,22 @@
   .traveler-list {
     display: flex;
     justify-content: space-between;
+  }
+
+  .traveler-list__item {
+    width: 285px;
+  }
+
+  .traveler-list__level {
+    top: 23px;
+    left: 23px;
+  }
+
+  .traveler-list__item-wrapper {
+    padding: 15px 30px 30px;
+  }
+
+  .traveler-list__point {
+    left: 20px;
   }
 }

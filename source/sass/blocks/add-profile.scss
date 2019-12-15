@@ -72,19 +72,94 @@
 
 @media (min-width: $tablet-width) {
   .add-profile__wrapper {
+    position: relative;
     padding-top: 95px;
     padding-bottom: 85px;
-    text-align: center;
+    background-position: bottom 45px right 85px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 160px;
+      right: 45px;
+      width: 198px;
+      height: 285px;
+      border-radius: 20px;
+      background-color: $secondary-grey;
+    }
   }
 
   .add-profile__title {
+    margin-bottom: 75px;
     text-align: center;
   }
 
   .add-profile__list {
+    position: relative;
     font-size: 28px;
     line-height: 33px;
     font-weight: 300;
+    margin-left: 90px;
+    margin-bottom: 60px;
+  }
+
+  .add-profile__item {
+    z-index: 1;
+    position: relative;
+    padding-right: 35px;
+    justify-content: space-between;
+    align-items: center;
+
+    &::after {
+      counter-increment: none;
+      content: none;
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: -85px;
+      background-color: $light-orange;
+      counter-increment: section;
+      content: counters(section, ".") " ";
+      color: $base-white;
+      padding: 15px 25px;
+      border-radius: 50%;
+    }
+  }
+
+  .add-profile__item:nth-child(2)::before {
+    background-color: $gold;
+  }
+
+  .add-profile__item:nth-child(3)::before {
+    background-color: $light-gold;
+  }
+
+  .add-profile__show-prices {
+    position: relative;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: left;
+    color: $blue4;
+    margin-left: 90px;
+
+    &::before {
+      position: absolute;
+      top: -20px;
+      left: -85px;
+      display: block;
+      content: "";
+      width: 67px;
+      height: 67px;
+      border-radius: 50%;
+      background-color: #e2e5f2;
+      background-image: url("../img/business-blue.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 17px;
+    }
   }
 }
 
