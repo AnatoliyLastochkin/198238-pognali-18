@@ -47,10 +47,14 @@
   }
 
   .about__title {
+    position: relative;
+    z-index: 1;
     margin-bottom: 40px;
   }
 
   .about__description {
+    position: relative;
+    z-index: 1;
     margin-bottom: 40px;
   }
 
@@ -70,10 +74,31 @@
   }
 
   .about__wrapper {
+    position: relative;
     width: $container-width;
+    padding-top: 130px;
+    padding-bottom: 160px;
     margin: 0 auto;
     background-image: url("../img/about-desktop@1x.png");
     background-repeat: no-repeat;
-    background-position: right 0;
+    background-position: right top 70px;
+
+    &::before {
+      width: 213px;
+      height: 213px;
+
+      content: "";
+      position: absolute;
+      top: 70px;
+      left: 60px;
+
+      background-color: $blue3;
+      border-radius: 20px;
+      z-index: 0;
+    }
+  }
+
+  .about__text-wrapper {
+    width: 615px;
   }
 }

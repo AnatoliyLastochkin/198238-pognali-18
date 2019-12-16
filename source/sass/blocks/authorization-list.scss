@@ -109,3 +109,37 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .authorization-list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .authorization__phone {
+    &::before {
+      margin-right: 35px;
+      width: 90px;
+      height: 90px;
+      background-size: 36px;
+    }
+  }
+
+  .authorization__email {
+    &::before {
+      margin-right: 35px;
+      width: 90px;
+      height: 90px;
+      background-size: 36px;
+    }
+  }
+
+  .authorization__address {
+    &::before {
+      width: 90px;
+      height: 90px;
+      margin-right: 35px;
+      background-size: 36px;
+    }
+  }
+}

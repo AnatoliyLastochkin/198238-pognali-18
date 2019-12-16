@@ -12,7 +12,7 @@
   position: relative;
   padding: 120px 25px 110px;
   background: url("../img/smolov-back-desktop@1x.png") no-repeat right 25px top 85px,
-  url("../img/rogovaya-back-desktop@1x.png") no-repeat left -10px top 390px;
+    url("../img/rogovaya-back-desktop@1x.png") no-repeat left -10px top 390px;
   background-size: auto, 71px;
 
   &::before {
@@ -94,9 +94,11 @@
 
 @media (min-width: $desktop-width) {
   .travelers__wrapper {
-    padding-top: 100px;
+    padding-top: 150px;
+    padding-bottom: 135px;
     display: flex;
     justify-content: space-between;
+    background-position: left 440px top 150px, left 140px top 410px;
   }
 
   .travelers__text-wrapper {
@@ -105,7 +107,13 @@
 
   .traveler__link {
     display: block;
-    position: static;
+    position: relative;
+    top: 0;
+    left: 0;
     width: 280px;
+  }
+
+  .travelers__list {
+    margin: 0;
   }
 }

@@ -91,3 +91,13 @@
     left: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .traveler-list__item {
+    margin-right: 60px;
+  }
+
+  .traveler-list__item:last-child {
+    margin-right: 0;
+  }
+}

@@ -104,10 +104,11 @@
   }
 
   .page-header__wrapper {
+    position: relative;
+    justify-content: start;
+    flex-wrap: nowrap;
     padding-top: 75px;
     padding-bottom: 10px;
-    display: flex;
-    flex-wrap: wrap;
   }
 
   .page-header__toggle {
@@ -120,9 +121,5 @@
 
   .page-header__title {
     padding: 0;
-  }
-
-  .page-header__logo {
-    align-self: start;
   }
 }

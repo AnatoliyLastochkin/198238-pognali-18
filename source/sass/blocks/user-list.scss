@@ -39,3 +39,8 @@
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
+@media (min-width: $desktop-width) {
+  display: flex;
+  flex-direction: row;
+}

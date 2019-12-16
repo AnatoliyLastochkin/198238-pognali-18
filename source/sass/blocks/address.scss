@@ -36,5 +36,17 @@
   .address__wrapper {
     padding-top: 40px;
     padding-bottom: 40px;
+    padding-left: 285px;
+    display: flex;
+    align-items: center;
+  }
+
+  .address__list {
+    margin-top: 20px;
+    margin-right: 150px;
+  }
+
+  .address__button {
+    width: 325px;
   }
 }

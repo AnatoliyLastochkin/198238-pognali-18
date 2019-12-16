@@ -20,3 +20,12 @@
     text-align: left;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    width: 630px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+}

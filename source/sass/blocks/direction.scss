@@ -69,18 +69,40 @@
 
 @media (min-width: $desktop-width) {
   .direction__wrapper {
-    padding-top: 50px;
+    padding-top: 160px;
+    padding-bottom: 145px;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+
+    &::before {
+      width: 141px;
+      height: 141px;
+
+      content: "";
+      position: absolute;
+      top: 90px;
+      left: 20px;
+
+      background-color: $secondary-grey;
+      border-radius: 20px;
+    }
   }
 
   .direction__text-wrapper {
+    margin-left: 170px;
+    margin-bottom: 0;
     order: 1;
-    width: 340px;
+  }
+
+  .direction__description {
+    margin-bottom: 105px;
+    color: $primary-grey;
   }
 
   .direction__link {
     position: relative;
+    top: 0;
+    left: 0;
     width: 275px;
   }
 

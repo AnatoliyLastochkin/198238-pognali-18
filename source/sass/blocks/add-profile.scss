@@ -76,17 +76,6 @@
     padding-top: 95px;
     padding-bottom: 85px;
     background-position: bottom 45px right 85px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 160px;
-      right: 45px;
-      width: 198px;
-      height: 285px;
-      border-radius: 20px;
-      background-color: $secondary-grey;
-    }
   }
 
   .add-profile__title {
@@ -167,5 +156,8 @@
   .add-profile__wrapper {
     padding-top: 80px;
     padding-bottom: 80px;
+    padding-right: 345px;
+    background-position: bottom 145px right 165px;
+    background-size: 200px;
   }
 }

@@ -103,6 +103,9 @@
   }
 
   .steps__item {
+    flex-direction: row;
+    margin-right: -10px;
+
     &:nth-child(1) {
       border-radius: 10px 0 0 10px;
     }
@@ -118,5 +121,14 @@
     &:nth-child(4) {
       border-radius: 10px;
     }
+
+    &::after {
+      font-size: 24px;
+      line-height: 22px;
+    }
+  }
+
+  .steps__text {
+    margin-bottom: 0;
   }
 }
