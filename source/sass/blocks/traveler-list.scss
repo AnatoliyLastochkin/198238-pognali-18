@@ -22,10 +22,6 @@
   border-top-right-radius: 10px;
 }
 
-.traveler-list__flags {
-  margin-top: -20px;
-}
-
 .traveler-list__flag {
   margin-right: 10px;
 }
@@ -35,7 +31,15 @@
 }
 
 .traveler-list__item-wrapper {
+  position: relative;
   padding: 25px 45px;
+}
+
+.traveler-list__flags {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
 }
 
 .traveler-list__name {

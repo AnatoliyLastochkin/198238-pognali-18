@@ -1,6 +1,6 @@
 .direction {
   position: relative;
-  margin-top: -80px;
+  margin-top: -20px;
   color: $primary-grey;
   background-color: $light;
   border-radius: 0 0 20px 20px;
@@ -10,7 +10,7 @@
 .direction__wrapper {
   @include container;
   position: relative;
-  padding: 130px 25px 120px;
+  padding: 90px 25px 120px;
 }
 
 .direction__text-wrapper {

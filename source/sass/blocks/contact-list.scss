@@ -1,0 +1,60 @@
+.contact-list {
+  @include list-reset;
+  text-align: left;
+}
+
+.contact-list__phone {
+  display: flex;
+  align-items: center;
+}
+
+.contact-list__phone:hover .contact-list__icon,
+.contact-list__phone:focus .contact-list__icon,
+.contact-list__email:hover .contact-list__icon,
+.contact-list__email:focus .contact-list__icon {
+  fill: $gold;
+}
+
+.contact-list__phone:active .contact-list__icon,
+.contact-list__email:active .contact-list__icon {
+  fill: $iconhover;
+}
+
+.contact-list__email {
+  display: flex;
+  align-items: center;
+}
+
+.contact-list__icon {
+  width: 18px;
+  height: 18px;
+  padding: 14px;
+  margin-right: 15px;
+  background-color: $blue2;
+  fill: $light-gold;
+  border-radius: 50%;
+}
+
+.contact-list__text {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  color: $secondary-blue;
+  text-transform: uppercase;
+
+  &--yellow {
+    color: $light-gold;
+  }
+}
+
+.contact-list__phone:hover .contact-list__text,
+.contact-list__phone:focus .contact-list__text,
+.contact-list__email:hover .contact-list__text,
+.contact-list__email:focus .contact-list__text {
+  color: $blue2;
+}
+
+.contact-list__phone:active .contact-list__text,
+.contact-list__email:active .contact-list__text {
+  opacity: 0.3;
+}

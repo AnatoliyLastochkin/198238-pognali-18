@@ -1,27 +1,38 @@
 .page-header {
   color: $base-white;
-  background-color: $base-white;
+  background-color: $primary-blue;
 
-  &--blue {
-    background-color: $primary-blue;
+  &--nojs {
+    background-color: $base-white;
   }
 
-  &--nojs .page-header__toggle {
-    display: none;
+  &--white {
+    background-color: $base-white;
   }
 }
 
 .page-header__wrapper {
   @include container;
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
   padding: 25px 25px 50px;
 }
 
 .page-header__logo {
+  width: 100px;
   height: 19px;
+  background-image: url("../img/logo-mobile-white@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.page-header--nojs .page-header__logo {
+  background-image: url("../img/logo-mobile-blue@1x.png");
+}
+
+.page-header--white .page-header__logo {
+  background-image: url("../img/logo-mobile-blue@1x.png");
 }
 
 .page-header__toggle {
@@ -32,19 +43,41 @@
   background-color: transparent;
   cursor: pointer;
   border: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+
+    width: 25px;
+    height: 3px;
+
+    background-color: $base-white;
+    box-shadow: 0 8px 0 0 $base-white;
+  }
 }
 
-.page-header__toggle::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
+.page-header--white .page-header__toggle {
+  width: 19px;
+  height: 19px;
+}
 
-  width: 25px;
-  height: 3px;
+.page-header__cross {
+  display: none;
+}
 
-  background-color: $base-white;
-  box-shadow: 0 8px 0 0 $base-white;
+.page-header--white .page-header__toggle::before {
+  display: none;
+}
+
+.page-header--white .page-header__cross {
+  display: block;
+  opacity: 0.3;
+}
+
+.page-header--nojs .page-header__cross {
+  display: none;
 }
 
 .page-header__title {
@@ -62,24 +95,37 @@
 @media (min-width: $tablet-width) {
   .page-header {
     background-color: $bg-tablet-blue;
+
+    &--white {
+      background-color: $base-white;
+    }
   }
 
   .page-header__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
     padding-top: 40px;
     padding-bottom: 80px;
   }
 
   .page-header__logo {
+    width: 166px;
     height: 42px;
-    margin-right: 20px;
+    background-image: url("../img/logo-tablet-white@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 
-  .page-header__link {
-    display: inherit;
+  .page-header--nojs .page-header__logo {
+    background-image: url("../img/logo-tablet-blue@1x.png");
+  }
+
+  .page-header--white .page-header__logo {
+    background-image: url("../img/logo-tablet-blue@1x.png");
+  }
+
+  .page-header__toggle {
+    position: absolute;
+    top: 50px;
+    left: 50%;
   }
 
   .page-header__back-link {
@@ -104,11 +150,17 @@
   }
 
   .page-header__wrapper {
-    position: relative;
-    justify-content: start;
-    flex-wrap: nowrap;
     padding-top: 75px;
     padding-bottom: 10px;
+  }
+
+  .page-header__logo {
+    margin-right: 150px;
+    width: 200px;
+    height: 52px;
+    background-image: url("../img/logo-desktop-white@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 
   .page-header__toggle {

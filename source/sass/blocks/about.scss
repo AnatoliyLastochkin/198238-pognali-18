@@ -1,19 +1,21 @@
 .about {
   position: relative;
   z-index: 9;
-  margin-top: -280px;
-  padding-top: 280px;
   color: $base-white;
   background-color: $secondary-blue;
   background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: 20px 285px;
+  background-position: 20px 40px;
   border-radius: 0 0 20px 20px;
 }
 
 .about__wrapper {
   @include container;
   padding: 35px $extra-offset 79px;
+}
+
+.about__text-wrapper {
+  margin-top: 20px;
 }
 
 .about__title {

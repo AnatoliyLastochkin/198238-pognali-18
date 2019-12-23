@@ -4,41 +4,60 @@
   justify-content: center;
 }
 
-.transports__item:nth-child(1) {
-  width: 19px;
-  height: 21px;
-  margin-right: 17px;
-  background-image: url("../img/plane.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.transports__item:nth-child(2) {
-  width: 17px;
-  height: 21px;
-  margin-right: 13px;
-  background-image: url("../img/bus.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.transports__item:nth-child(3) {
-  width: 24px;
-  height: 21px;
+.transports__item {
   margin-right: 10px;
-  background-image: url("../img/bike.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
-.transports__item:nth-child(4) {
-  width: 20px;
-  height: 21px;
-  background-image: url("../img/run.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+.transports__item:last-child {
+  margin-right: 0;
 }
 
-.transports__item--not-active {
-  opacity: 0.3;
+.transports__icon {
+  fill: rgba($blue, 0.15);
+
+  &--active {
+    fill: $blue;
+  }
+}
+
+.transports__wrapper {
+  display: flex;
+}
+
+.transports__transport-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+  background-color: $base-white;
+  border-radius: 50%;
+}
+
+.transports__transport-checkbox + .transports__transport-label {
+  fill: rgba($blue, 0.15);
+}
+
+.transports__transport-checkbox + .transports__transport-label:hover,
+.transports__transport-checkbox + .transports__transport-label:focus {
+  fill: rgba($blue, 0.3);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+}
+
+.transports__transport-checkbox + .transports__transport-label:active {
+  fill: rgba($blue, 0.1);
+  background-color: $transport-active;
+}
+
+.transports__transport-checkbox:checked + .transports__transport-label {
+  fill: $blue;
+}
+
+.transports__transport-checkbox:checked + .transports__transport-label:hover,
+.transports__transport-checkbox:checked + .transports__transport-label:focus {
+  fill: rgba($blue, 0.7);
+}
+
+.transports__transport-checkbox:checked + .transports__transport-label:active {
+  fill: rgba($blue, 0.3);
 }

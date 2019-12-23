@@ -7,6 +7,17 @@
 
 .promo__wrapper {
   @include container;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 260px;
+    background-color: $secondary-blue;
+  }
 }
 
 .promo__title {
@@ -18,15 +29,13 @@
 }
 
 .promo__traveler {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 25px;
-}
+  display: block;
 
-.promo__list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: 15px;
+  }
 }
 
 .promo__review {
@@ -46,7 +55,6 @@
 
 .promo__steps {
   margin-top: -80px;
-  margin-bottom: 40px;
 }
 
 @media (min-width: $tablet-width) {
@@ -83,7 +91,7 @@
     }
   }
 
-  .promo__list {
+  .promo__user-list {
     display: none;
   }
 
@@ -138,12 +146,5 @@
   .promo__review {
     @include margin-padding-reset;
     width: 285px;
-  }
-
-  .promo__list {
-    display: flex;
-    position: absolute;
-    top: 90px;
-    right: 160px;
   }
 }

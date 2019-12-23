@@ -2,7 +2,7 @@
 @import "mixin";
 @import "variables";
 @import "common";
-@import "./blocks/authorization-list";
+@import "blocks/contact-list";
 @import "./blocks/social";
 @import "./blocks/user-list";
 @import "./blocks/site-list";
@@ -11,11 +11,11 @@
 @import "./blocks/level";
 @import "./blocks/flags";
 @import "./blocks/button";
-@import "blocks/authorization-link";
 @import "./blocks/block-title";
 @import "./blocks/content-title";
 @import "./blocks/content-text";
 @import "./blocks/traveler-list";
+@import "./blocks/business-price";
 @import "./blocks/page-header";
 @import "./blocks/main-nav";
 @import "./blocks/page-main";

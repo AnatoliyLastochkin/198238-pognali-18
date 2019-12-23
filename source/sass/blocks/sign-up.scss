@@ -1,7 +1,7 @@
 .sign-up {
   position: relative;
   color: $base-white;
-  margin-top: -60px;
+  margin-top: -20px;
   background-color: $secondary-blue;
   border-radius: 0 0 20px 20px;
   z-index: 3;
@@ -9,7 +9,7 @@
 
 .sign-up__wrapper {
   @include container;
-  padding: 130px 25px 45px;
+  padding: 90px 25px 45px;
 }
 
 .sign-up__title {
@@ -34,10 +34,10 @@
 }
 
 .sign-up__email {
-  flex-grow: 1;
   border-radius: 10px;
-  margin-right: -7px;
   border: none;
+  font-family: inherit;
+  flex-grow: 1;
 
   @include placeholder {
     color: $primary-grey;
@@ -49,11 +49,11 @@
 }
 
 .sign-up__button {
-  flex-grow: 1;
-  margin-left: -7px;
+  display: block;
   padding: 0;
-  width: 22px;
+  width: 62px;
   height: 62px;
+  margin-left: -13px;
 }
 
 .sign-up__questions {

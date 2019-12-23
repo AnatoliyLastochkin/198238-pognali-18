@@ -1,11 +1,10 @@
 .main-nav {
-  width: 270px;
-  padding: 0 25px;
-  top: 40px;
-  left: 0;
   position: absolute;
+  top: 100%;
+  left: 0;
   z-index: 11;
-  text-align: center;
+  width: 270px;
+  padding: 30px 25px 40px;
   color: $secondary-blue;
   background-color: $base-white;
 
@@ -19,7 +18,6 @@
 }
 
 .main-nav__site-list {
-  margin-top: 80px;
   margin-bottom: 60px;
 }
 
@@ -27,81 +25,84 @@
   margin-bottom: 40px;
 }
 
-.main-nav__social {
+.main-nav__contact {
   margin-bottom: 40px;
 }
 
 @media (min-width: $tablet-width) {
   .main-nav {
     width: 688px;
-    padding: 0 40px;
-    top: 80px;
+    padding: 20px 40px 90px;
+    top: 100%;
+
+    &--closed {
+      display: block;
+      background-color: transparent;
+    }
   }
 
   .main-nav__site-list {
     margin-left: 60px;
     margin-bottom: 150px;
+    display: none;
+
+    &--open {
+      display: inherit;
+    }
   }
 
   .main-nav__user-list {
+    position: absolute;
+    top: -122px;
+    right: 40px;
+  }
+
+  .main-nav__contact {
     margin-left: 60px;
     margin-bottom: 130px;
+    display: none;
+
+    &--open {
+      display: block;
+    }
   }
 
   .main-nav__social {
+    display: none;
     margin-left: 60px;
-    margin-bottom: 90px;
+
+    &--open {
+      display: flex;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav {
+    width: 74%;
     padding: 0;
     position: static;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     background-color: $primary-blue;
   }
 
-  .main-nav__logo {
-    width: 200px;
-    height: 52px;
-  }
-
   .main-nav__site-list {
     margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    color: $base-white;
-
-    li {
-      margin-right: 30px;
-    }
-
-    a {
-      text-transform: uppercase;
-      color: $base-white;
-      font-size: 20px;
-      line-height: 30px;
-      font-weight: 500;
-    }
+    display: inherit;
   }
 
   .main-nav__user-list {
-    display: none;
+    position: static;
+    margin: 0;
   }
 
-  .main-nav__close {
+  .main-nav__contact {
     display: none;
   }
 
   .main-nav__social {
     display: none;
-  }
-
-  .main-nav__list {
-    display: flex;
   }
 }
