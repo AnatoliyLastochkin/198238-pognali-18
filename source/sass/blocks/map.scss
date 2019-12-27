@@ -6,7 +6,7 @@
 
 .map__wrapper {
   @include container;
-  height: 546px;
+  height: 350px;
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
   background-position: -550px -200px;
@@ -14,14 +14,13 @@
 
 @media (min-width: $tablet-width) {
   .map__wrapper {
+    height: 546px;
     background-position: -330px -120px;
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .map__wrapper {
-    width: 1440px;
     background-position: 0 0;
-    background-size: 1440px;
   }
 }

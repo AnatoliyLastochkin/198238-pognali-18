@@ -29,9 +29,10 @@
 
 @mixin container {
   margin: 0 auto;
-  max-width: 1320px;
+  max-width: 1440px;
   padding-left: 25px;
   padding-right: 25px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     padding-left: 40px;

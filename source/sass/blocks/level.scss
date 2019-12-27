@@ -6,12 +6,15 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  border: 3px inset $orange;
-  background-image: url("../img/dark-circle.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  border: 3px solid $orange;
   color: $base-white;
   text-align: center;
+  box-sizing: border-box;
+
+  &--w100 {
+    width: 99px;
+    height: 99px;
+  }
 }
 
 .level__count {
@@ -30,10 +33,30 @@
     background-color: $base-white;
     opacity: 0.3;
   }
+
+  &--w100 {
+    font-size: 38px;
+    line-height: 38px;
+    color: $primary-blue;
+  }
+}
+
+.level__count--w100::after {
+  width: 49px;
+  height: 2px;
+  background-color: $base-black;
+  opacity: 0.1;
+  left: -3px;
 }
 
 .level__text {
   margin-top: 2px;
   font-size: 14px;
   line-height: 14px;
+
+  &--w100 {
+    font-size: 18px;
+    line-height: 22px;
+    color: $primary-grey;
+  }
 }

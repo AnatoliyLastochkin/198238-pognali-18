@@ -1,7 +1,85 @@
-.step-input__input {
-  font-family: inherit;
+.step-input {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: $blue;
+  margin-bottom: 20px;
 }
 
-.step-input__button {
+.step-input__label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.step-input__mark {
+  color: rgba($blue, 0.3);
+}
+
+.step-input__wrapper {
+  position: relative;
+  margin-bottom: 20px;
+
+  button {
+    display: flex;
+    align-items: center;
+    fill: rgba($blue, 0.3);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+.step-input__button-left {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+}
+
+.step-input__button-right {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+}
+
+
+.step-input__input {
+  @include placeholder {
+    color: $blue;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 13.5px;
+    letter-spacing: 1.5px;
+  }
   font-family: inherit;
+  width: 100%;
+  text-align: center;
+  padding: 16px;
+  box-sizing: border-box;
+  border: 1px solid $grey3;
+  border-radius: 5px;
+}
+
+.step-input__tick-label {
+  display: flex;
+  align-items: center;
+}
+
+.step-input__tick {
+  margin-right: 15px;
+  border: 1px solid $grey3;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.step-input__check-box:checked + .step-input__tick-label {
+  fill: $secondary-blue;
+}
+
+.step-input__check-box + .step-input__tick-label {
+  fill: rgba($secondary-blue, 0);
 }

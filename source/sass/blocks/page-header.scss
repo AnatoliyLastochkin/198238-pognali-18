@@ -9,6 +9,11 @@
   &--white {
     background-color: $base-white;
   }
+
+  &--inner {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
 }
 
 .page-header__wrapper {
@@ -16,7 +21,8 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding: 25px 25px 50px;
+  flex-wrap: wrap;
+  padding-top: 25px;
 }
 
 .page-header__logo {
@@ -81,7 +87,7 @@
 }
 
 .page-header__title {
-  padding-top: 60px;
+  margin-top: 70px;
 }
 
 .page-header__link {
@@ -150,6 +156,7 @@
   }
 
   .page-header__wrapper {
+    flex-wrap: nowrap;
     padding-top: 75px;
     padding-bottom: 10px;
   }

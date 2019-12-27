@@ -3,9 +3,59 @@
   background-color: $light;
 }
 
-.profile__wrapper {
+.profile__form {
   @include container;
-  padding: 60px 25px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.profile__avatar {
+  img {
+    display: block;
+    border-radius: 50%;
+  }
+}
+
+.profile__button {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.profile__list {
+  @include list-reset;
+}
+
+.profile__item {
+  position: relative;
+  padding: 25px;
+  border: 1px solid $grey3;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  z-index: 0;
+  text-align: center;
+}
+
+.profile__item:last-child {
+  margin-bottom: 0;
+}
+
+.profile__title {
+  padding: 0 15px;
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $light;
+}
+
+.profile__text {
+  text-align: left;
 }
 
 @media (min-width: $tablet-width) {

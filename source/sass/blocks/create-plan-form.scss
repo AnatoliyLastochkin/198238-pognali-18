@@ -1,0 +1,28 @@
+.create-plan-form__list {
+  @include list-reset;
+}
+
+.create-plan-form__item {
+  padding: 25px;
+  margin-bottom: 10px;
+  background-color: $base-white;
+  border-radius: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.create-plan-form__title {
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+
+.create-plan-form__step-description {
+  margin-bottom: 25px;
+  padding-right: 5px;
+}
+
+.create-plan-form__calendar {
+  margin-bottom: 25px;
+}

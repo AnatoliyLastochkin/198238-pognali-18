@@ -3,7 +3,7 @@
   top: 100%;
   left: 0;
   z-index: 11;
-  width: 270px;
+  width: 84%;
   padding: 30px 25px 40px;
   color: $secondary-blue;
   background-color: $base-white;
@@ -31,7 +31,7 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    width: 688px;
+    width: 89.5%;
     padding: 20px 40px 90px;
     top: 100%;
 

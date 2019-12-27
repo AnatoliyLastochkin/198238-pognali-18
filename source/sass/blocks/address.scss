@@ -34,11 +34,10 @@
 
 @media (min-width: $desktop-width) {
   .address__wrapper {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 285px;
+    padding: 40px 130px;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
   }
 
   .address__list {

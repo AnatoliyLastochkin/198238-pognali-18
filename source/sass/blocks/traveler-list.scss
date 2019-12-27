@@ -18,6 +18,8 @@
 }
 
 .traveler-list__avatar {
+  display: block;
+  width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -43,27 +45,31 @@
 }
 
 .traveler-list__name {
+  display: inline-block;
   position: relative;
   margin-bottom: 18px;
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
   color: $blue;
+  padding-left: 17px;
+  padding-right: 17px;
 }
 
-.traveler-list__point {
+.traveler-list__name::before {
+  content: "";
   position: absolute;
-  top: 5px;
-  left: 5px;
+  top: 6px;
+  left: 0;
   display: block;
   width: 5px;
   height: 5px;
   border-radius: 2.5px;
   background-color: $pink;
+}
 
-  &--active {
-    background-color: $green-apple;
-  }
+.traveler-list__name--active::before {
+  background-color: $green-apple;
 }
 
 .traveler-list__tags {
@@ -79,7 +85,7 @@
   }
 
   .traveler-list__item {
-    width: 285px;
+    width: 46%;
   }
 
   .traveler-list__level {

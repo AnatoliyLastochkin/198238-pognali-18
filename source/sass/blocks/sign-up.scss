@@ -108,7 +108,7 @@
 
 @media (min-width: $desktop-width) {
   .sign-up__wrapper {
-    padding: 80px 130px;
+    padding: 80px 130px 130px;
   }
 
   .sign-up__text {
@@ -118,5 +118,19 @@
 
   .sign-up__button {
     width: 325px;
+  }
+
+  .sign-up__list {
+    padding: 0 220px;
+    display: flex;
+    justify-content: center;
+
+    li {
+      margin-right: 110px;
+    }
+
+    li:last-child {
+      margin-right: 0;
+    }
   }
 }

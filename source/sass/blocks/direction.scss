@@ -43,12 +43,25 @@
     background-image: url("../img/flags-back@1x.png");
     background-repeat: no-repeat;
     background-position: right 40px top 95px;
+
+    &::before {
+      width: 141px;
+      height: 141px;
+
+      content: "";
+      position: absolute;
+      top: 440px;
+      left: 40px;
+
+      background-color: $secondary-grey;
+      border-radius: 20px;
+    }
   }
 
   .direction__text-wrapper {
     width: 340px;
-    margin-left: 35px;
-    padding: 0;
+    padding-left: 35px;
+    margin-bottom: 110px;
   }
 
   .direction__title {
@@ -56,7 +69,6 @@
   }
 
   .direction__description {
-    margin-bottom: 110px;
     color: $primary-grey;
   }
 
@@ -69,22 +81,13 @@
 
 @media (min-width: $desktop-width) {
   .direction__wrapper {
-    padding-top: 160px;
-    padding-bottom: 145px;
+    padding: 160px 130px 145px;
     display: flex;
     justify-content: start;
 
     &::before {
-      width: 141px;
-      height: 141px;
-
-      content: "";
-      position: absolute;
       top: 90px;
       left: 20px;
-
-      background-color: $secondary-grey;
-      border-radius: 20px;
     }
   }
 

@@ -1,0 +1,58 @@
+.plan-list {
+  @include list-reset;
+  counter-reset: section;
+  list-style-type: none;
+}
+
+.plan-list__item {
+  position: relative;
+  border-radius: 10px;
+  background-color: $base-white;
+  margin-bottom: 10px;
+  padding: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::after {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    counter-increment: section;
+    content: counters(section, ".") ".";
+    color: $blue;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+  }
+}
+
+.plan-list__title {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.plan-list__text {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+.plan-list__button {
+  margin-top: 25px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: rgba($base-black, 0.3);
+}

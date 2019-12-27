@@ -3,6 +3,7 @@
 @import "variables";
 @import "common";
 @import "blocks/contact-list";
+@import "blocks/plan-list";
 @import "./blocks/social";
 @import "./blocks/user-list";
 @import "./blocks/site-list";
@@ -11,11 +12,15 @@
 @import "./blocks/level";
 @import "./blocks/flags";
 @import "./blocks/button";
+@import "./blocks/step-button";
+@import "./blocks/dots-list";
 @import "./blocks/block-title";
 @import "./blocks/content-title";
 @import "./blocks/content-text";
 @import "./blocks/traveler-list";
 @import "./blocks/business-price";
+@import "./blocks/create-plan-form";
+@import "./blocks/country-select";
 @import "./blocks/page-header";
 @import "./blocks/main-nav";
 @import "./blocks/page-main";

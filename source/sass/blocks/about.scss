@@ -6,7 +6,7 @@
   background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 20px 40px;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 30px 30px;
 }
 
 .about__wrapper {
@@ -33,19 +33,19 @@
 @media (min-width: $tablet-width) {
   .about {
     background-image: none;
-    margin-top: -150px;
+    margin-top: -50px;
     padding-top: 0;
   }
 
   .about__wrapper {
-    padding-top: 280px;
+    padding-top: 100px;
     background: url("../img/about-tablet@1x.png") no-repeat 420px 285px,
       url("../img/about-bg-blue.png") no-repeat 40px 240px;
   }
 
   .about__text-wrapper {
     width: 300px;
-    margin-left: 35px;
+    padding-left: 35px;
   }
 
   .about__title {
@@ -72,15 +72,13 @@
 
 @media (min-width: $desktop-width) {
   .about {
+    margin-top: -20px;
     background-image: none;
   }
 
   .about__wrapper {
     position: relative;
-    width: $container-width;
-    padding-top: 130px;
-    padding-bottom: 160px;
-    margin: 0 auto;
+    padding: 90px 130px 60px;
     background-image: url("../img/about-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: right top 70px;
@@ -101,6 +99,7 @@
   }
 
   .about__text-wrapper {
+    padding: 0;
     width: 615px;
   }
 }

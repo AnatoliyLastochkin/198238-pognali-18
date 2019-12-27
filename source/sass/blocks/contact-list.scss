@@ -54,6 +54,13 @@
   color: $blue2;
 }
 
+.contact-list__phone:hover .contact-list__text--yellow,
+.contact-list__phone:focus .contact-list__text--yellow,
+.contact-list__email:hover .contact-list__text--yellow,
+.contact-list__email:focus .contact-list__text--yellow {
+  color: $gold;
+}
+
 .contact-list__phone:active .contact-list__text,
 .contact-list__email:active .contact-list__text {
   opacity: 0.3;
