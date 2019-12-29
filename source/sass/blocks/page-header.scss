@@ -9,11 +9,6 @@
   &--white {
     background-color: $base-white;
   }
-
-  &--inner {
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-  }
 }
 
 .page-header__wrapper {
@@ -87,7 +82,9 @@
 }
 
 .page-header__title {
-  margin-top: 70px;
+  position: absolute;
+  left: 25px;
+  bottom: 0;
 }
 
 .page-header__link {
@@ -101,6 +98,10 @@
 @media (min-width: $tablet-width) {
   .page-header {
     background-color: $bg-tablet-blue;
+
+    &--inner {
+      background-color: $primary-blue;
+    }
 
     &--white {
       background-color: $base-white;
@@ -146,7 +147,7 @@
   }
 
   .page-header__title {
-    padding: 0;
+    left: 40px;
   }
 }
 

@@ -14,8 +14,11 @@
 }
 
 .create-plan-form__title {
-  padding-right: 20px;
   margin-bottom: 20px;
+
+  span {
+    display: block;
+  }
 }
 
 .create-plan-form__step-description {
@@ -25,4 +28,122 @@
 
 .create-plan-form__calendar {
   margin-bottom: 25px;
+}
+
+.create-plan-form__add-country-wrapper {
+  margin-bottom: 25px;
+  position: relative;
+
+  svg {
+    fill: rgba($blue, 0.3);
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+  }
+}
+
+.create-plan-form__add-country {
+  position: relative;
+  width: 100%;
+  padding: 11px 12px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: left;
+  color: $blue;
+  border: none;
+  border-radius: 5px;
+  background-color: $light;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 22.2%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border: 1px solid $grey3;
+    border-radius: 50%;
+    background-color: $base-white;
+    cursor: pointer;
+  }
+}
+
+.create-plan-form__next-step,
+.create-plan-form__button {
+  margin-bottom: 12px;
+}
+
+.create-plan-form__label-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  align-items: center;
+
+  label {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 500;
+    color: $blue;
+  }
+}
+
+.create-plan-form__textarea {
+  resize: none;
+  padding: 13px;
+  width: 100%;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: $primary-grey;
+}
+
+.create-plan-form__next-step,
+.create-plan-form__prev-step,
+.create-plan-form__button {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .create-plan-form__item {
+    padding: 45px;
+  }
+
+  .create-plan-form__button-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .create-plan-form__next-step,
+  .create-plan-form__button {
+    margin-bottom: 0;
+    width: 54%;
+  }
+
+  .create-plan-form__prev-step {
+    width: 46%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .create-plan-form__item {
+    padding: 100px 160px 105px;
+  }
+
+  .create-plan-form__top-item-wrapper {
+    position: relative;
+  }
+
+  .create-plan-form__step-description {
+    width: 57.6%;
+  }
+
+  .create-plan-form__dots {
+    position: absolute;
+    top: 0;
+    right: 22.2%;
+  }
 }

@@ -17,6 +17,7 @@
 
 @media (min-width: $tablet-width) {
   .my-plans__wrapper {
+    @include extra-padding-tablet;
     padding-top: 60px;
     padding-bottom: 60px;
   }

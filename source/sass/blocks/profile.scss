@@ -5,9 +5,11 @@
 
 .profile__form {
   @include container;
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: -30px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -25,11 +27,9 @@
   margin-bottom: 25px;
 }
 
-.profile__list {
-  @include list-reset;
-}
-
-.profile__item {
+.profile__tags,
+.profile__transport {
+  width: 100%;
   position: relative;
   padding: 25px;
   border: 1px solid $grey3;
@@ -47,8 +47,8 @@
 .profile__title {
   padding: 0 15px;
   position: absolute;
-  z-index: 1;
   top: -10px;
+  z-index: 1;
   left: 50%;
   transform: translateX(-50%);
   background-color: $light;
@@ -59,28 +59,51 @@
 }
 
 @media (min-width: $tablet-width) {
-  .profile__wrapper {
-    padding-top: 60px;
-    padding-bottom: 30px;
-    display: flex;
-    flex-wrap: wrap;
+  .profile__form {
+    @include extra-padding-tablet;
+  }
+
+  .profile__tags {
+    padding: 32px;
+  }
+
+  .profile__transport {
+    width: 45%;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .profile__title {
+    top: 75px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .profile__wrapper {
-    position: relative;
+  .profile__transport {
+    position: static;
+    transform: translateX(0);
   }
 
-  .profile__level {
-    position: absolute;
-    top: -30px;
-    right: 420px;
+  .profile__button {
+    display: none;
   }
 
   .profile__avatar {
     position: absolute;
-    top: -70px;
+    top: -100px;
     right: 150px;
+    border-radius: 0;
+  }
+
+  .profile__level {
+    position: absolute;
+    top: -100px;
+    right: 250px;
+  }
+
+  .profile__form {
+    flex-wrap: nowrap;
   }
 }

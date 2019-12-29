@@ -20,6 +20,7 @@
 
 .create-plan__form {
   margin-top: 30px;
+  width: 100%;
 }
 
 .create-plan__list {
@@ -57,12 +58,21 @@
 
 @media (min-width: $tablet-width) {
   .create-plan__wrapper {
+    @include extra-padding-tablet;
     padding-top: 60px;
     padding-bottom: 50px;
   }
 
   .create-plan__item {
     margin-bottom: 40px;
+    display: flex;
+  }
+
+  .create-plan__title-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 

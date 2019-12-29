@@ -1,3 +1,27 @@
-.page-main {
-  font-family: inherit;
+.page-main__wrapper {
+  @include container;
+  background-color: $primary-blue;
+  border-radius: 0 0 30px 30px;
+  position: relative;
+  z-index: 5;
+  padding-top: 60px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__wrapper {
+    @include extra-padding-tablet;
+    padding-top: 55px;
+    padding-bottom: 70px;
+    border-radius: 0 0 100px 100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    background-color: $primary-blue;
+  }
+
+  .page-main__wrapper {
+    padding: 125px 125px 70px;
+  }
 }

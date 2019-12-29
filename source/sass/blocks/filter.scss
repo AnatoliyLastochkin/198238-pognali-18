@@ -1,30 +1,75 @@
 .filter {
   color: $secondary-blue;
   background-color: $secondary-grey;
+  border-radius: 0 0 30px 30px;
+  position: relative;
+  z-index: 4;
 }
 
 .filter__wrapper {
   @include container;
-  padding: 30px 25px;
+  margin-top: -30px;
+  padding: 50px 25px 30px;
+}
+
+.filter__nav {
+  margin-bottom: 25px;
+}
+
+.filter__nav-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.filter__title {
+  margin-left: 10px;
+  margin-right: 30px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  color: $secondary-blue;
+  text-transform: uppercase;
+}
+
+.filter__continents-list {
+  padding: 0 25px;
+}
+
+.filter__table-wrapper {
+  padding: 0 25px;
 }
 
 .filter__table {
   width: 100%;
   background-color: $base-white;
+  border-collapse: collapse;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 65px;
+}
+
+.filter__table-item {
+  border: 1px solid rgba($blue, 0.3);
 }
 
 .filter__table-list {
   display: none;
 }
 
+.filter__countries {
+  margin-bottom: 25px;
+}
+
 @media (min-width: $tablet-width) {
   .filter__wrapper {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    margin-top: -100px;
+    padding: 160px 75px 75px;
   }
 
   .filter__nav {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
   }
 
@@ -32,27 +77,51 @@
     display: none;
   }
 
-  .filter__close {
-    order: 1;
-  }
-
-  .filter__continents-list {
-    order: 0;
+  .filter__icon {
+    display: none;
   }
 
   .filter__table-wrapper {
+    padding: 0;
     display: flex;
   }
 
   .filter__table {
-    background-color: transparent;
+    background-color: inherit;
+  }
+
+  .filter__table-item {
+    border: none;
+    padding: 20px;
+
+    span {
+      font-size: 60px;
+      line-height: 24px;
+      font-weight: 700;
+      color: rgba($secondary-blue, 0.2);
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .filter__wrapper {
-    padding-top: 40px;
-    padding-bottom: 40px;
+  .filter__nav {
+    position: relative;
+    justify-content: start;
+    flex-direction: row;
+  }
+
+  .filter__icon {
+    display: none;
+  }
+
+  .filter__title {
+    display: block;
+  }
+
+  .filter__roll-up--top {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 
   .filter__table {
@@ -73,5 +142,9 @@
       line-height: 24px;
       font-weight: 700;
     }
+  }
+
+  .filter__countries {
+    display: none;
   }
 }

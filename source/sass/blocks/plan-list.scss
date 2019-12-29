@@ -56,3 +56,47 @@
   letter-spacing: 1.4px;
   color: rgba($base-black, 0.3);
 }
+
+@media (min-width: $tablet-width) {
+  .plan-list__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &::after {
+      counter-increment: none;
+      content: none;
+    }
+
+    &::before {
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      counter-increment: section;
+      content: counters(section, ".") ".";
+      color: $blue;
+      font-size: 20px;
+      line-height: 18px;
+      font-weight: 500;
+      letter-spacing: 2px;
+    }
+  }
+
+  .plan-list__title {
+    width: 100%;
+    font-size: 24px;
+    margin-bottom: 55px;
+  }
+
+  .plan-list__text {
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+
+  .plan-list__button {
+    margin-top: 0;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+}

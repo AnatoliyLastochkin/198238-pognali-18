@@ -47,6 +47,7 @@
 
 .country-select__icon {
   position: relative;
+  z-index: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,10 +65,29 @@
   }
 }
 
-.country-select__dot {
+.country-select__check-box + .country-select__dot {
   position: absolute;
   top: 50%;
-  left: -6px;
+  left: -5px;
   transform: translateY(-50%);
-  z-index: 1;
+  width: 8px;
+  height: 8px;
+  border: 1px solid $grey3;
+  border-radius: 50%;
+  z-index: 2;
+  background-color: $base-white;
+}
+
+.country-select__check-box + .country-select__dot:hover,
+.country-select__check-box + .country-select__dot:focus {
+  background-color: rgba($blue, 0.3);
+}
+
+.country-select__check-box:checked + .country-select__dot {
+  background-color: $blue;
+}
+
+.country-select__dropdown-icon {
+  fill: rgba($blue, 0.3);
+  margin-left: 12px;
 }

@@ -1,7 +1,6 @@
 .step-button {
   font-family: inherit;
   padding: 7px 0 3px;
-  width: 100%;
   border: none;
   text-transform: uppercase;
   border-radius: 20px;
@@ -11,4 +10,51 @@
   font-weight: 700;
   color: $primary-blue;
   box-sizing: border-box;
+
+  &--white {
+    background-color: $base-white;
+  }
+
+  &--back {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .step-button {
+    position: relative;
+    font-size: 24px;
+    line-height: 24px;
+    color: $blue;
+    text-transform: none;
+    padding: 29px 35px 28px;
+    text-align: left;
+
+    &--back {
+      padding: 29px 0 28px;
+      text-align: right;
+    }
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: 12.2%;
+      transform: translateY(-50%);
+      content: "";
+      width: 0;
+      height: 0;
+      border-top: 7px solid transparent;
+      border-left: 11px solid $blue;
+      border-bottom: 7px solid transparent;
+    }
+  }
+
+  .step-button--back::after {
+    right: auto;
+    left: 27%;
+    border-left: none;
+    border-top: 7px solid transparent;
+    border-right: 11px solid $blue;
+    border-bottom: 7px solid transparent;
+  }
 }

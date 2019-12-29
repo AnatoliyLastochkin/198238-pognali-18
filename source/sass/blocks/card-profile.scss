@@ -2,4 +2,13 @@
   padding: 15px 20px 20px 20px;
   color: $blue;
   background-color: $base-white;
+  border-radius: 10px;
+}
+
+.card-profile__avatar {
+  display: flex;
+}
+
+.card-profile__invite {
+  width: 100%;
 }

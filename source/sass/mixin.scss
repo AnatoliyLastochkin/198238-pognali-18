@@ -44,3 +44,10 @@
     padding-right: 60px;
   }
 }
+
+@mixin extra-padding-tablet {
+  @media (min-width: $tablet-width) {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+}

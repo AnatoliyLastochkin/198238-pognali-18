@@ -1,7 +1,6 @@
 .country-list {
   @include list-reset;
   color: $primary-blue;
-  background-color: $light;
 }
 
 .country-list__item {

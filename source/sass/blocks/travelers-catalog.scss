@@ -1,12 +1,15 @@
 .travelers-catalog {
-  background-color: $light;
+  background-color: $secondary-grey;
+  position: relative;
+  z-index: 3;
 }
 
 .travelers-catalog__wrapper {
   @include container;
   display: flex;
   flex-direction: column;
-  padding: 30px 25px;
+  margin-top: -30px;
+  padding: 60px 25px;
 }
 
 .travelers-catalog__list {
@@ -14,7 +17,7 @@
 }
 
 .travelers-catalog__filter {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .travelers-catalog__item {
@@ -55,15 +58,14 @@
 @media (min-width: $desktop-width) {
   .travelers-catalog__wrapper {
     flex-direction: row-reverse;
-    padding-top: 40px;
-    padding-bottom: 40px;
   }
 
   .travelers-catalog__filter {
+    width: 21.5%;
     height: 815px;
   }
 
-  .travelers-catalog__list-wrapper {
-    flex-grow: 1;
+  .travelers-catalog__inner-wrapper {
+    width: 71.9%;
   }
 }
