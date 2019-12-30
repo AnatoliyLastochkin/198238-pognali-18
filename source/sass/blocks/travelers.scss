@@ -10,7 +10,7 @@
 .travelers__wrapper {
   @include container;
   position: relative;
-  padding: 120px 25px 110px;
+  padding: 125px 25px 110px;
   background: url("../img/smolov-back-desktop@1x.png") no-repeat right 25px top 85px,
     url("../img/rogovaya-back-desktop@1x.png") no-repeat left -10px top 390px;
   background-size: auto, 71px;
@@ -35,7 +35,7 @@
 
 .travelers__title {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .travelers__description {
