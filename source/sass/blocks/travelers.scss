@@ -3,14 +3,14 @@
   margin-top: -50px;
   color: $base-white;
   background-color: $secondary-blue;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 30px 30px;
   z-index: 5;
 }
 
 .travelers__wrapper {
   @include container;
   position: relative;
-  padding: 125px 25px 110px;
+  padding: 125px 25px 101px;
   background: url("../img/smolov-back-desktop@1x.png") no-repeat right 25px top 85px,
     url("../img/rogovaya-back-desktop@1x.png") no-repeat left -10px top 390px;
   background-size: auto, 71px;
@@ -31,6 +31,7 @@
 
 .travelers__text-wrapper {
   padding: 0 25px;
+  margin-bottom: 56px;
 }
 
 .travelers__title {
@@ -40,15 +41,11 @@
 
 .travelers__description {
   position: relative;
-  margin-bottom: 25px;
-}
-
-.travelers__slogan {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .traveler__link {
-  width: 222px;
+  width: 84%;
   position: absolute;
   bottom: 30px;
   left: 25px;

@@ -1,15 +1,7 @@
 .transports {
   @include list-reset;
   display: flex;
-  justify-content: center;
-}
-
-.transports__item {
-  margin-right: 10px;
-}
-
-.transports__item:last-child {
-  margin-right: 0;
+  justify-content: space-between;
 }
 
 .transports__icon {

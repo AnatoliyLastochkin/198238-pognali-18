@@ -15,6 +15,7 @@
 
   &--border-blue {
     border: 3px solid $secondary-blue;
+    padding: 20px 22px 17px;
   }
 
   &::after {
@@ -28,6 +29,10 @@
     border-left: 10px solid $blue;
     border-bottom: 7px solid transparent;
   }
+}
+
+.button--border-blue::after {
+  right: 20px;
 }
 
 @media (min-width: $tablet-width) {

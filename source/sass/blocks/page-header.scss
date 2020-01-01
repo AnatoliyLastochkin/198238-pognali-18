@@ -1,84 +1,96 @@
 .page-header {
   color: $base-white;
-  background-color: $primary-blue;
-
-  &--nojs {
-    background-color: $base-white;
-  }
-
-  &--white {
-    background-color: $base-white;
-  }
 }
 
 .page-header__wrapper {
   @include container;
+  background-color: $primary-blue;
   position: relative;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-top: 45px;
+  padding-top: 25px;
+
+  &--opened {
+    background-color: $base-white;
+    min-height: 50px;
+  }
+
+  &--nojs {
+    background-color: $base-white;
+  }
 }
 
-.page-header__logo {
+.page-header__wrapper--nojs .page-header__toggle {
+  display: none;
+}
+
+.page-header__wrapper--closed .page-header__logo {
+  display: block;
   width: 100px;
   height: 19px;
   background-image: url("../img/logo-mobile-white@1x.png");
   background-repeat: no-repeat;
-  background-position: 0 2px;
+  background-position: 0 0;
 }
 
-.page-header--nojs .page-header__logo {
+.page-header__wrapper--opened .page-header__logo,
+.page-header__wrapper--nojs .page-header__logo {
+  display: block;
+  width: 100px;
+  height: 19px;
   background-image: url("../img/logo-mobile-blue@1x.png");
-}
-
-.page-header--white .page-header__logo {
-  background-image: url("../img/logo-mobile-blue@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .page-header__toggle {
-  position: relative;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  z-index: 2;
   width: 25px;
-  height: 11px;
-  padding: 0;
-  background-color: transparent;
+  height: 25px;
+  display: block;
   cursor: pointer;
   border: none;
+  background-color: transparent;
+}
 
-  &::before {
+.page-header__wrapper--closed .page-header__toggle::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+
+  width: 25px;
+  height: 3px;
+
+  background-color: $base-white;
+  box-shadow: 0 8px 0 0 $base-white;
+}
+
+.page-header__wrapper--opened .page-header__toggle {
+
+  &::before,
+  &::after {
     position: absolute;
     content: "";
-    top: 6px;
+    top:  12px;
     left: 0;
-
-    width: 25px;
-    height: 3px;
-
-    background-color: $base-white;
-    box-shadow: 0 8px 0 0 $base-white;
+    width: 19px;
+    height: 2px;
+    background-color: $grey-close;
+    box-shadow: none;
   }
-}
 
-.page-header--white .page-header__toggle {
-  width: 19px;
-  height: 19px;
-}
+  &::before {
+    transform: rotate(45deg);
+  }
 
-.page-header__cross {
-  display: none;
-}
-
-.page-header--white .page-header__toggle::before {
-  display: none;
-}
-
-.page-header--white .page-header__cross {
-  display: block;
-  opacity: 0.3;
-}
-
-.page-header--nojs .page-header__cross {
-  display: none;
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 
 .page-header__title {
@@ -96,24 +108,21 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-header {
-    background-color: $bg-tablet-blue;
+  .page-header__wrapper {
+    background-color: $secondary-blue;
+    padding-top: 40px;
 
-    &--inner {
-      background-color: $primary-blue;
+    &--opened {
+      background-color: $base-white;
     }
 
-    &--white {
+    &--nojs {
       background-color: $base-white;
     }
   }
 
-  .page-header__wrapper {
-    padding-top: 40px;
-    padding-bottom: 80px;
-  }
-
-  .page-header__logo {
+  .page-header__wrapper--closed .page-header__logo {
+    display: block;
     width: 166px;
     height: 42px;
     background-image: url("../img/logo-tablet-white@1x.png");
@@ -121,22 +130,20 @@
     background-position: 0 0;
   }
 
-  .page-header--nojs .page-header__logo {
+  .page-header__wrapper--opened .page-header__logo,
+  .page-header__wrapper--nojs .page-header__logo {
+    display: block;
+    width: 166px;
+    height: 42px;
     background-image: url("../img/logo-tablet-blue@1x.png");
-  }
-
-  .page-header--white .page-header__logo {
-    background-image: url("../img/logo-tablet-blue@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 
   .page-header__toggle {
-    position: absolute;
     top: 50px;
     left: 50%;
-  }
-
-  .page-header__back-link {
-    display: inline-block;
+    transform: translateX(-50%);
   }
 
   .page__header-title-wrapper {
@@ -157,6 +164,7 @@
   }
 
   .page-header__wrapper {
+    background-color: $primary-blue;
     flex-wrap: nowrap;
     padding-top: 75px;
     padding-bottom: 10px;

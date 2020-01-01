@@ -1,20 +1,23 @@
 .add-profile {
   position: relative;
-  margin-top: -20px;
+  margin-top: -30px;
   color: $primary-grey;
   background-color: $light;
-  z-index: 6;
-  border-radius: 0 0 20px 20px;
+  z-index: 4;
+  border-radius: 0 0 30px 30px;
 }
 
 .add-profile__wrapper {
   @include container;
-  padding: 80px 25px 40px 50px;
+  padding: 82px 25px 35px 50px;
 }
 
 .add-profile__title {
-  margin-right: 100px;
-  margin-bottom: 45px;
+  margin-bottom: 43px;
+
+  span {
+    display: block;
+  }
 }
 
 .add-profile__list {
@@ -22,13 +25,13 @@
   position: relative;
   counter-reset: section;
   list-style-type: none;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 
   &::after {
     content: "";
     display: block;
     position: absolute;
-    top: -120px;
+    top: -132px;
     right: 0;
     width: 99px;
     height: 99px;
@@ -42,20 +45,21 @@
 .add-profile__item {
   position: relative;
   border-top: 1px solid $light-grey-2;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 11px;
   margin-right: 45px;
+  box-sizing: border-box;
 
   &::after {
     position: absolute;
-    top: 5px;
-    right: -45px;
+    top: 4px;
+    right: -44px;
     align-self: start;
     background-color: $light-orange;
     counter-increment: section;
     content: counters(section, ".") " ";
     color: $base-white;
-    padding: 9px 15px 8px;
+    padding: 6px 13px 4px;
     border-radius: 50%;
   }
 }

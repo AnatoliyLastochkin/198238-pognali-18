@@ -24,30 +24,29 @@
   border-top-right-radius: 10px;
 }
 
+.traveler-list__item-wrapper {
+  padding: 26px 45px 13px;
+}
+
+.traveler-list__flags {
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
 .traveler-list__flag {
-  margin-right: 10px;
+  margin-right: 19px;
 }
 
 .traveler-list__flag:last-child {
   margin-right: 0;
 }
 
-.traveler-list__item-wrapper {
-  position: relative;
-  padding: 25px 45px;
-}
-
-.traveler-list__flags {
-  position: absolute;
-  top: -20px;
-  left: 0;
-  width: 100%;
-}
-
 .traveler-list__name {
   display: inline-block;
   position: relative;
-  margin-bottom: 18px;
+  margin-top: 17px;
+  margin-bottom: 15px;
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
@@ -59,8 +58,9 @@
 .traveler-list__name::before {
   content: "";
   position: absolute;
-  top: 6px;
+  top: 50%;
   left: 0;
+  transform: translateY(-50%);
   display: block;
   width: 5px;
   height: 5px;
@@ -76,6 +76,10 @@
   display: inline-block;
   margin-bottom: 18px;
   line-height: 18px;
+}
+
+.traveler-list__transports {
+  padding: 0 27px;
 }
 
 @media (min-width: $tablet-width) {
@@ -95,10 +99,6 @@
 
   .traveler-list__item-wrapper {
     padding: 15px 30px 30px;
-  }
-
-  .traveler-list__point {
-    left: 20px;
   }
 }
 

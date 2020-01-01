@@ -1,21 +1,6 @@
 .user-list {
   @include list-reset;
   display: flex;
-
-  &--menu {
-    margin-bottom: 50px;
-  }
-}
-
-.user-list__item {
-  &--none {
-    display: none;
-  }
-}
-
-.user-list__item--menu .user-list__link {
-  width: 270px;
-  box-sizing: border-box;
 }
 
 .user-list__phone {
@@ -89,15 +74,24 @@
 }
 
 @media (min-width: $tablet-width) {
-  .user-list__item .user-list__link {
-    width: 188px;
-    box-sizing: border-box;
+  .user-list__item--active {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .user-list {
+    display: flex;
+  }
+
   .user-list__item {
     display: block;
+  }
+
+  .user-list__item--active {
+    position: static;
   }
 
   .user-list__link {

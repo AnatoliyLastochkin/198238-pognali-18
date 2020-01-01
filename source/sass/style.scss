@@ -2,6 +2,7 @@
 @import "mixin";
 @import "variables";
 @import "common";
+@import "./blocks/transports";
 @import "blocks/contact-list";
 @import "blocks/plan-list";
 @import "./blocks/social";
@@ -41,7 +42,6 @@
 @import "blocks/map";
 @import "./blocks/page-footer";
 @import "./blocks/copyright";
-@import "./blocks/transports";
 @import "./blocks/card-profile";
 @import "./blocks/travelers-filter";
 @import "./blocks/my-plans";
