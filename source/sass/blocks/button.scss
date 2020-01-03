@@ -37,8 +37,22 @@
 
 @media (min-width: $tablet-width) {
   .button {
+    border-radius: 20px;
+    padding: 30px 32px 27px;
     font-size: 24px;
     line-height: 24px;
     color: $secondary-blue;
+
+    &::after {
+      top: 50%;
+      right: 35px;
+      transform: translateY(-50%);
+      content: "";
+      width: 0;
+      height: 0;
+      border-top: 7px solid transparent;
+      border-left: 10px solid $blue;
+      border-bottom: 7px solid transparent;
+    }
   }
 }

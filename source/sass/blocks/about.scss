@@ -30,13 +30,14 @@
   .about {
     background-image: none;
     margin-top: -50px;
-    padding-top: 0;
+    border-radius: 0 0 60px 60px;
   }
 
   .about__wrapper {
-    padding-top: 100px;
-    background: url("../img/about-tablet@1x.png") no-repeat 420px 285px,
-      url("../img/about-bg-blue.png") no-repeat 40px 240px;
+    padding-top: 77px;
+    padding-bottom: 88px;
+    background: url("../img/about-tablet@1x.png") no-repeat 385px 83px,
+      url("../img/about-bg-blue.png") no-repeat 40px 37px;
   }
 
   .about__text-wrapper {
@@ -53,7 +54,7 @@
   .about__description {
     position: relative;
     z-index: 1;
-    margin-bottom: 40px;
+    margin-bottom: 31px;
   }
 
   .about__slogan {
@@ -62,7 +63,7 @@
 
   .about__link {
     display: inline-block;
-    width: 250px;
+    width: 90.9%;
   }
 }
 

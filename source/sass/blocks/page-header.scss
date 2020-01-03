@@ -127,7 +127,7 @@
     height: 42px;
     background-image: url("../img/logo-tablet-white@1x.png");
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: 0 5px;
   }
 
   .page-header__wrapper--opened .page-header__logo,
@@ -141,7 +141,7 @@
   }
 
   .page-header__toggle {
-    top: 50px;
+    top: 61px;
     left: 50%;
     transform: translateX(-50%);
   }

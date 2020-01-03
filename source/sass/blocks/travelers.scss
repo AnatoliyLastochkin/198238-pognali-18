@@ -53,29 +53,30 @@
 
 @media (min-width: $tablet-width) {
   .travelers__wrapper {
-    padding: 160px 75px 250px;
-    background-position: left 40px top 450px, right 75px top 110px;
+    padding: 190px 75px 250px;
+    background-position: left 40px top 450px, right 75px top 129px;
     background-size: 143px, 285px;
 
     &::before {
       width: 213px;
       height: 213px;
-      top: 110px;
+      top: 129px;
       left: 40px;
     }
   }
 
   .travelers__text-wrapper {
     padding: 0;
-    width: 68%;
+    width: 69%;
+    margin-bottom: 58px;
   }
 
   .travelers__title {
-    margin-bottom: 60px;
+    margin-bottom: 57px;
   }
 
   .travelers__description {
-    margin-bottom: 45px;
+    margin-bottom: 40px;
   }
 
   .traveler__link {

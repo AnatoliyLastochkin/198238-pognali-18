@@ -59,6 +59,13 @@
   color: $primary-blue;
   border-radius: 25px;
   text-transform: uppercase;
+  box-sizing: border-box;
+
+  &--menu {
+    width: 100%;
+    text-align: center;
+    padding: 11px 34px 8px 31px;
+  }
 
   &:hover {
     background-color: $gold;
@@ -76,8 +83,13 @@
 @media (min-width: $tablet-width) {
   .user-list__item--active {
     position: absolute;
-    top: 0;
-    right: 0;
+  }
+
+  .user-list__link {
+    &--menu {
+      font-size: 20px;
+      padding: 11px 30px 8px 27px;
+    }
   }
 }
 

@@ -67,19 +67,20 @@
     background-color: $bg-tablet-blue;
     background-image: url("../img/globe-back-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: -355px 235px;
+    background-position: -355px 290px;
   }
 
   .promo__wrapper {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 72px;
     padding-bottom: 110px;
   }
 
   .promo__title {
     order: 0;
     padding: 0 10px;
-    margin-bottom: 40px;
+    margin-bottom: 27px;
     font-size: 60px;
     line-height: 70px;
     font-weight: 700;
@@ -89,11 +90,6 @@
     margin-right: 0;
     margin-left: -50px;
     order: 2;
-
-    img {
-      width: 372px;
-      height: auto;
-    }
   }
 
   .promo__user-list {
@@ -106,14 +102,14 @@
     margin: 60px 0 0 35px;
     padding: 0;
     background-color: transparent;
+  }
 
-    .promo__text {
-      margin-bottom: 50px;
-    }
+  .promo__text {
+    margin-bottom: 43px;
   }
 
   .promo__steps {
-    margin-top: 0;
+    margin-top: 5px;
   }
 }
 

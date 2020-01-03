@@ -6,6 +6,8 @@
   }
 
   &--opened {
+    box-sizing: border-box;
+    padding: 0 25px 40px;
     position: absolute;
     width: 100%;
     top: 100%;
@@ -16,11 +18,16 @@
 
   &--nojs {
     background-color: $base-white;
+    width: 100%;
   }
 }
 
 .main-nav .user-list__item {
   display: none;
+}
+
+.main-nav .user-list__item--active {
+  display: block;
 }
 
 .main-nav--closed .main-nav__site-list,
@@ -32,29 +39,35 @@
 
 .main-nav--opened .main-nav__site-list,
 .main-nav--opened .main-nav__user-list,
-.main-nav--opened .main-nav__contact,
-.main-nav--opened .main-nav__social {
+.main-nav--opened .main-nav__contact {
   display: block;
+}
+
+.main-nav--opened .main-nav__social {
+  display: flex;
 }
 
 .main-nav--nojs .main-nav__site-list,
 .main-nav--nojs .main-nav__user-list,
-.main-nav--nojs .main-nav__contact,
-.main-nav--nojs .main-nav__social {
+.main-nav--nojs .main-nav__contact {
   display: block;
 }
 
+.main-nav--nojs .main-nav__social {
+  display: flex;
+}
+
 .main-nav__site-list {
-  margin-top: 43px;
-  margin-bottom: 54px;
+  margin-top: 72px;
+  margin-bottom: 50px;
 }
 
 .main-nav__user-list {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .main-nav__contact {
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 }
 
 @media (min-width: $tablet-width) {
@@ -62,8 +75,13 @@
     display: block;
   }
 
+  .main-nav--closed .user-list__item--active {
+    top: 0;
+    right: 0;
+  }
+
   .main-nav--opened .user-list__item--active {
-    top: -40px;
+    top: -43px;
     right: 40px;
   }
 
