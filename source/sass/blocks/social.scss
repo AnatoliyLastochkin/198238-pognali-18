@@ -59,4 +59,27 @@
   .social {
     justify-content: left;
   }
+
+  .social__link {
+    width: 60px;
+    height: 60px;
+  }
+
+  .social__facebook {
+    width: 14px;
+    height: 28px;
+    margin: 16px 23px;
+  }
+
+  .social__vkontakte {
+    width: 31px;
+    height: 16px;
+    margin: 23px 14px 21px;
+  }
+
+  .social__instagram {
+    width: 24px;
+    height: 24px;
+    margin: 18px;
+  }
 }

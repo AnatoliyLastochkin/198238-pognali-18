@@ -104,16 +104,25 @@
 }
 
 @media (min-width: $tablet-width) {
+  .add-profile {
+    border-radius: 0 0 60px 60px;
+  }
+
   .add-profile__wrapper {
     position: relative;
-    padding-top: 95px;
-    padding-bottom: 85px;
+    padding-top: 104px;
+    padding-bottom: 60px;
     background-position: bottom 45px right 85px;
   }
 
   .add-profile__title {
-    margin-bottom: 75px;
+    letter-spacing: 1.5px;
+    margin-bottom: 72px;
     text-align: center;
+
+    span {
+      display: inline-block;
+    }
   }
 
   .add-profile__list {
@@ -121,13 +130,13 @@
     font-size: 28px;
     line-height: 33px;
     font-weight: 300;
-    margin-bottom: 35px;
+    margin-bottom: 33px;
 
     &::before {
       content: "";
       position: absolute;
       top: -45px;
-      right: 35px;
+      right: 0;
       width: 198px;
       height: 285px;
       background-color: $secondary-grey;
@@ -135,8 +144,8 @@
     }
 
     &::after {
-      top: 210px;
-      right: 85px;
+      top: 217px;
+      right: 45px;
     }
   }
 
@@ -144,25 +153,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 0;
     margin-left: 90px;
     z-index: 1;
     position: relative;
+    padding-top: 17px;
+    padding-bottom: 15px;
     padding-right: 35px;
 
     &::after {
-      counter-increment: none;
-      content: none;
-    }
-
-    &::before {
       position: absolute;
-      top: 0;
+      top: -1px;
+      right: auto;
       left: -89px;
       background-color: $light-orange;
       counter-increment: section;
       content: counters(section, ".") " ";
       color: $base-white;
-      padding: 15px 25px;
+      padding: 18px 26px 15px 25px;
       border-radius: 50%;
     }
   }

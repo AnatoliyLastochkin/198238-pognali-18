@@ -64,20 +64,21 @@
 
 @media (min-width: $tablet-width) {
   .sign-up {
-    margin-top: -20px;
+    margin-top: -50px;
+    border-radius: 0 0 60px 60px;
   }
 
   .sign-up__wrapper {
-    padding: 90px 75px 80px;
+    padding: 127px 75px 59px;
   }
 
   .sign-up__title {
-    margin-bottom: 60px;
+    margin-bottom: 57px;
   }
 
   .sign-up__text {
     padding: 0;
-    margin-bottom: 65px;
+    margin-bottom: 63px;
   }
 
   .sign-up__form {
@@ -85,6 +86,8 @@
   }
 
   .sign-up__email {
+    border-radius: 15px;
+
     @include placeholder {
       font-size: 24px;
       line-height: 24px;
@@ -101,7 +104,7 @@
   }
 
   .sign-up__questions {
-    margin-bottom: 65px;
+    margin-bottom: 40px;
     padding: 0;
   }
 }

@@ -20,11 +20,12 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    margin-top: -20px;
+    margin-top: -32px;
+    border-radius: 60px 60px 0 0;
   }
 
   .page-footer__wrapper {
-    padding-top: 50px;
+    padding-top: 48px;
     padding-bottom: 45px;
     display: flex;
     justify-content: space-between;
@@ -33,6 +34,7 @@
 
   .page-footer__social {
     margin: 0;
+    margin-right: 15px;
   }
 }
 
