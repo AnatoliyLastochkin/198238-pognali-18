@@ -137,13 +137,25 @@
     height: 42px;
     background-image: url("../img/logo-tablet-blue@1x.png");
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: 0 5px;
   }
 
   .page-header__toggle {
     top: 61px;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .page-header__wrapper--opened .page-header__toggle {
+
+    &::before,
+    &::after {
+
+      top:  3px;
+      left: 1px;
+      width: 23px;
+      height: 2px;
+    }
   }
 
   .page__header-title-wrapper {

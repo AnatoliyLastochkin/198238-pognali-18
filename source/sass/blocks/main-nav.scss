@@ -12,7 +12,7 @@
     width: 100%;
     top: 100%;
     left: 0;
-    z-index: 10;
+    z-index: 11;
     background-color: $base-white;
   }
 
@@ -71,6 +71,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-nav {
+    &--opened {
+      padding: 102px 97px 40px;
+    }
+  }
+
   .main-nav .main-nav__user-list {
     display: block;
   }
@@ -90,16 +96,16 @@
   }
 
   .main-nav__site-list {
-    margin-bottom: 150px;
+    margin-top: 0;
+    margin-bottom: 131px;
   }
 
   .main-nav__contact {
-    margin-left: 60px;
-    margin-bottom: 130px;
+    margin-bottom: 115px;
   }
 
   .main-nav__social {
-    margin-left: 60px;
+    margin-left: 3px;
   }
 }
 
