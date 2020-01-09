@@ -178,17 +178,16 @@
   .page-header__wrapper {
     background-color: $primary-blue;
     flex-wrap: nowrap;
-    padding-top: 75px;
+    padding-top: 50px;
     padding-bottom: 10px;
   }
 
-  .page-header__logo {
-    margin-right: 150px;
+  .page-header__wrapper--closed .page-header__logo {
     width: 200px;
     height: 52px;
     background-image: url("../img/logo-desktop-white@1x.png");
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: 0 -2px;
   }
 
   .page-header__toggle {

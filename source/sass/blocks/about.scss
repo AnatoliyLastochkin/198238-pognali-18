@@ -75,10 +75,10 @@
 
   .about__wrapper {
     position: relative;
-    padding: 90px 130px 60px;
+    padding: 156px 130px 164px;
     background-image: url("../img/about-desktop@1x.png");
     background-repeat: no-repeat;
-    background-position: right top 70px;
+    background-position: right 60px top 108px;
 
     &::before {
       width: 213px;
@@ -98,5 +98,21 @@
   .about__text-wrapper {
     padding: 0;
     width: 615px;
+  }
+
+  .about__title {
+    margin-bottom: 57px;
+  }
+
+  .about__description {
+    margin-bottom: 43px;
+  }
+
+  .about__slogan {
+    margin-bottom: 83px;
+  }
+
+  .about__link {
+    width: 44.9%;
   }
 }

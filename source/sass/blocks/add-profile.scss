@@ -207,8 +207,29 @@
 
 @media (min-width: $desktop-width) {
   .add-profile__wrapper {
-    padding: 80px 130px;
+    padding: 137px 245px 162px 130px;
     background-position: bottom 145px right 165px;
     background-size: 200px;
+  }
+
+  .add-profile__title {
+    margin-bottom: 132px;
+  }
+
+  .add-profile__list {
+    margin-bottom: 36px;
+    &::before {
+      width: 444px;
+      height: 300px;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .add-profile__item {
+    margin-right: 159px;
+    padding-right: 0;
   }
 }

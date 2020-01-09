@@ -19,8 +19,10 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .map__wrapper {
+    height: 615px;
+    margin-top: -201px;
     background-position: 0 0;
   }
 }

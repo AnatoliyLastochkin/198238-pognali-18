@@ -93,14 +93,26 @@
 
 @media (min-width: $desktop-width) {
   .travelers__wrapper {
-    padding: 150px 130px 135px;
+    padding: 180px 60px 77px 130px;
     display: flex;
     justify-content: space-between;
     background-position: left 440px top 150px, left 140px top 410px;
   }
 
   .travelers__text-wrapper {
-    width: 425px;
+    width: 36%;
+  }
+
+  .travelers__list {
+    margin: 0;
+  }
+
+  .travelers__description {
+    margin-bottom: 43px;
+  }
+
+  .travelers__slogan {
+    margin-bottom: 83px;
   }
 
   .traveler__link {
@@ -109,9 +121,5 @@
     top: 0;
     left: 0;
     width: 280px;
-  }
-
-  .travelers__list {
-    margin: 0;
   }
 }

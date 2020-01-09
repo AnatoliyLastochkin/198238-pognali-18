@@ -130,8 +130,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .traveler-list {
+    width: 50%;
+  }
+
   .traveler-list__item {
     margin-right: 60px;
+    height: 483px;
   }
 
   .traveler-list__item:last-child {

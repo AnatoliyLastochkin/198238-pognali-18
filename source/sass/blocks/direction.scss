@@ -80,24 +80,25 @@
 
 @media (min-width: $desktop-width) {
   .direction__wrapper {
-    padding: 160px 130px 145px;
+    padding: 202px 130px 138px;
     display: flex;
     justify-content: start;
+    background-position: right 59px top 127px;
 
     &::before {
-      top: 90px;
-      left: 20px;
+      top: 130px;
+      left: 60px;
     }
   }
 
   .direction__text-wrapper {
-    margin-left: 170px;
+    margin-left: 174px;
     margin-bottom: 0;
     order: 1;
   }
 
   .direction__description {
-    margin-bottom: 105px;
+    margin-bottom: 100px;
     color: $primary-grey;
   }
 
@@ -111,5 +112,9 @@
   .direction__list {
     order: 0;
     width: 560px;
+  }
+
+  .direction__title {
+    margin-top: 5px;
   }
 }

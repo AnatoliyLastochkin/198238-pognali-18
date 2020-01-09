@@ -84,3 +84,22 @@
     line-height: 28px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contact-list__icon {
+    width: 36px;
+    height: 36px;
+    padding: 28px;
+    margin-right: 40px;
+
+    svg {
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  .contact-list__text {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
