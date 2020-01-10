@@ -24,6 +24,12 @@
   }
 }
 
+.dots-list__item:nth-child(1) .dots-list__link {
+  &::before {
+    background-color: $blue3;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .dots-list {
     flex-direction: column;

@@ -1,7 +1,7 @@
 .transports {
   @include list-reset;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .transports__icon {

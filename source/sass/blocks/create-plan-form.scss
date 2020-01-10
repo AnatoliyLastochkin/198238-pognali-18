@@ -3,7 +3,7 @@
 }
 
 .create-plan-form__item {
-  padding: 25px;
+  padding: 24px;
   margin-bottom: 10px;
   background-color: $base-white;
   border-radius: 10px;
@@ -13,8 +13,12 @@
   }
 }
 
+.create-plan-form__top-item-wrapper {
+  position: relative;
+}
+
 .create-plan-form__title {
-  margin-bottom: 20px;
+  margin-bottom: 11px;
 
   span {
     display: block;
@@ -22,12 +26,19 @@
 }
 
 .create-plan-form__step-description {
-  margin-bottom: 25px;
+  margin-bottom: 21px;
   padding-right: 5px;
 }
 
+.create-plan-form__dots {
+  font-size: 0;
+  position: absolute;
+  top: -69px;
+  right: -7px;
+}
+
 .create-plan-form__calendar {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .create-plan-form__add-country-wrapper {
@@ -72,15 +83,14 @@
   }
 }
 
-.create-plan-form__next-step,
-.create-plan-form__button {
-  margin-bottom: 12px;
+.create-plan-form__prev-step {
+  margin-top: 7px;
 }
 
 .create-plan-form__label-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 11px;
   align-items: center;
 
   label {
@@ -95,7 +105,8 @@
   resize: none;
   padding: 13px;
   width: 100%;
-  margin-bottom: 25px;
+  height: 220px;
+  margin-bottom: 17px;
   border-radius: 5px;
   box-sizing: border-box;
   color: $primary-grey;

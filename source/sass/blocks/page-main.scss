@@ -1,10 +1,27 @@
 .page-main__wrapper {
   @include container;
   background-color: $primary-blue;
-  border-radius: 0 0 30px 30px;
+  border-radius: 0 0 20px 20px;
   position: relative;
   z-index: 5;
-  padding-top: 60px;
+  padding-top: 56px;
+  padding-bottom: 10px;
+}
+
+.page-main__title {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    content: "";
+    display: block;
+    width: 215px;
+    height: 5px;
+    background-color: $orange;
+    border-radius: 10px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -22,6 +39,17 @@
   }
 
   .page-main__wrapper {
-    padding: 125px 125px 70px;
+    position: relative;
+    z-index: 0;
+    padding: 107px 125px 62px;
+  }
+
+  .page-main__title {
+    &::before {
+      width: 359px;
+      height: 8px;
+      bottom: -65px;
+      left: 0;
+    }
   }
 }
